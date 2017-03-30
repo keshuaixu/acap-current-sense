@@ -1,12 +1,12 @@
-Loading plugins phase: Elapsed time ==> 0s.307ms
+Loading plugins phase: Elapsed time ==> 0s.338ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\ADC_SingleEndedMode02.cyprj -d CY8C5888LTI-LP097 -s C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.560ms
+Elaboration phase: Elapsed time ==> 1s.913ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.083ms
+HDL generation phase: Elapsed time ==> 0s.065ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -40,7 +40,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Keshu
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Fri Mar 10 00:49:38 2017
+Thu Mar 30 04:58:16 2017
 
 
 ======================================================================
@@ -50,12 +50,15 @@ Options  :    -yv2 -q10 ADC_SingleEndedMode02.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Fri Mar 10 00:49:38 2017
+Thu Mar 30 04:58:16 2017
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\AMuxSeq_v1_80\AMuxSeq_v1_80.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'
 
 vpp:  No errors.
 
@@ -83,7 +86,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Keshu
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Fri Mar 10 00:49:38 2017
+Thu Mar 30 04:58:16 2017
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -100,6 +103,9 @@ Linking 'C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_Singl
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\AMuxSeq_v1_80\AMuxSeq_v1_80.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
 
 tovif:  No errors.
 
@@ -111,7 +117,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Keshu
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Fri Mar 10 00:49:38 2017
+Thu Mar 30 04:58:16 2017
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -128,6 +134,9 @@ Linking 'C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_Singl
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\AMuxSeq_v1_80\AMuxSeq_v1_80.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
 
 ----------------------------------------------------------
@@ -162,37 +171,31 @@ Alias Detection
 ------------------------------------------------------
 Aliasing zero to \ADC_DelSig_1:Net_482\
 Aliasing \ADC_DelSig_1:Net_252\ to \ADC_DelSig_1:Net_482\
+Aliasing tmpOE__Pin_1_net_5 to \ADC_DelSig_1:soc\
+Aliasing tmpOE__Pin_1_net_4 to \ADC_DelSig_1:soc\
+Aliasing tmpOE__Pin_1_net_3 to \ADC_DelSig_1:soc\
+Aliasing tmpOE__Pin_1_net_2 to \ADC_DelSig_1:soc\
+Aliasing tmpOE__Pin_1_net_1 to \ADC_DelSig_1:soc\
 Aliasing tmpOE__Pin_1_net_0 to \ADC_DelSig_1:soc\
 Aliasing one to \ADC_DelSig_1:soc\
-Aliasing \LCD:tmpOE__LCDPort_net_6\ to \ADC_DelSig_1:soc\
-Aliasing \LCD:tmpOE__LCDPort_net_5\ to \ADC_DelSig_1:soc\
-Aliasing \LCD:tmpOE__LCDPort_net_4\ to \ADC_DelSig_1:soc\
-Aliasing \LCD:tmpOE__LCDPort_net_3\ to \ADC_DelSig_1:soc\
-Aliasing \LCD:tmpOE__LCDPort_net_2\ to \ADC_DelSig_1:soc\
-Aliasing \LCD:tmpOE__LCDPort_net_1\ to \ADC_DelSig_1:soc\
-Aliasing \LCD:tmpOE__LCDPort_net_0\ to \ADC_DelSig_1:soc\
 Aliasing \USBUART:tmpOE__Dm_net_0\ to \ADC_DelSig_1:soc\
 Aliasing \USBUART:tmpOE__Dp_net_0\ to \ADC_DelSig_1:soc\
-Aliasing tmpOE__Pin_2_net_0 to \ADC_DelSig_1:soc\
 Removing Rhs of wire \ADC_DelSig_1:Net_488\[8] = \ADC_DelSig_1:Net_250\[46]
 Removing Rhs of wire \ADC_DelSig_1:Net_481\[11] = \ADC_DelSig_1:Net_482\[12]
 Removing Rhs of wire zero[14] = \ADC_DelSig_1:Net_481\[11]
 Removing Lhs of wire \ADC_DelSig_1:Net_252\[48] = zero[14]
-Removing Rhs of wire tmpOE__Pin_1_net_0[54] = \ADC_DelSig_1:soc\[50]
-Removing Lhs of wire one[58] = tmpOE__Pin_1_net_0[54]
-Removing Lhs of wire \LCD:tmpOE__LCDPort_net_6\[61] = tmpOE__Pin_1_net_0[54]
-Removing Lhs of wire \LCD:tmpOE__LCDPort_net_5\[62] = tmpOE__Pin_1_net_0[54]
-Removing Lhs of wire \LCD:tmpOE__LCDPort_net_4\[63] = tmpOE__Pin_1_net_0[54]
-Removing Lhs of wire \LCD:tmpOE__LCDPort_net_3\[64] = tmpOE__Pin_1_net_0[54]
-Removing Lhs of wire \LCD:tmpOE__LCDPort_net_2\[65] = tmpOE__Pin_1_net_0[54]
-Removing Lhs of wire \LCD:tmpOE__LCDPort_net_1\[66] = tmpOE__Pin_1_net_0[54]
-Removing Lhs of wire \LCD:tmpOE__LCDPort_net_0\[67] = tmpOE__Pin_1_net_0[54]
-Removing Lhs of wire \USBUART:tmpOE__Dm_net_0\[87] = tmpOE__Pin_1_net_0[54]
-Removing Lhs of wire \USBUART:tmpOE__Dp_net_0\[94] = tmpOE__Pin_1_net_0[54]
-Removing Lhs of wire tmpOE__Pin_2_net_0[147] = tmpOE__Pin_1_net_0[54]
+Removing Rhs of wire tmpOE__Pin_1_net_5[54] = \ADC_DelSig_1:soc\[50]
+Removing Lhs of wire tmpOE__Pin_1_net_4[55] = tmpOE__Pin_1_net_5[54]
+Removing Lhs of wire tmpOE__Pin_1_net_3[56] = tmpOE__Pin_1_net_5[54]
+Removing Lhs of wire tmpOE__Pin_1_net_2[57] = tmpOE__Pin_1_net_5[54]
+Removing Lhs of wire tmpOE__Pin_1_net_1[58] = tmpOE__Pin_1_net_5[54]
+Removing Lhs of wire tmpOE__Pin_1_net_0[59] = tmpOE__Pin_1_net_5[54]
+Removing Lhs of wire one[79] = tmpOE__Pin_1_net_5[54]
+Removing Lhs of wire \USBUART:tmpOE__Dm_net_0\[84] = tmpOE__Pin_1_net_5[54]
+Removing Lhs of wire \USBUART:tmpOE__Dp_net_0\[91] = tmpOE__Pin_1_net_5[54]
 
 ------------------------------------------------------
-Aliased 0 equations, 16 wires.
+Aliased 0 equations, 13 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -216,10 +219,10 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\ADC_SingleEndedMode02.cyprj" -dcpsoc3 ADC_SingleEndedMode02.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.364ms
+Warp synthesis phase: Elapsed time ==> 0s.398ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.0.0.432, Family: PSoC3, Started at: Friday, 10 March 2017 00:49:38
+cyp3fit: V4.0.0.432, Family: PSoC3, Started at: Thursday, 30 March 2017 04:58:16
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\ADC_SingleEndedMode02.cyprj -d CY8C5888LTI-LP097 ADC_SingleEndedMode02.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
@@ -233,7 +236,7 @@ Design parsing phase: Elapsed time ==> 0s.008ms
 </CYPRESSTAG>
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
-ADD: pft.M0040: information: The following 2 pin(s) will be assigned a location by the fitter: \USBUART:Dm(0)\, \USBUART:Dp(0)\
+ADD: pft.M0040: information: The following 7 pin(s) will be assigned a location by the fitter: \USBUART:Dm(0)\, \USBUART:Dp(0)\, Pin_1(1), Pin_1(2), Pin_1(3), Pin_1(4), Pin_1(5)
 
 
 Removing unused cells resulting from optimization
@@ -288,20 +291,20 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => Pin_1(0)__PA ,
-            analog_term => Net_19 ,
+            analog_term => Net_79 ,
             pad => Pin_1(0)_PAD );
         Properties:
         {
         }
 
-    Pin : Name = \LCD:LCDPort(0)\
+    Pin : Name = Pin_1(1)
         Attributes:
             In Group/Port: True
             In Sync Option: AUTO
-            Out Sync Option: NOSYNC
+            Out Sync Option: AUTO
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_ANALOG
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -311,10 +314,10 @@ Design Equations
             LCD Mode: COMMON
             Register Mode: RegComb
             CaSense Mode: NEITHER
-            Treat as pin: False
+            Treat as pin: True
             Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
+            Uses Analog: True
+            Can contain Digital: False
             Is SIO: False
             SIO Output Buf: NONREGULATED
             SIO Input Buf: SINGLE_ENDED
@@ -323,24 +326,22 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilitites: ANALOG
             Initial Value: 0
             IO Voltage: 0
         PORT MAP (
-            pa_out => \LCD:LCDPort(0)\__PA ,
-            pad => \LCD:LCDPort(0)_PAD\ );
-        Properties:
-        {
-        }
+            pa_out => Pin_1(1)__PA ,
+            analog_term => Net_80 ,
+            pad => Pin_1(1)_PAD );
 
-    Pin : Name = \LCD:LCDPort(1)\
+    Pin : Name = Pin_1(2)
         Attributes:
             In Group/Port: True
             In Sync Option: AUTO
-            Out Sync Option: NOSYNC
+            Out Sync Option: AUTO
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_ANALOG
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -350,10 +351,10 @@ Design Equations
             LCD Mode: COMMON
             Register Mode: RegComb
             CaSense Mode: NEITHER
-            Treat as pin: False
+            Treat as pin: True
             Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
+            Uses Analog: True
+            Can contain Digital: False
             Is SIO: False
             SIO Output Buf: NONREGULATED
             SIO Input Buf: SINGLE_ENDED
@@ -362,24 +363,22 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilitites: ANALOG
             Initial Value: 0
             IO Voltage: 0
         PORT MAP (
-            pa_out => \LCD:LCDPort(1)\__PA ,
-            pad => \LCD:LCDPort(1)_PAD\ );
-        Properties:
-        {
-        }
+            pa_out => Pin_1(2)__PA ,
+            analog_term => Net_81 ,
+            pad => Pin_1(2)_PAD );
 
-    Pin : Name = \LCD:LCDPort(2)\
+    Pin : Name = Pin_1(3)
         Attributes:
             In Group/Port: True
             In Sync Option: AUTO
-            Out Sync Option: NOSYNC
+            Out Sync Option: AUTO
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_ANALOG
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -389,10 +388,10 @@ Design Equations
             LCD Mode: COMMON
             Register Mode: RegComb
             CaSense Mode: NEITHER
-            Treat as pin: False
+            Treat as pin: True
             Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
+            Uses Analog: True
+            Can contain Digital: False
             Is SIO: False
             SIO Output Buf: NONREGULATED
             SIO Input Buf: SINGLE_ENDED
@@ -401,24 +400,22 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilitites: ANALOG
             Initial Value: 0
             IO Voltage: 0
         PORT MAP (
-            pa_out => \LCD:LCDPort(2)\__PA ,
-            pad => \LCD:LCDPort(2)_PAD\ );
-        Properties:
-        {
-        }
+            pa_out => Pin_1(3)__PA ,
+            analog_term => Net_82 ,
+            pad => Pin_1(3)_PAD );
 
-    Pin : Name = \LCD:LCDPort(3)\
+    Pin : Name = Pin_1(4)
         Attributes:
             In Group/Port: True
             In Sync Option: AUTO
-            Out Sync Option: NOSYNC
+            Out Sync Option: AUTO
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_ANALOG
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -428,10 +425,10 @@ Design Equations
             LCD Mode: COMMON
             Register Mode: RegComb
             CaSense Mode: NEITHER
-            Treat as pin: False
+            Treat as pin: True
             Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
+            Uses Analog: True
+            Can contain Digital: False
             Is SIO: False
             SIO Output Buf: NONREGULATED
             SIO Input Buf: SINGLE_ENDED
@@ -440,24 +437,22 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilitites: ANALOG
             Initial Value: 0
             IO Voltage: 0
         PORT MAP (
-            pa_out => \LCD:LCDPort(3)\__PA ,
-            pad => \LCD:LCDPort(3)_PAD\ );
-        Properties:
-        {
-        }
+            pa_out => Pin_1(4)__PA ,
+            analog_term => Net_83 ,
+            pad => Pin_1(4)_PAD );
 
-    Pin : Name = \LCD:LCDPort(4)\
+    Pin : Name = Pin_1(5)
         Attributes:
             In Group/Port: True
             In Sync Option: AUTO
-            Out Sync Option: NOSYNC
+            Out Sync Option: AUTO
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_ANALOG
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -467,10 +462,10 @@ Design Equations
             LCD Mode: COMMON
             Register Mode: RegComb
             CaSense Mode: NEITHER
-            Treat as pin: False
+            Treat as pin: True
             Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
+            Uses Analog: True
+            Can contain Digital: False
             Is SIO: False
             SIO Output Buf: NONREGULATED
             SIO Input Buf: SINGLE_ENDED
@@ -479,93 +474,13 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO Multiplier Index: 0
             SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
+            Required Capabilitites: ANALOG
             Initial Value: 0
             IO Voltage: 0
         PORT MAP (
-            pa_out => \LCD:LCDPort(4)\__PA ,
-            pad => \LCD:LCDPort(4)_PAD\ );
-        Properties:
-        {
-        }
-
-    Pin : Name = \LCD:LCDPort(5)\
-        Attributes:
-            In Group/Port: True
-            In Sync Option: AUTO
-            Out Sync Option: NOSYNC
-            Interrupt generated: False
-            Interrupt mode: NONE
-            Drive mode: CMOS_OUT
-            VTrip: EITHER
-            Slew: FAST
-            Input Sync needed: False
-            Output Sync needed: False
-            SC shield enabled: False
-            POR State: ANY
-            LCD Mode: COMMON
-            Register Mode: RegComb
-            CaSense Mode: NEITHER
-            Treat as pin: False
-            Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
-            Is SIO: False
-            SIO Output Buf: NONREGULATED
-            SIO Input Buf: SINGLE_ENDED
-            SIO HiFreq: LOW
-            SIO Hyst: DISABLED
-            SIO Vtrip: MULTIPLIER_0_5
-            SIO Multiplier Index: 0
-            SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
-            Initial Value: 0
-            IO Voltage: 0
-        PORT MAP (
-            pa_out => \LCD:LCDPort(5)\__PA ,
-            pad => \LCD:LCDPort(5)_PAD\ );
-        Properties:
-        {
-        }
-
-    Pin : Name = \LCD:LCDPort(6)\
-        Attributes:
-            In Group/Port: True
-            In Sync Option: AUTO
-            Out Sync Option: NOSYNC
-            Interrupt generated: False
-            Interrupt mode: NONE
-            Drive mode: CMOS_OUT
-            VTrip: EITHER
-            Slew: FAST
-            Input Sync needed: False
-            Output Sync needed: False
-            SC shield enabled: False
-            POR State: ANY
-            LCD Mode: COMMON
-            Register Mode: RegComb
-            CaSense Mode: NEITHER
-            Treat as pin: False
-            Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
-            Is SIO: False
-            SIO Output Buf: NONREGULATED
-            SIO Input Buf: SINGLE_ENDED
-            SIO HiFreq: LOW
-            SIO Hyst: DISABLED
-            SIO Vtrip: MULTIPLIER_0_5
-            SIO Multiplier Index: 0
-            SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
-            Initial Value: 0
-            IO Voltage: 0
-        PORT MAP (
-            pa_out => \LCD:LCDPort(6)\__PA ,
-            pad => \LCD:LCDPort(6)_PAD\ );
-        Properties:
-        {
-        }
+            pa_out => Pin_1(5)__PA ,
+            analog_term => Net_84 ,
+            pad => Pin_1(5)_PAD );
 
     Pin : Name = \USBUART:Dm(0)\
         Attributes:
@@ -640,46 +555,6 @@ Design Equations
             pa_out => \USBUART:Dp(0)\__PA ,
             analog_term => \USBUART:Net_1000\ ,
             pad => \USBUART:Dp(0)_PAD\ );
-
-    Pin : Name = Pin_2(0)
-        Attributes:
-            In Group/Port: True
-            In Sync Option: AUTO
-            Out Sync Option: AUTO
-            Interrupt generated: False
-            Interrupt mode: NONE
-            Drive mode: HI_Z_ANALOG
-            VTrip: EITHER
-            Slew: FAST
-            Input Sync needed: False
-            Output Sync needed: False
-            SC shield enabled: False
-            POR State: ANY
-            LCD Mode: COMMON
-            Register Mode: RegComb
-            CaSense Mode: NEITHER
-            Treat as pin: True
-            Is OE Registered: False
-            Uses Analog: True
-            Can contain Digital: False
-            Is SIO: False
-            SIO Output Buf: NONREGULATED
-            SIO Input Buf: SINGLE_ENDED
-            SIO HiFreq: LOW
-            SIO Hyst: DISABLED
-            SIO Vtrip: MULTIPLIER_0_5
-            SIO Multiplier Index: 0
-            SIO RefSel: VCC_IO
-            Required Capabilitites: ANALOG
-            Initial Value: 0
-            IO Voltage: 0
-        PORT MAP (
-            pa_out => Pin_2(0)__PA ,
-            analog_term => Net_20 ,
-            pad => Pin_2(0)_PAD );
-        Properties:
-        {
-        }
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
 
@@ -719,7 +594,7 @@ Design Equations
 
     interrupt: Name =\ADC_DelSig_1:IRQ\
         PORT MAP (
-            interrupt => Net_22 );
+            interrupt => Net_96 );
         Properties:
         {
             int_type = "10"
@@ -744,27 +619,18 @@ Design Equations
             is_nmi = 0
         }
 
+    interrupt: Name =\USBUART:ep_4\
+        PORT MAP (
+            interrupt => \USBUART:ep_int_4\ );
+        Properties:
+        {
+            int_type = "10"
+            is_nmi = 0
+        }
+
     interrupt: Name =\USBUART:ep_3\
         PORT MAP (
             interrupt => \USBUART:ep_int_3\ );
-        Properties:
-        {
-            int_type = "10"
-            is_nmi = 0
-        }
-
-    interrupt: Name =\USBUART:ep_2\
-        PORT MAP (
-            interrupt => \USBUART:ep_int_2\ );
-        Properties:
-        {
-            int_type = "10"
-            is_nmi = 0
-        }
-
-    interrupt: Name =\USBUART:ep_1\
-        PORT MAP (
-            interrupt => \USBUART:ep_int_1\ );
         Properties:
         {
             int_type = "10"
@@ -820,8 +686,8 @@ Digital Clocks                :    1 :    7 :    8 : 12.50 %
 Analog Clocks                 :    1 :    3 :    4 : 25.00 %
 CapSense Buffers              :    0 :    2 :    2 :  0.00 %
 Digital Filter Block          :    0 :    1 :    1 :  0.00 %
-Interrupts                    :   10 :   22 :   32 : 31.25 %
-IO                            :   14 :   34 :   48 : 29.17 %
+Interrupts                    :    9 :   23 :   32 : 28.13 %
+IO                            :   11 :   37 :   48 : 22.92 %
 Segment LCD                   :    0 :    1 :    1 :  0.00 %
 CAN 2.0b                      :    0 :    1 :    1 :  0.00 %
 I2C                           :    0 :    1 :    1 :  0.00 %
@@ -844,43 +710,40 @@ Analog (SC/CT) Blocks         :    0 :    4 :    4 :  0.00 %
 DAC                           :      :      :      :        
   VIDAC                       :    0 :    4 :    4 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.046ms
-Tech Mapping phase: Elapsed time ==> 0s.098ms
+Technology Mapping: Elapsed time ==> 0s.008ms
+Tech Mapping phase: Elapsed time ==> 0s.075ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 Initial Analog Placement Results:
 IO_7@[IOP=(0)][IoId=(7)] : Pin_1(0) (fixed)
-IO_6@[IOP=(0)][IoId=(6)] : Pin_2(0) (fixed)
-IO_0@[IOP=(2)][IoId=(0)] : \LCD:LCDPort(0)\ (fixed)
-IO_1@[IOP=(2)][IoId=(1)] : \LCD:LCDPort(1)\ (fixed)
-IO_2@[IOP=(2)][IoId=(2)] : \LCD:LCDPort(2)\ (fixed)
-IO_3@[IOP=(2)][IoId=(3)] : \LCD:LCDPort(3)\ (fixed)
-IO_4@[IOP=(2)][IoId=(4)] : \LCD:LCDPort(4)\ (fixed)
-IO_5@[IOP=(2)][IoId=(5)] : \LCD:LCDPort(5)\ (fixed)
-IO_6@[IOP=(2)][IoId=(6)] : \LCD:LCDPort(6)\ (fixed)
 IO_7@[IOP=(15)][IoId=(7)] : \USBUART:Dm(0)\ (fixed)
 IO_6@[IOP=(15)][IoId=(6)] : \USBUART:Dp(0)\ (fixed)
+IO_0@[IOP=(2)][IoId=(0)] : Pin_1(1)
+IO_5@[IOP=(15)][IoId=(5)] : Pin_1(2)
+IO_4@[IOP=(15)][IoId=(4)] : Pin_1(3)
+IO_4@[IOP=(3)][IoId=(4)] : Pin_1(4)
+IO_5@[IOP=(1)][IoId=(5)] : Pin_1(5)
 DSM[0]@[FFB(DSM,0)] : \ADC_DelSig_1:DSM\
 USB[0]@[FFB(USB,0)] : \USBUART:USB\
+Log: apr.M0058: The analog placement iterative improvement is 28% done. (App=cydsfit)
+Log: apr.M0058: The analog placement iterative improvement is 51% done. (App=cydsfit)
+Log: apr.M0058: The analog placement iterative improvement is 99% done. (App=cydsfit)
 Analog Placement Results:
 IO_7@[IOP=(0)][IoId=(7)] : Pin_1(0) (fixed)
-IO_6@[IOP=(0)][IoId=(6)] : Pin_2(0) (fixed)
-IO_0@[IOP=(2)][IoId=(0)] : \LCD:LCDPort(0)\ (fixed)
-IO_1@[IOP=(2)][IoId=(1)] : \LCD:LCDPort(1)\ (fixed)
-IO_2@[IOP=(2)][IoId=(2)] : \LCD:LCDPort(2)\ (fixed)
-IO_3@[IOP=(2)][IoId=(3)] : \LCD:LCDPort(3)\ (fixed)
-IO_4@[IOP=(2)][IoId=(4)] : \LCD:LCDPort(4)\ (fixed)
-IO_5@[IOP=(2)][IoId=(5)] : \LCD:LCDPort(5)\ (fixed)
-IO_6@[IOP=(2)][IoId=(6)] : \LCD:LCDPort(6)\ (fixed)
 IO_7@[IOP=(15)][IoId=(7)] : \USBUART:Dm(0)\ (fixed)
 IO_6@[IOP=(15)][IoId=(6)] : \USBUART:Dp(0)\ (fixed)
+IO_5@[IOP=(0)][IoId=(5)] : Pin_1(1)
+IO_0@[IOP=(3)][IoId=(0)] : Pin_1(2)
+IO_1@[IOP=(0)][IoId=(1)] : Pin_1(3)
+IO_4@[IOP=(3)][IoId=(4)] : Pin_1(4)
+IO_1@[IOP=(3)][IoId=(1)] : Pin_1(5)
 DSM[0]@[FFB(DSM,0)] : \ADC_DelSig_1:DSM\
 USB[0]@[FFB(USB,0)] : \USBUART:USB\
 
-Analog Placement phase: Elapsed time ==> 0s.015ms
+Analog Placement phase: Elapsed time ==> 4s.935ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
-Analog Routing phase: Elapsed time ==> 0s.000ms
+Analog Routing phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -888,19 +751,27 @@ Dump of CyAnalogRoutingResultsDB
 Map of net to items {
   Net: Net_19 {
     dsm_0_vplus
-    agl7_x_dsm_0_vplus
-    agl7
-    agl7_x_p0_7
+  }
+  Net: Net_79 {
     p0_7
+  }
+  Net: Net_81 {
+    p0_6
+  }
+  Net: Net_83 {
+    p0_2
   }
   Net: Net_20 {
     dsm_0_vminus
-    agl1_x_dsm_0_vminus
-    agl1
-    agl1_x_vidac_0_iout
-    vidac_0_iout
-    p0_6_x_vidac_0_iout
-    p0_6
+  }
+  Net: Net_80 {
+    p15_5
+  }
+  Net: Net_82 {
+    p2_5
+  }
+  Net: Net_84 {
+    p2_1
   }
   Net: \ADC_DelSig_1:Net_249\ {
   }
@@ -910,28 +781,146 @@ Map of net to items {
   }
   Net: \ADC_DelSig_1:Net_34\ {
   }
+  Net: AmuxNet::AMuxSeq_1_CYAMUXSIDE_A {
+    dsm_0_vplus
+    agl7_x_dsm_0_vplus
+    agl7
+    agl7_x_p0_7
+    agl6_x_dsm_0_vplus
+    agl6
+    agl6_x_p0_2
+    agl6_x_p0_6
+    p0_7
+    p0_2
+    p0_6
+  }
+  Net: AmuxNet::AMuxSeq_1_CYAMUXSIDE_B {
+    dsm_0_vminus
+    agl1_x_dsm_0_vminus
+    agl1
+    agl1_x_p2_1
+    agl1_x_p2_5
+    agl1_x_p15_5
+    p2_1
+    p2_5
+    p15_5
+  }
 }
 Map of item to net {
   dsm_0_vplus                                      -> Net_19
-  agl7_x_dsm_0_vplus                               -> Net_19
-  agl7                                             -> Net_19
-  agl7_x_p0_7                                      -> Net_19
-  p0_7                                             -> Net_19
+  p0_7                                             -> Net_79
+  p0_6                                             -> Net_81
+  p0_2                                             -> Net_83
   dsm_0_vminus                                     -> Net_20
-  agl1_x_dsm_0_vminus                              -> Net_20
-  agl1                                             -> Net_20
-  agl1_x_vidac_0_iout                              -> Net_20
-  vidac_0_iout                                     -> Net_20
-  p0_6_x_vidac_0_iout                              -> Net_20
-  p0_6                                             -> Net_20
+  p15_5                                            -> Net_80
+  p2_5                                             -> Net_82
+  p2_1                                             -> Net_84
+  agl7_x_dsm_0_vplus                               -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_A
+  agl7                                             -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_A
+  agl7_x_p0_7                                      -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_A
+  agl6_x_dsm_0_vplus                               -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_A
+  agl6                                             -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_A
+  agl6_x_p0_2                                      -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_A
+  agl6_x_p0_6                                      -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_A
+  agl1_x_dsm_0_vminus                              -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_B
+  agl1                                             -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_B
+  agl1_x_p2_1                                      -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_B
+  agl1_x_p2_5                                      -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_B
+  agl1_x_p15_5                                     -> AmuxNet::AMuxSeq_1_CYAMUXSIDE_B
 }
 Mux Info {
+  Mux: AMuxSeq_1_CYAMUXSIDE_A {
+     Mouth: Net_19
+     Guts:  AmuxNet::AMuxSeq_1_CYAMUXSIDE_A
+     IsSingleSwitching: False
+     IsStaticSwitching: True
+     IsAtMostOneSwitch: True
+    Arm: 0 {
+      Net:   Net_79
+      Outer: agl7_x_p0_7
+      Inner: agl7_x_dsm_0_vplus
+      Path {
+        p0_7
+        agl7_x_p0_7
+        agl7
+        agl7_x_dsm_0_vplus
+        dsm_0_vplus
+      }
+    }
+    Arm: 1 {
+      Net:   Net_81
+      Outer: agl6_x_p0_6
+      Inner: __open__
+      Path {
+        p0_6
+        agl6_x_p0_6
+        agl6
+        agl6_x_dsm_0_vplus
+        dsm_0_vplus
+      }
+    }
+    Arm: 2 {
+      Net:   Net_83
+      Outer: agl6_x_p0_2
+      Inner: __open__
+      Path {
+        p0_2
+        agl6_x_p0_2
+        agl6
+        agl6_x_dsm_0_vplus
+        dsm_0_vplus
+      }
+    }
+  }
+  Mux: AMuxSeq_1_CYAMUXSIDE_B {
+     Mouth: Net_20
+     Guts:  AmuxNet::AMuxSeq_1_CYAMUXSIDE_B
+     IsSingleSwitching: False
+     IsStaticSwitching: True
+     IsAtMostOneSwitch: True
+    Arm: 0 {
+      Net:   Net_80
+      Outer: agl1_x_p15_5
+      Inner: __open__
+      Path {
+        p15_5
+        agl1_x_p15_5
+        agl1
+        agl1_x_dsm_0_vminus
+        dsm_0_vminus
+      }
+    }
+    Arm: 1 {
+      Net:   Net_82
+      Outer: agl1_x_p2_5
+      Inner: __open__
+      Path {
+        p2_5
+        agl1_x_p2_5
+        agl1
+        agl1_x_dsm_0_vminus
+        dsm_0_vminus
+      }
+    }
+    Arm: 2 {
+      Net:   Net_84
+      Outer: agl1_x_p2_1
+      Inner: __open__
+      Path {
+        p2_1
+        agl1_x_p2_1
+        agl1
+        agl1_x_dsm_0_vminus
+        dsm_0_vminus
+      }
+    }
+  }
 }
 Dump of CyP35AnalogRoutingResultsDB
 IsVddaHalfUsedForComp = False
 IsVddaHalfUsedForSar0 = False
 IsVddaHalfUsedForSar1 = False
-Analog Code Generation phase: Elapsed time ==> 0s.280ms
+Analog Code Generation phase: Elapsed time ==> 0s.319ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
@@ -967,7 +956,7 @@ PLD Packing: Elapsed time ==> 0s.000ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.015ms
+Partitioning: Elapsed time ==> 0s.021ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -1030,27 +1019,18 @@ UDB [UDB=(3,4)] is empty.
 UDB [UDB=(3,5)] is empty.
 Intr container @ [IntrContainer=(0)]: 
   Intr@ [IntrContainer=(0)][IntrId=(0)] 
-    interrupt: Name =\USBUART:ep_1\
+    interrupt: Name =\USBUART:ep_3\
         PORT MAP (
-            interrupt => \USBUART:ep_int_1\ );
+            interrupt => \USBUART:ep_int_3\ );
         Properties:
         {
             int_type = "10"
             is_nmi = 0
         }
   Intr@ [IntrContainer=(0)][IntrId=(1)] 
-    interrupt: Name =\USBUART:ep_2\
+    interrupt: Name =\USBUART:ep_4\
         PORT MAP (
-            interrupt => \USBUART:ep_int_2\ );
-        Properties:
-        {
-            int_type = "10"
-            is_nmi = 0
-        }
-  Intr@ [IntrContainer=(0)][IntrId=(2)] 
-    interrupt: Name =\USBUART:ep_3\
-        PORT MAP (
-            interrupt => \USBUART:ep_int_3\ );
+            interrupt => \USBUART:ep_int_4\ );
         Properties:
         {
             int_type = "10"
@@ -1113,7 +1093,7 @@ Intr container @ [IntrContainer=(0)]:
   Intr@ [IntrContainer=(0)][IntrId=(29)] 
     interrupt: Name =\ADC_DelSig_1:IRQ\
         PORT MAP (
-            interrupt => Net_22 );
+            interrupt => Net_96 );
         Properties:
         {
             int_type = "10"
@@ -1121,8 +1101,8 @@ Intr container @ [IntrContainer=(0)]:
         }
 Drq container @ [DrqContainer=(0)]: empty
 Port 0 contains the following IO cells:
-[IoId=6]: 
-Pin : Name = Pin_2(0)
+[IoId=2]: 
+Pin : Name = Pin_1(4)
     Attributes:
         In Group/Port: True
         In Sync Option: AUTO
@@ -1155,9 +1135,50 @@ Pin : Name = Pin_2(0)
         Initial Value: 0
         IO Voltage: 0
     PORT MAP (
-        pa_out => Pin_2(0)__PA ,
-        analog_term => Net_20 ,
-        pad => Pin_2(0)_PAD );
+        pa_out => Pin_1(4)__PA ,
+        analog_term => Net_83 ,
+        pad => Pin_1(4)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=6]: 
+Pin : Name = Pin_1(2)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_1(2)__PA ,
+        analog_term => Net_81 ,
+        pad => Pin_1(2)_PAD );
     Properties:
     {
     }
@@ -1197,7 +1218,7 @@ Pin : Name = Pin_1(0)
         IO Voltage: 0
     PORT MAP (
         pa_out => Pin_1(0)__PA ,
-        analog_term => Net_19 ,
+        analog_term => Net_79 ,
         pad => Pin_1(0)_PAD );
     Properties:
     {
@@ -1205,55 +1226,15 @@ Pin : Name = Pin_1(0)
 
 Port 1 is empty
 Port 2 contains the following IO cells:
-[IoId=0]: 
-Pin : Name = \LCD:LCDPort(0)\
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: False
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => \LCD:LCDPort(0)\__PA ,
-        pad => \LCD:LCDPort(0)_PAD\ );
-    Properties:
-    {
-    }
-
 [IoId=1]: 
-Pin : Name = \LCD:LCDPort(1)\
+Pin : Name = Pin_1(5)
     Attributes:
         In Group/Port: True
         In Sync Option: AUTO
-        Out Sync Option: NOSYNC
+        Out Sync Option: AUTO
         Interrupt generated: False
         Interrupt mode: NONE
-        Drive mode: CMOS_OUT
+        Drive mode: HI_Z_ANALOG
         VTrip: EITHER
         Slew: FAST
         Input Sync needed: False
@@ -1263,10 +1244,10 @@ Pin : Name = \LCD:LCDPort(1)\
         LCD Mode: COMMON
         Register Mode: RegComb
         CaSense Mode: NEITHER
-        Treat as pin: False
+        Treat as pin: True
         Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
+        Uses Analog: True
+        Can contain Digital: False
         Is SIO: False
         SIO Output Buf: NONREGULATED
         SIO Input Buf: SINGLE_ENDED
@@ -1275,145 +1256,26 @@ Pin : Name = \LCD:LCDPort(1)\
         SIO Vtrip: MULTIPLIER_0_5
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
+        Required Capabilitites: ANALOG
         Initial Value: 0
         IO Voltage: 0
     PORT MAP (
-        pa_out => \LCD:LCDPort(1)\__PA ,
-        pad => \LCD:LCDPort(1)_PAD\ );
-    Properties:
-    {
-    }
-
-[IoId=2]: 
-Pin : Name = \LCD:LCDPort(2)\
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: False
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => \LCD:LCDPort(2)\__PA ,
-        pad => \LCD:LCDPort(2)_PAD\ );
-    Properties:
-    {
-    }
-
-[IoId=3]: 
-Pin : Name = \LCD:LCDPort(3)\
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: False
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => \LCD:LCDPort(3)\__PA ,
-        pad => \LCD:LCDPort(3)_PAD\ );
-    Properties:
-    {
-    }
-
-[IoId=4]: 
-Pin : Name = \LCD:LCDPort(4)\
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: False
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => \LCD:LCDPort(4)\__PA ,
-        pad => \LCD:LCDPort(4)_PAD\ );
+        pa_out => Pin_1(5)__PA ,
+        analog_term => Net_84 ,
+        pad => Pin_1(5)_PAD );
     Properties:
     {
     }
 
 [IoId=5]: 
-Pin : Name = \LCD:LCDPort(5)\
+Pin : Name = Pin_1(3)
     Attributes:
         In Group/Port: True
         In Sync Option: AUTO
-        Out Sync Option: NOSYNC
+        Out Sync Option: AUTO
         Interrupt generated: False
         Interrupt mode: NONE
-        Drive mode: CMOS_OUT
+        Drive mode: HI_Z_ANALOG
         VTrip: EITHER
         Slew: FAST
         Input Sync needed: False
@@ -1423,10 +1285,10 @@ Pin : Name = \LCD:LCDPort(5)\
         LCD Mode: COMMON
         Register Mode: RegComb
         CaSense Mode: NEITHER
-        Treat as pin: False
+        Treat as pin: True
         Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
+        Uses Analog: True
+        Can contain Digital: False
         Is SIO: False
         SIO Output Buf: NONREGULATED
         SIO Input Buf: SINGLE_ENDED
@@ -1435,52 +1297,13 @@ Pin : Name = \LCD:LCDPort(5)\
         SIO Vtrip: MULTIPLIER_0_5
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
+        Required Capabilitites: ANALOG
         Initial Value: 0
         IO Voltage: 0
     PORT MAP (
-        pa_out => \LCD:LCDPort(5)\__PA ,
-        pad => \LCD:LCDPort(5)_PAD\ );
-    Properties:
-    {
-    }
-
-[IoId=6]: 
-Pin : Name = \LCD:LCDPort(6)\
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: False
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => \LCD:LCDPort(6)\__PA ,
-        pad => \LCD:LCDPort(6)_PAD\ );
+        pa_out => Pin_1(3)__PA ,
+        analog_term => Net_82 ,
+        pad => Pin_1(3)_PAD );
     Properties:
     {
     }
@@ -1490,9 +1313,9 @@ Port 12 is empty
 Port 15 generates interrupt for logical port:
     logicalport: Name =\USBUART:Dp\
         PORT MAP (
-            in_clock_en => tmpOE__Pin_1_net_0 ,
+            in_clock_en => tmpOE__Pin_1_net_5 ,
             in_reset => zero ,
-            out_clock_en => tmpOE__Pin_1_net_0 ,
+            out_clock_en => tmpOE__Pin_1_net_5 ,
             out_reset => zero ,
             interrupt => \USBUART:Net_1010\ ,
             in_clock => ClockBlock_BUS_CLK );
@@ -1555,6 +1378,47 @@ Port 15 generates interrupt for logical port:
             width = 1
         }
     and contains the following IO cells:
+[IoId=5]: 
+Pin : Name = Pin_1(1)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_1(1)__PA ,
+        analog_term => Net_80 ,
+        pad => Pin_1(1)_PAD );
+    Properties:
+    {
+    }
+
 [IoId=6]: 
 Pin : Name = \USBUART:Dp(0)\
     Attributes:
@@ -1709,7 +1573,7 @@ Decimator group 0:
             mod_dat_0 => \ADC_DelSig_1:mod_dat_0\ ,
             ext_start => __ONE__ ,
             modrst => \ADC_DelSig_1:mod_reset\ ,
-            interrupt => Net_22 );
+            interrupt => Net_96 );
         Properties:
         {
             cy_registers = ""
@@ -1760,58 +1624,91 @@ CapSense Buffers group 0: empty
 Vref group 0: empty
 LPF group 0: empty
 SAR ADC group 0: empty
+
+Blocks not positioned by the digital component placer:
+    Amux Block @ <No Location>: 
+    amuxcell: Name =AMuxSeq_1_CYAMUXSIDE_A
+        PORT MAP (
+            muxin_2 => Net_83 ,
+            muxin_1 => Net_81 ,
+            muxin_0 => Net_79 ,
+            vout => Net_19 );
+        Properties:
+        {
+            api_type = 1
+            connect_mode = 1
+            cy_registers = ""
+            hw_control = 0
+            init_mux_sel = "000"
+            muxin_width = 3
+            one_active = 1
+        }
+    Amux Block @ <No Location>: 
+    amuxcell: Name =AMuxSeq_1_CYAMUXSIDE_B
+        PORT MAP (
+            muxin_2 => Net_84 ,
+            muxin_1 => Net_82 ,
+            muxin_0 => Net_80 ,
+            vout => Net_20 );
+        Properties:
+        {
+            api_type = 1
+            connect_mode = 1
+            cy_registers = ""
+            hw_control = 0
+            init_mux_sel = "000"
+            muxin_width = 3
+            one_active = 1
+        }
 </CYPRESSTAG>
 <CYPRESSTAG name="Port Configuration Details">
 
 ------------------------------------------------------------
 Port Configuration report
 ------------------------------------------------------------
-     |     |       | Interrupt |                  |                  | 
-Port | Pin | Fixed |      Type |       Drive Mode |             Name | Connections
------+-----+-------+-----------+------------------+------------------+---------------------------
-   0 |   6 |     * |      NONE |      HI_Z_ANALOG |         Pin_2(0) | Analog(Net_20)
-     |   7 |     * |      NONE |      HI_Z_ANALOG |         Pin_1(0) | Analog(Net_19)
------+-----+-------+-----------+------------------+------------------+---------------------------
-   2 |   0 |     * |      NONE |         CMOS_OUT | \LCD:LCDPort(0)\ | 
-     |   1 |     * |      NONE |         CMOS_OUT | \LCD:LCDPort(1)\ | 
-     |   2 |     * |      NONE |         CMOS_OUT | \LCD:LCDPort(2)\ | 
-     |   3 |     * |      NONE |         CMOS_OUT | \LCD:LCDPort(3)\ | 
-     |   4 |     * |      NONE |         CMOS_OUT | \LCD:LCDPort(4)\ | 
-     |   5 |     * |      NONE |         CMOS_OUT | \LCD:LCDPort(5)\ | 
-     |   6 |     * |      NONE |         CMOS_OUT | \LCD:LCDPort(6)\ | 
------+-----+-------+-----------+------------------+------------------+---------------------------
-  15 |   6 |       |   FALLING |      HI_Z_ANALOG |  \USBUART:Dp(0)\ | Analog(\USBUART:Net_1000\)
-     |   7 |       |      NONE |      HI_Z_ANALOG |  \USBUART:Dm(0)\ | Analog(\USBUART:Net_597\)
--------------------------------------------------------------------------------------------------
+     |     |       | Interrupt |                  |                 | 
+Port | Pin | Fixed |      Type |       Drive Mode |            Name | Connections
+-----+-----+-------+-----------+------------------+-----------------+---------------------------
+   0 |   2 |       |      NONE |      HI_Z_ANALOG |        Pin_1(4) | Analog(Net_83)
+     |   6 |       |      NONE |      HI_Z_ANALOG |        Pin_1(2) | Analog(Net_81)
+     |   7 |     * |      NONE |      HI_Z_ANALOG |        Pin_1(0) | Analog(Net_79)
+-----+-----+-------+-----------+------------------+-----------------+---------------------------
+   2 |   1 |       |      NONE |      HI_Z_ANALOG |        Pin_1(5) | Analog(Net_84)
+     |   5 |       |      NONE |      HI_Z_ANALOG |        Pin_1(3) | Analog(Net_82)
+-----+-----+-------+-----------+------------------+-----------------+---------------------------
+  15 |   5 |       |      NONE |      HI_Z_ANALOG |        Pin_1(1) | Analog(Net_80)
+     |   6 |       |   FALLING |      HI_Z_ANALOG | \USBUART:Dp(0)\ | Analog(\USBUART:Net_1000\)
+     |   7 |       |      NONE |      HI_Z_ANALOG | \USBUART:Dm(0)\ | Analog(\USBUART:Net_597\)
+------------------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.000ms
-Digital Placement phase: Elapsed time ==> 0s.835ms
+Digital component placer commit/Report: Elapsed time ==> 0s.001ms
+Digital Placement phase: Elapsed time ==> 0s.871ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.326ms
+Digital Routing phase: Elapsed time ==> 1s.343ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.201ms
+Bitstream Generation phase: Elapsed time ==> 0s.230ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.046ms
+Bitstream Verification phase: Elapsed time ==> 0s.042ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in ADC_SingleEndedMode02_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.284ms
+Static timing analysis phase: Elapsed time ==> 0s.266ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.196ms
+Design database save phase: Elapsed time ==> 0s.206ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 3s.328ms
+cydsfit: Elapsed time ==> 8s.360ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 3s.329ms
-API generation phase: Elapsed time ==> 2s.060ms
-Dependency generation phase: Elapsed time ==> 0s.015ms
-Cleanup phase: Elapsed time ==> 0s.000ms
+Fitter phase: Elapsed time ==> 8s.360ms
+API generation phase: Elapsed time ==> 1s.945ms
+Dependency generation phase: Elapsed time ==> 0s.021ms
+Cleanup phase: Elapsed time ==> 0s.005ms

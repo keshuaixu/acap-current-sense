@@ -57,43 +57,60 @@
 #define USBUART_BUFFER_SIZE (64u)
 #define LINE_STR_LENGTH     (20u)
 
+union
+{
+    int32* integer;
+    uint8* byte;
+} conv;
+
 static uint16 X_Axis=0, Y_Axis=0;
 static int16 X_Data, Y_Data;
-static int8 Joystick_Data[3] = {0, 0, 0}; /*[0] = X-Axis, [1] = Y-Axis, [2] = Buttons */
+static int32 Joystick_Data[16] = {0};
 static unsigned char Buttons;
 
 
 int main()
 {
-    int32 output;
-        uint16 count;
-    char buffer[USBUART_BUFFER_SIZE];
+	int32 output;
+		uint16 count;
+	char buffer[USBUART_BUFFER_SIZE];
+	
+		CyGlobalIntEnable;
+
+	/* Start USBFS operation with 5-V operation. */
+	USBUART_Start(USBFS_DEVICE, USBUART_5V_OPERATION);
+	while(!USBUART_bGetConfiguration());
+	//USBUART_CDC_Init();
+
+	/* Start the components */
+
+	ADC_DelSig_1_Start();
+
+	/* Start the ADC conversion */
+	ADC_DelSig_1_StartConvert();
     
-        CyGlobalIntEnable;
+    Joystick_Data[0] = 0x01;
+    Joystick_Data[1] = 0x02;
+    Joystick_Data[2] = 0x03;
 
-    /* Start USBFS operation with 5-V operation. */
-    USBUART_Start(USBFS_DEVICE, USBUART_5V_OPERATION);
- while(!USBUART_bGetConfiguration());
- USBUART_CDC_Init();
+	//USBUART_LoadInEP(3, (uint8*)Joystick_Data, 12);
+    conv.integer = Joystick_Data;
+	
 
-    /* Start the components */
-
-    LCD_Start();
-    ADC_DelSig_1_Start();
-
-    /* Start the ADC conversion */
-    ADC_DelSig_1_StartConvert();
-
-    /* Display the value of ADC output on LCD */
-    LCD_Position(0u, 0u);
-    LCD_PrintString("ADC_Output");
-    USBUART_LoadInEP(3, (uint8 *)Joystick_Data, 3);
-    
-
-    for(;;)
-    {
+	for(;;)
+	{
+		/* Wait for ACK before loading data. */
+        //while (0u == USBUART_GetEPAckState(3))
+        if (USBUART_GetEPState(3) == USBUART_IN_BUFFER_EMPTY){
+        
+        Joystick_Data[0] += 0x1000;
+        //USBUART_LoadInEP(3, (uint8*){0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08}, 8);
+        USBUART_LoadInEP(3, conv.byte, 64);
+        }
+        continue;
+        
         if(ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_RETURN_STATUS))
-        {
+		{
             output = ADC_DelSig_1_GetResult32();
             
             
@@ -104,15 +121,15 @@ int main()
                     {
                     }
             
-            USBUART_PutData((uint8_t*)buffer, c);
+            //USBUART_PutData((uint8_t*)buffer, c);
             X_Data = output;
             Y_Data = 101;
             Joystick_Data[0] = X_Data;		
-		    Joystick_Data[1] = Y_Data;
-		    Joystick_Data[2] = Buttons;
-            USBUART_LoadInEP(3, (uint8 *)Joystick_Data, 3);
-        }
-    }
+            Joystick_Data[1] = Y_Data;
+            Joystick_Data[2] = Buttons;
+			//USBUART_LoadInEP(3, (uint8 *)Joystick_Data, 3);
+		}
+	}
 }
 
 

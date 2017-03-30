@@ -1,0 +1,853 @@
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"AMuxSeq_1.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	AMuxSeq_1_initVar
+  19              		.bss
+  20              		.type	AMuxSeq_1_initVar, %object
+  21              		.size	AMuxSeq_1_initVar, 1
+  22              	AMuxSeq_1_initVar:
+  23 0000 00       		.space	1
+  24              		.section	.text.AMuxSeq_1_Start,"ax",%progbits
+  25              		.align	2
+  26              		.global	AMuxSeq_1_Start
+  27              		.thumb
+  28              		.thumb_func
+  29              		.type	AMuxSeq_1_Start, %function
+  30              	AMuxSeq_1_Start:
+  31              	.LFB0:
+  32              		.file 1 "Generated_Source\\PSoC5\\AMuxSeq_1.c"
+   1:Generated_Source\PSoC5/AMuxSeq_1.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/AMuxSeq_1.c **** * File Name: AMuxSeq_1.c
+   3:Generated_Source\PSoC5/AMuxSeq_1.c **** * Version 1.80
+   4:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+   5:Generated_Source\PSoC5/AMuxSeq_1.c **** *  Description:
+   6:Generated_Source\PSoC5/AMuxSeq_1.c **** *    This file contains functions for the AMuxSeq.
+   7:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+   8:Generated_Source\PSoC5/AMuxSeq_1.c **** *   Note:
+   9:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  10:Generated_Source\PSoC5/AMuxSeq_1.c **** *******************************************************************************
+  11:Generated_Source\PSoC5/AMuxSeq_1.c **** * Copyright 2008-2010, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC5/AMuxSeq_1.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:Generated_Source\PSoC5/AMuxSeq_1.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:Generated_Source\PSoC5/AMuxSeq_1.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC5/AMuxSeq_1.c **** ********************************************************************************/
+  16:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+  17:Generated_Source\PSoC5/AMuxSeq_1.c **** #include "AMuxSeq_1.h"
+  18:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+  19:Generated_Source\PSoC5/AMuxSeq_1.c **** uint8 AMuxSeq_1_initVar = 0u;
+  20:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+  21:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+  22:Generated_Source\PSoC5/AMuxSeq_1.c **** /*******************************************************************************
+  23:Generated_Source\PSoC5/AMuxSeq_1.c **** * Function Name: AMuxSeq_1_Start
+  24:Generated_Source\PSoC5/AMuxSeq_1.c **** ********************************************************************************
+  25:Generated_Source\PSoC5/AMuxSeq_1.c **** * Summary:
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 2
+
+
+  26:Generated_Source\PSoC5/AMuxSeq_1.c **** *  Disconnect all channels. The next time Next is called, channel 0 will be
+  27:Generated_Source\PSoC5/AMuxSeq_1.c **** *  connected.
+  28:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  29:Generated_Source\PSoC5/AMuxSeq_1.c **** * Parameters:
+  30:Generated_Source\PSoC5/AMuxSeq_1.c **** *  void
+  31:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  32:Generated_Source\PSoC5/AMuxSeq_1.c **** * Return:
+  33:Generated_Source\PSoC5/AMuxSeq_1.c **** *  void
+  34:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  35:Generated_Source\PSoC5/AMuxSeq_1.c **** *******************************************************************************/
+  36:Generated_Source\PSoC5/AMuxSeq_1.c **** void AMuxSeq_1_Start(void)
+  37:Generated_Source\PSoC5/AMuxSeq_1.c **** {
+  33              		.loc 1 37 0
+  34              		.cfi_startproc
+  35              		@ args = 0, pretend = 0, frame = 0
+  36              		@ frame_needed = 1, uses_anonymous_args = 0
+  37 0000 80B5     		push	{r7, lr}
+  38              		.cfi_def_cfa_offset 8
+  39              		.cfi_offset 7, -8
+  40              		.cfi_offset 14, -4
+  41 0002 00AF     		add	r7, sp, #0
+  42              		.cfi_def_cfa_register 7
+  38:Generated_Source\PSoC5/AMuxSeq_1.c ****     AMuxSeq_1_DisconnectAll();
+  43              		.loc 1 38 0
+  44 0004 FFF7FEFF 		bl	AMuxSeq_1_DisconnectAll
+  39:Generated_Source\PSoC5/AMuxSeq_1.c ****     AMuxSeq_1_initVar = 1u;
+  45              		.loc 1 39 0
+  46 0008 014B     		ldr	r3, .L2
+  47 000a 0122     		movs	r2, #1
+  48 000c 1A70     		strb	r2, [r3]
+  40:Generated_Source\PSoC5/AMuxSeq_1.c **** }
+  49              		.loc 1 40 0
+  50 000e 80BD     		pop	{r7, pc}
+  51              	.L3:
+  52              		.align	2
+  53              	.L2:
+  54 0010 00000000 		.word	AMuxSeq_1_initVar
+  55              		.cfi_endproc
+  56              	.LFE0:
+  57              		.size	AMuxSeq_1_Start, .-AMuxSeq_1_Start
+  58              		.section	.text.AMuxSeq_1_Init,"ax",%progbits
+  59              		.align	2
+  60              		.global	AMuxSeq_1_Init
+  61              		.thumb
+  62              		.thumb_func
+  63              		.type	AMuxSeq_1_Init, %function
+  64              	AMuxSeq_1_Init:
+  65              	.LFB1:
+  41:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+  42:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+  43:Generated_Source\PSoC5/AMuxSeq_1.c **** /*******************************************************************************
+  44:Generated_Source\PSoC5/AMuxSeq_1.c **** * Function Name: AMuxSeq_1_Init
+  45:Generated_Source\PSoC5/AMuxSeq_1.c **** ********************************************************************************
+  46:Generated_Source\PSoC5/AMuxSeq_1.c **** * Summary:
+  47:Generated_Source\PSoC5/AMuxSeq_1.c **** *  Disconnect all channels. The next time Next is called, channel 0 will be
+  48:Generated_Source\PSoC5/AMuxSeq_1.c **** *  connected.
+  49:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 3
+
+
+  50:Generated_Source\PSoC5/AMuxSeq_1.c **** * Parameters:
+  51:Generated_Source\PSoC5/AMuxSeq_1.c **** *  void
+  52:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  53:Generated_Source\PSoC5/AMuxSeq_1.c **** * Return:
+  54:Generated_Source\PSoC5/AMuxSeq_1.c **** *  void
+  55:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  56:Generated_Source\PSoC5/AMuxSeq_1.c **** *******************************************************************************/
+  57:Generated_Source\PSoC5/AMuxSeq_1.c **** void AMuxSeq_1_Init(void)
+  58:Generated_Source\PSoC5/AMuxSeq_1.c **** {
+  66              		.loc 1 58 0
+  67              		.cfi_startproc
+  68              		@ args = 0, pretend = 0, frame = 0
+  69              		@ frame_needed = 1, uses_anonymous_args = 0
+  70 0000 80B5     		push	{r7, lr}
+  71              		.cfi_def_cfa_offset 8
+  72              		.cfi_offset 7, -8
+  73              		.cfi_offset 14, -4
+  74 0002 00AF     		add	r7, sp, #0
+  75              		.cfi_def_cfa_register 7
+  59:Generated_Source\PSoC5/AMuxSeq_1.c ****     AMuxSeq_1_DisconnectAll();
+  76              		.loc 1 59 0
+  77 0004 FFF7FEFF 		bl	AMuxSeq_1_DisconnectAll
+  60:Generated_Source\PSoC5/AMuxSeq_1.c **** }
+  78              		.loc 1 60 0
+  79 0008 80BD     		pop	{r7, pc}
+  80              		.cfi_endproc
+  81              	.LFE1:
+  82              		.size	AMuxSeq_1_Init, .-AMuxSeq_1_Init
+  83 000a 00BF     		.section	.text.AMuxSeq_1_Stop,"ax",%progbits
+  84              		.align	2
+  85              		.global	AMuxSeq_1_Stop
+  86              		.thumb
+  87              		.thumb_func
+  88              		.type	AMuxSeq_1_Stop, %function
+  89              	AMuxSeq_1_Stop:
+  90              	.LFB2:
+  61:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+  62:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+  63:Generated_Source\PSoC5/AMuxSeq_1.c **** /*******************************************************************************
+  64:Generated_Source\PSoC5/AMuxSeq_1.c **** * Function Name: AMuxSeq_1_Stop
+  65:Generated_Source\PSoC5/AMuxSeq_1.c **** ********************************************************************************
+  66:Generated_Source\PSoC5/AMuxSeq_1.c **** * Summary:
+  67:Generated_Source\PSoC5/AMuxSeq_1.c **** *  Disconnect all channels. The next time Next is called, channel 0 will be
+  68:Generated_Source\PSoC5/AMuxSeq_1.c **** *  connected.
+  69:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  70:Generated_Source\PSoC5/AMuxSeq_1.c **** * Parameters:
+  71:Generated_Source\PSoC5/AMuxSeq_1.c **** *  void
+  72:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  73:Generated_Source\PSoC5/AMuxSeq_1.c **** * Return:
+  74:Generated_Source\PSoC5/AMuxSeq_1.c **** *  void
+  75:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  76:Generated_Source\PSoC5/AMuxSeq_1.c **** *******************************************************************************/
+  77:Generated_Source\PSoC5/AMuxSeq_1.c **** void AMuxSeq_1_Stop(void)
+  78:Generated_Source\PSoC5/AMuxSeq_1.c **** {
+  91              		.loc 1 78 0
+  92              		.cfi_startproc
+  93              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 4
+
+
+  94              		@ frame_needed = 1, uses_anonymous_args = 0
+  95 0000 80B5     		push	{r7, lr}
+  96              		.cfi_def_cfa_offset 8
+  97              		.cfi_offset 7, -8
+  98              		.cfi_offset 14, -4
+  99 0002 00AF     		add	r7, sp, #0
+ 100              		.cfi_def_cfa_register 7
+  79:Generated_Source\PSoC5/AMuxSeq_1.c ****     AMuxSeq_1_DisconnectAll();
+ 101              		.loc 1 79 0
+ 102 0004 FFF7FEFF 		bl	AMuxSeq_1_DisconnectAll
+  80:Generated_Source\PSoC5/AMuxSeq_1.c **** }
+ 103              		.loc 1 80 0
+ 104 0008 80BD     		pop	{r7, pc}
+ 105              		.cfi_endproc
+ 106              	.LFE2:
+ 107              		.size	AMuxSeq_1_Stop, .-AMuxSeq_1_Stop
+ 108 000a 00BF     		.section	.text.AMuxSeq_1_Next,"ax",%progbits
+ 109              		.align	2
+ 110              		.global	AMuxSeq_1_Next
+ 111              		.thumb
+ 112              		.thumb_func
+ 113              		.type	AMuxSeq_1_Next, %function
+ 114              	AMuxSeq_1_Next:
+ 115              	.LFB3:
+  81:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+  82:Generated_Source\PSoC5/AMuxSeq_1.c **** #if (AMuxSeq_1_MUXTYPE == AMuxSeq_1_MUX_DIFF)
+  83:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+  84:Generated_Source\PSoC5/AMuxSeq_1.c **** /*******************************************************************************
+  85:Generated_Source\PSoC5/AMuxSeq_1.c **** * Function Name: AMuxSeq_1_Next
+  86:Generated_Source\PSoC5/AMuxSeq_1.c **** ********************************************************************************
+  87:Generated_Source\PSoC5/AMuxSeq_1.c **** * Summary:
+  88:Generated_Source\PSoC5/AMuxSeq_1.c **** *  Disconnects the previous channel and connects the next one in the sequence.
+  89:Generated_Source\PSoC5/AMuxSeq_1.c **** *  When Next is called for the first time after Init, Start, Enable, Stop, or
+  90:Generated_Source\PSoC5/AMuxSeq_1.c **** *  DisconnectAll, it connects channel 0.
+  91:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  92:Generated_Source\PSoC5/AMuxSeq_1.c **** * Parameters:
+  93:Generated_Source\PSoC5/AMuxSeq_1.c **** *  void
+  94:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  95:Generated_Source\PSoC5/AMuxSeq_1.c **** * Return:
+  96:Generated_Source\PSoC5/AMuxSeq_1.c **** *  void
+  97:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+  98:Generated_Source\PSoC5/AMuxSeq_1.c **** *******************************************************************************/
+  99:Generated_Source\PSoC5/AMuxSeq_1.c **** void AMuxSeq_1_Next(void)
+ 100:Generated_Source\PSoC5/AMuxSeq_1.c **** {
+ 116              		.loc 1 100 0
+ 117              		.cfi_startproc
+ 118              		@ args = 0, pretend = 0, frame = 0
+ 119              		@ frame_needed = 1, uses_anonymous_args = 0
+ 120 0000 80B5     		push	{r7, lr}
+ 121              		.cfi_def_cfa_offset 8
+ 122              		.cfi_offset 7, -8
+ 123              		.cfi_offset 14, -4
+ 124 0002 00AF     		add	r7, sp, #0
+ 125              		.cfi_def_cfa_register 7
+ 101:Generated_Source\PSoC5/AMuxSeq_1.c ****     AMuxSeq_1_CYAMUXSIDE_A_Next();
+ 126              		.loc 1 101 0
+ 127 0004 FFF7FEFF 		bl	AMuxSeq_1_CYAMUXSIDE_A_Next
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 5
+
+
+ 102:Generated_Source\PSoC5/AMuxSeq_1.c ****     AMuxSeq_1_CYAMUXSIDE_B_Next();
+ 128              		.loc 1 102 0
+ 129 0008 FFF7FEFF 		bl	AMuxSeq_1_CYAMUXSIDE_B_Next
+ 103:Generated_Source\PSoC5/AMuxSeq_1.c **** }
+ 130              		.loc 1 103 0
+ 131 000c 80BD     		pop	{r7, pc}
+ 132              		.cfi_endproc
+ 133              	.LFE3:
+ 134              		.size	AMuxSeq_1_Next, .-AMuxSeq_1_Next
+ 135 000e 00BF     		.section	.text.AMuxSeq_1_DisconnectAll,"ax",%progbits
+ 136              		.align	2
+ 137              		.global	AMuxSeq_1_DisconnectAll
+ 138              		.thumb
+ 139              		.thumb_func
+ 140              		.type	AMuxSeq_1_DisconnectAll, %function
+ 141              	AMuxSeq_1_DisconnectAll:
+ 142              	.LFB4:
+ 104:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+ 105:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+ 106:Generated_Source\PSoC5/AMuxSeq_1.c **** /*******************************************************************************
+ 107:Generated_Source\PSoC5/AMuxSeq_1.c **** * Function Name: AMuxSeq_1_DisconnectAll
+ 108:Generated_Source\PSoC5/AMuxSeq_1.c **** ********************************************************************************
+ 109:Generated_Source\PSoC5/AMuxSeq_1.c **** * Summary:
+ 110:Generated_Source\PSoC5/AMuxSeq_1.c **** *  This function disconnects all channels. The next time Next is called, channel
+ 111:Generated_Source\PSoC5/AMuxSeq_1.c **** *  0 will be connected.
+ 112:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+ 113:Generated_Source\PSoC5/AMuxSeq_1.c **** * Parameters:
+ 114:Generated_Source\PSoC5/AMuxSeq_1.c **** *  void
+ 115:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+ 116:Generated_Source\PSoC5/AMuxSeq_1.c **** * Return:
+ 117:Generated_Source\PSoC5/AMuxSeq_1.c **** *  void
+ 118:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+ 119:Generated_Source\PSoC5/AMuxSeq_1.c **** *******************************************************************************/
+ 120:Generated_Source\PSoC5/AMuxSeq_1.c **** void AMuxSeq_1_DisconnectAll(void)
+ 121:Generated_Source\PSoC5/AMuxSeq_1.c **** {
+ 143              		.loc 1 121 0
+ 144              		.cfi_startproc
+ 145              		@ args = 0, pretend = 0, frame = 0
+ 146              		@ frame_needed = 1, uses_anonymous_args = 0
+ 147 0000 80B5     		push	{r7, lr}
+ 148              		.cfi_def_cfa_offset 8
+ 149              		.cfi_offset 7, -8
+ 150              		.cfi_offset 14, -4
+ 151 0002 00AF     		add	r7, sp, #0
+ 152              		.cfi_def_cfa_register 7
+ 122:Generated_Source\PSoC5/AMuxSeq_1.c ****     AMuxSeq_1_CYAMUXSIDE_A_DisconnectAll();
+ 153              		.loc 1 122 0
+ 154 0004 FFF7FEFF 		bl	AMuxSeq_1_CYAMUXSIDE_A_DisconnectAll
+ 123:Generated_Source\PSoC5/AMuxSeq_1.c ****     AMuxSeq_1_CYAMUXSIDE_B_DisconnectAll();
+ 155              		.loc 1 123 0
+ 156 0008 FFF7FEFF 		bl	AMuxSeq_1_CYAMUXSIDE_B_DisconnectAll
+ 124:Generated_Source\PSoC5/AMuxSeq_1.c **** }
+ 157              		.loc 1 124 0
+ 158 000c 80BD     		pop	{r7, pc}
+ 159              		.cfi_endproc
+ 160              	.LFE4:
+ 161              		.size	AMuxSeq_1_DisconnectAll, .-AMuxSeq_1_DisconnectAll
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 6
+
+
+ 162 000e 00BF     		.section	.text.AMuxSeq_1_GetChannel,"ax",%progbits
+ 163              		.align	2
+ 164              		.global	AMuxSeq_1_GetChannel
+ 165              		.thumb
+ 166              		.thumb_func
+ 167              		.type	AMuxSeq_1_GetChannel, %function
+ 168              	AMuxSeq_1_GetChannel:
+ 169              	.LFB5:
+ 125:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+ 126:Generated_Source\PSoC5/AMuxSeq_1.c **** 
+ 127:Generated_Source\PSoC5/AMuxSeq_1.c **** /*******************************************************************************
+ 128:Generated_Source\PSoC5/AMuxSeq_1.c **** * Function Name: AMuxSeq_1_GetChannel
+ 129:Generated_Source\PSoC5/AMuxSeq_1.c **** ********************************************************************************
+ 130:Generated_Source\PSoC5/AMuxSeq_1.c **** * Summary:
+ 131:Generated_Source\PSoC5/AMuxSeq_1.c **** *  The currently connected channel is retuned. If no channel is connected
+ 132:Generated_Source\PSoC5/AMuxSeq_1.c **** *  returns -1.
+ 133:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+ 134:Generated_Source\PSoC5/AMuxSeq_1.c **** * Parameters:
+ 135:Generated_Source\PSoC5/AMuxSeq_1.c **** *  void
+ 136:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+ 137:Generated_Source\PSoC5/AMuxSeq_1.c **** * Return:
+ 138:Generated_Source\PSoC5/AMuxSeq_1.c **** *  The current channel or -1.
+ 139:Generated_Source\PSoC5/AMuxSeq_1.c **** *
+ 140:Generated_Source\PSoC5/AMuxSeq_1.c **** *******************************************************************************/
+ 141:Generated_Source\PSoC5/AMuxSeq_1.c **** int8 AMuxSeq_1_GetChannel(void)
+ 142:Generated_Source\PSoC5/AMuxSeq_1.c **** {
+ 170              		.loc 1 142 0
+ 171              		.cfi_startproc
+ 172              		@ args = 0, pretend = 0, frame = 0
+ 173              		@ frame_needed = 1, uses_anonymous_args = 0
+ 174              		@ link register save eliminated.
+ 175 0000 80B4     		push	{r7}
+ 176              		.cfi_def_cfa_offset 4
+ 177              		.cfi_offset 7, -4
+ 178 0002 00AF     		add	r7, sp, #0
+ 179              		.cfi_def_cfa_register 7
+ 143:Generated_Source\PSoC5/AMuxSeq_1.c ****     return AMuxSeq_1_CYAMUXSIDE_A_curChannel;
+ 180              		.loc 1 143 0
+ 181 0004 034B     		ldr	r3, .L10
+ 182 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 183 0008 5BB2     		sxtb	r3, r3
+ 144:Generated_Source\PSoC5/AMuxSeq_1.c **** }
+ 184              		.loc 1 144 0
+ 185 000a 1846     		mov	r0, r3
+ 186 000c BD46     		mov	sp, r7
+ 187              		.cfi_def_cfa_register 13
+ 188              		@ sp needed
+ 189 000e 5DF8047B 		ldr	r7, [sp], #4
+ 190              		.cfi_restore 7
+ 191              		.cfi_def_cfa_offset 0
+ 192 0012 7047     		bx	lr
+ 193              	.L11:
+ 194              		.align	2
+ 195              	.L10:
+ 196 0014 00000000 		.word	AMuxSeq_1_CYAMUXSIDE_A_curChannel
+ 197              		.cfi_endproc
+ 198              	.LFE5:
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 7
+
+
+ 199              		.size	AMuxSeq_1_GetChannel, .-AMuxSeq_1_GetChannel
+ 200              		.text
+ 201              	.Letext0:
+ 202              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 203              		.file 3 "Generated_Source\\PSoC5\\cyfitter_cfg.h"
+ 204              		.section	.debug_info,"",%progbits
+ 205              	.Ldebug_info0:
+ 206 0000 1B010000 		.4byte	0x11b
+ 207 0004 0400     		.2byte	0x4
+ 208 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 209 000a 04       		.byte	0x4
+ 210 000b 01       		.uleb128 0x1
+ 211 000c 1E000000 		.4byte	.LASF21
+ 212 0010 01       		.byte	0x1
+ 213 0011 06010000 		.4byte	.LASF22
+ 214 0015 AC000000 		.4byte	.LASF23
+ 215 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 216 001d 00000000 		.4byte	0
+ 217 0021 00000000 		.4byte	.Ldebug_line0
+ 218 0025 02       		.uleb128 0x2
+ 219 0026 01       		.byte	0x1
+ 220 0027 06       		.byte	0x6
+ 221 0028 3E020000 		.4byte	.LASF0
+ 222 002c 02       		.uleb128 0x2
+ 223 002d 01       		.byte	0x1
+ 224 002e 08       		.byte	0x8
+ 225 002f 2F010000 		.4byte	.LASF1
+ 226 0033 02       		.uleb128 0x2
+ 227 0034 02       		.byte	0x2
+ 228 0035 05       		.byte	0x5
+ 229 0036 0D020000 		.4byte	.LASF2
+ 230 003a 02       		.uleb128 0x2
+ 231 003b 02       		.byte	0x2
+ 232 003c 07       		.byte	0x7
+ 233 003d 4F010000 		.4byte	.LASF3
+ 234 0041 02       		.uleb128 0x2
+ 235 0042 04       		.byte	0x4
+ 236 0043 05       		.byte	0x5
+ 237 0044 1D020000 		.4byte	.LASF4
+ 238 0048 02       		.uleb128 0x2
+ 239 0049 04       		.byte	0x4
+ 240 004a 07       		.byte	0x7
+ 241 004b 3D010000 		.4byte	.LASF5
+ 242 004f 02       		.uleb128 0x2
+ 243 0050 08       		.byte	0x8
+ 244 0051 05       		.byte	0x5
+ 245 0052 EA010000 		.4byte	.LASF6
+ 246 0056 02       		.uleb128 0x2
+ 247 0057 08       		.byte	0x8
+ 248 0058 07       		.byte	0x7
+ 249 0059 B1010000 		.4byte	.LASF7
+ 250 005d 03       		.uleb128 0x3
+ 251 005e 04       		.byte	0x4
+ 252 005f 05       		.byte	0x5
+ 253 0060 696E7400 		.ascii	"int\000"
+ 254 0064 02       		.uleb128 0x2
+ 255 0065 04       		.byte	0x4
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 8
+
+
+ 256 0066 07       		.byte	0x7
+ 257 0067 A4010000 		.4byte	.LASF8
+ 258 006b 04       		.uleb128 0x4
+ 259 006c 17020000 		.4byte	.LASF9
+ 260 0070 02       		.byte	0x2
+ 261 0071 9201     		.2byte	0x192
+ 262 0073 2C000000 		.4byte	0x2c
+ 263 0077 04       		.uleb128 0x4
+ 264 0078 8A010000 		.4byte	.LASF10
+ 265 007c 02       		.byte	0x2
+ 266 007d 9501     		.2byte	0x195
+ 267 007f 25000000 		.4byte	0x25
+ 268 0083 02       		.uleb128 0x2
+ 269 0084 04       		.byte	0x4
+ 270 0085 04       		.byte	0x4
+ 271 0086 29010000 		.4byte	.LASF11
+ 272 008a 02       		.uleb128 0x2
+ 273 008b 08       		.byte	0x8
+ 274 008c 04       		.byte	0x4
+ 275 008d 74010000 		.4byte	.LASF12
+ 276 0091 02       		.uleb128 0x2
+ 277 0092 01       		.byte	0x1
+ 278 0093 08       		.byte	0x8
+ 279 0094 F8010000 		.4byte	.LASF13
+ 280 0098 05       		.uleb128 0x5
+ 281 0099 FD010000 		.4byte	.LASF14
+ 282 009d 01       		.byte	0x1
+ 283 009e 24       		.byte	0x24
+ 284 009f 00000000 		.4byte	.LFB0
+ 285 00a3 14000000 		.4byte	.LFE0-.LFB0
+ 286 00a7 01       		.uleb128 0x1
+ 287 00a8 9C       		.byte	0x9c
+ 288 00a9 05       		.uleb128 0x5
+ 289 00aa 0F000000 		.4byte	.LASF15
+ 290 00ae 01       		.byte	0x1
+ 291 00af 39       		.byte	0x39
+ 292 00b0 00000000 		.4byte	.LFB1
+ 293 00b4 0A000000 		.4byte	.LFE1-.LFB1
+ 294 00b8 01       		.uleb128 0x1
+ 295 00b9 9C       		.byte	0x9c
+ 296 00ba 05       		.uleb128 0x5
+ 297 00bb 7B010000 		.4byte	.LASF16
+ 298 00bf 01       		.byte	0x1
+ 299 00c0 4D       		.byte	0x4d
+ 300 00c1 00000000 		.4byte	.LFB2
+ 301 00c5 0A000000 		.4byte	.LFE2-.LFB2
+ 302 00c9 01       		.uleb128 0x1
+ 303 00ca 9C       		.byte	0x9c
+ 304 00cb 05       		.uleb128 0x5
+ 305 00cc 00000000 		.4byte	.LASF17
+ 306 00d0 01       		.byte	0x1
+ 307 00d1 63       		.byte	0x63
+ 308 00d2 00000000 		.4byte	.LFB3
+ 309 00d6 0E000000 		.4byte	.LFE3-.LFB3
+ 310 00da 01       		.uleb128 0x1
+ 311 00db 9C       		.byte	0x9c
+ 312 00dc 05       		.uleb128 0x5
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 9
+
+
+ 313 00dd 26020000 		.4byte	.LASF18
+ 314 00e1 01       		.byte	0x1
+ 315 00e2 78       		.byte	0x78
+ 316 00e3 00000000 		.4byte	.LFB4
+ 317 00e7 0E000000 		.4byte	.LFE4-.LFB4
+ 318 00eb 01       		.uleb128 0x1
+ 319 00ec 9C       		.byte	0x9c
+ 320 00ed 06       		.uleb128 0x6
+ 321 00ee 8F010000 		.4byte	.LASF24
+ 322 00f2 01       		.byte	0x1
+ 323 00f3 8D       		.byte	0x8d
+ 324 00f4 77000000 		.4byte	0x77
+ 325 00f8 00000000 		.4byte	.LFB5
+ 326 00fc 18000000 		.4byte	.LFE5-.LFB5
+ 327 0100 01       		.uleb128 0x1
+ 328 0101 9C       		.byte	0x9c
+ 329 0102 07       		.uleb128 0x7
+ 330 0103 C8010000 		.4byte	.LASF19
+ 331 0107 03       		.byte	0x3
+ 332 0108 1C       		.byte	0x1c
+ 333 0109 77000000 		.4byte	0x77
+ 334 010d 08       		.uleb128 0x8
+ 335 010e 62010000 		.4byte	.LASF20
+ 336 0112 01       		.byte	0x1
+ 337 0113 13       		.byte	0x13
+ 338 0114 6B000000 		.4byte	0x6b
+ 339 0118 05       		.uleb128 0x5
+ 340 0119 03       		.byte	0x3
+ 341 011a 00000000 		.4byte	AMuxSeq_1_initVar
+ 342 011e 00       		.byte	0
+ 343              		.section	.debug_abbrev,"",%progbits
+ 344              	.Ldebug_abbrev0:
+ 345 0000 01       		.uleb128 0x1
+ 346 0001 11       		.uleb128 0x11
+ 347 0002 01       		.byte	0x1
+ 348 0003 25       		.uleb128 0x25
+ 349 0004 0E       		.uleb128 0xe
+ 350 0005 13       		.uleb128 0x13
+ 351 0006 0B       		.uleb128 0xb
+ 352 0007 03       		.uleb128 0x3
+ 353 0008 0E       		.uleb128 0xe
+ 354 0009 1B       		.uleb128 0x1b
+ 355 000a 0E       		.uleb128 0xe
+ 356 000b 55       		.uleb128 0x55
+ 357 000c 17       		.uleb128 0x17
+ 358 000d 11       		.uleb128 0x11
+ 359 000e 01       		.uleb128 0x1
+ 360 000f 10       		.uleb128 0x10
+ 361 0010 17       		.uleb128 0x17
+ 362 0011 00       		.byte	0
+ 363 0012 00       		.byte	0
+ 364 0013 02       		.uleb128 0x2
+ 365 0014 24       		.uleb128 0x24
+ 366 0015 00       		.byte	0
+ 367 0016 0B       		.uleb128 0xb
+ 368 0017 0B       		.uleb128 0xb
+ 369 0018 3E       		.uleb128 0x3e
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 10
+
+
+ 370 0019 0B       		.uleb128 0xb
+ 371 001a 03       		.uleb128 0x3
+ 372 001b 0E       		.uleb128 0xe
+ 373 001c 00       		.byte	0
+ 374 001d 00       		.byte	0
+ 375 001e 03       		.uleb128 0x3
+ 376 001f 24       		.uleb128 0x24
+ 377 0020 00       		.byte	0
+ 378 0021 0B       		.uleb128 0xb
+ 379 0022 0B       		.uleb128 0xb
+ 380 0023 3E       		.uleb128 0x3e
+ 381 0024 0B       		.uleb128 0xb
+ 382 0025 03       		.uleb128 0x3
+ 383 0026 08       		.uleb128 0x8
+ 384 0027 00       		.byte	0
+ 385 0028 00       		.byte	0
+ 386 0029 04       		.uleb128 0x4
+ 387 002a 16       		.uleb128 0x16
+ 388 002b 00       		.byte	0
+ 389 002c 03       		.uleb128 0x3
+ 390 002d 0E       		.uleb128 0xe
+ 391 002e 3A       		.uleb128 0x3a
+ 392 002f 0B       		.uleb128 0xb
+ 393 0030 3B       		.uleb128 0x3b
+ 394 0031 05       		.uleb128 0x5
+ 395 0032 49       		.uleb128 0x49
+ 396 0033 13       		.uleb128 0x13
+ 397 0034 00       		.byte	0
+ 398 0035 00       		.byte	0
+ 399 0036 05       		.uleb128 0x5
+ 400 0037 2E       		.uleb128 0x2e
+ 401 0038 00       		.byte	0
+ 402 0039 3F       		.uleb128 0x3f
+ 403 003a 19       		.uleb128 0x19
+ 404 003b 03       		.uleb128 0x3
+ 405 003c 0E       		.uleb128 0xe
+ 406 003d 3A       		.uleb128 0x3a
+ 407 003e 0B       		.uleb128 0xb
+ 408 003f 3B       		.uleb128 0x3b
+ 409 0040 0B       		.uleb128 0xb
+ 410 0041 27       		.uleb128 0x27
+ 411 0042 19       		.uleb128 0x19
+ 412 0043 11       		.uleb128 0x11
+ 413 0044 01       		.uleb128 0x1
+ 414 0045 12       		.uleb128 0x12
+ 415 0046 06       		.uleb128 0x6
+ 416 0047 40       		.uleb128 0x40
+ 417 0048 18       		.uleb128 0x18
+ 418 0049 9642     		.uleb128 0x2116
+ 419 004b 19       		.uleb128 0x19
+ 420 004c 00       		.byte	0
+ 421 004d 00       		.byte	0
+ 422 004e 06       		.uleb128 0x6
+ 423 004f 2E       		.uleb128 0x2e
+ 424 0050 00       		.byte	0
+ 425 0051 3F       		.uleb128 0x3f
+ 426 0052 19       		.uleb128 0x19
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 11
+
+
+ 427 0053 03       		.uleb128 0x3
+ 428 0054 0E       		.uleb128 0xe
+ 429 0055 3A       		.uleb128 0x3a
+ 430 0056 0B       		.uleb128 0xb
+ 431 0057 3B       		.uleb128 0x3b
+ 432 0058 0B       		.uleb128 0xb
+ 433 0059 27       		.uleb128 0x27
+ 434 005a 19       		.uleb128 0x19
+ 435 005b 49       		.uleb128 0x49
+ 436 005c 13       		.uleb128 0x13
+ 437 005d 11       		.uleb128 0x11
+ 438 005e 01       		.uleb128 0x1
+ 439 005f 12       		.uleb128 0x12
+ 440 0060 06       		.uleb128 0x6
+ 441 0061 40       		.uleb128 0x40
+ 442 0062 18       		.uleb128 0x18
+ 443 0063 9742     		.uleb128 0x2117
+ 444 0065 19       		.uleb128 0x19
+ 445 0066 00       		.byte	0
+ 446 0067 00       		.byte	0
+ 447 0068 07       		.uleb128 0x7
+ 448 0069 34       		.uleb128 0x34
+ 449 006a 00       		.byte	0
+ 450 006b 03       		.uleb128 0x3
+ 451 006c 0E       		.uleb128 0xe
+ 452 006d 3A       		.uleb128 0x3a
+ 453 006e 0B       		.uleb128 0xb
+ 454 006f 3B       		.uleb128 0x3b
+ 455 0070 0B       		.uleb128 0xb
+ 456 0071 49       		.uleb128 0x49
+ 457 0072 13       		.uleb128 0x13
+ 458 0073 3F       		.uleb128 0x3f
+ 459 0074 19       		.uleb128 0x19
+ 460 0075 3C       		.uleb128 0x3c
+ 461 0076 19       		.uleb128 0x19
+ 462 0077 00       		.byte	0
+ 463 0078 00       		.byte	0
+ 464 0079 08       		.uleb128 0x8
+ 465 007a 34       		.uleb128 0x34
+ 466 007b 00       		.byte	0
+ 467 007c 03       		.uleb128 0x3
+ 468 007d 0E       		.uleb128 0xe
+ 469 007e 3A       		.uleb128 0x3a
+ 470 007f 0B       		.uleb128 0xb
+ 471 0080 3B       		.uleb128 0x3b
+ 472 0081 0B       		.uleb128 0xb
+ 473 0082 49       		.uleb128 0x49
+ 474 0083 13       		.uleb128 0x13
+ 475 0084 3F       		.uleb128 0x3f
+ 476 0085 19       		.uleb128 0x19
+ 477 0086 02       		.uleb128 0x2
+ 478 0087 18       		.uleb128 0x18
+ 479 0088 00       		.byte	0
+ 480 0089 00       		.byte	0
+ 481 008a 00       		.byte	0
+ 482              		.section	.debug_aranges,"",%progbits
+ 483 0000 44000000 		.4byte	0x44
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 12
+
+
+ 484 0004 0200     		.2byte	0x2
+ 485 0006 00000000 		.4byte	.Ldebug_info0
+ 486 000a 04       		.byte	0x4
+ 487 000b 00       		.byte	0
+ 488 000c 0000     		.2byte	0
+ 489 000e 0000     		.2byte	0
+ 490 0010 00000000 		.4byte	.LFB0
+ 491 0014 14000000 		.4byte	.LFE0-.LFB0
+ 492 0018 00000000 		.4byte	.LFB1
+ 493 001c 0A000000 		.4byte	.LFE1-.LFB1
+ 494 0020 00000000 		.4byte	.LFB2
+ 495 0024 0A000000 		.4byte	.LFE2-.LFB2
+ 496 0028 00000000 		.4byte	.LFB3
+ 497 002c 0E000000 		.4byte	.LFE3-.LFB3
+ 498 0030 00000000 		.4byte	.LFB4
+ 499 0034 0E000000 		.4byte	.LFE4-.LFB4
+ 500 0038 00000000 		.4byte	.LFB5
+ 501 003c 18000000 		.4byte	.LFE5-.LFB5
+ 502 0040 00000000 		.4byte	0
+ 503 0044 00000000 		.4byte	0
+ 504              		.section	.debug_ranges,"",%progbits
+ 505              	.Ldebug_ranges0:
+ 506 0000 00000000 		.4byte	.LFB0
+ 507 0004 14000000 		.4byte	.LFE0
+ 508 0008 00000000 		.4byte	.LFB1
+ 509 000c 0A000000 		.4byte	.LFE1
+ 510 0010 00000000 		.4byte	.LFB2
+ 511 0014 0A000000 		.4byte	.LFE2
+ 512 0018 00000000 		.4byte	.LFB3
+ 513 001c 0E000000 		.4byte	.LFE3
+ 514 0020 00000000 		.4byte	.LFB4
+ 515 0024 0E000000 		.4byte	.LFE4
+ 516 0028 00000000 		.4byte	.LFB5
+ 517 002c 18000000 		.4byte	.LFE5
+ 518 0030 00000000 		.4byte	0
+ 519 0034 00000000 		.4byte	0
+ 520              		.section	.debug_line,"",%progbits
+ 521              	.Ldebug_line0:
+ 522 0000 CB000000 		.section	.debug_str,"MS",%progbits,1
+ 522      02005800 
+ 522      00000201 
+ 522      FB0E0D00 
+ 522      01010101 
+ 523              	.LASF17:
+ 524 0000 414D7578 		.ascii	"AMuxSeq_1_Next\000"
+ 524      5365715F 
+ 524      315F4E65 
+ 524      787400
+ 525              	.LASF15:
+ 526 000f 414D7578 		.ascii	"AMuxSeq_1_Init\000"
+ 526      5365715F 
+ 526      315F496E 
+ 526      697400
+ 527              	.LASF21:
+ 528 001e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 528      4320342E 
+ 528      392E3320 
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 13
+
+
+ 528      32303135 
+ 528      30333033 
+ 529 0051 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 529      20726576 
+ 529      6973696F 
+ 529      6E203232 
+ 529      31323230 
+ 530 0084 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 530      66756E63 
+ 530      74696F6E 
+ 530      2D736563 
+ 530      74696F6E 
+ 531              	.LASF23:
+ 532 00ac 433A5C55 		.ascii	"C:\\Users\\Keshuai\\Documents\\PSoC Creator\\ADC_Si"
+ 532      73657273 
+ 532      5C4B6573 
+ 532      68756169 
+ 532      5C446F63 
+ 533 00da 6E676C65 		.ascii	"ngleEndedMode01\\ADC_SingleEndedMode02.cydsn\000"
+ 533      456E6465 
+ 533      644D6F64 
+ 533      6530315C 
+ 533      4144435F 
+ 534              	.LASF22:
+ 535 0106 47656E65 		.ascii	"Generated_Source\\PSoC5\\AMuxSeq_1.c\000"
+ 535      72617465 
+ 535      645F536F 
+ 535      75726365 
+ 535      5C50536F 
+ 536              	.LASF11:
+ 537 0129 666C6F61 		.ascii	"float\000"
+ 537      7400
+ 538              	.LASF1:
+ 539 012f 756E7369 		.ascii	"unsigned char\000"
+ 539      676E6564 
+ 539      20636861 
+ 539      7200
+ 540              	.LASF5:
+ 541 013d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 541      20756E73 
+ 541      69676E65 
+ 541      6420696E 
+ 541      7400
+ 542              	.LASF3:
+ 543 014f 73686F72 		.ascii	"short unsigned int\000"
+ 543      7420756E 
+ 543      7369676E 
+ 543      65642069 
+ 543      6E7400
+ 544              	.LASF20:
+ 545 0162 414D7578 		.ascii	"AMuxSeq_1_initVar\000"
+ 545      5365715F 
+ 545      315F696E 
+ 545      69745661 
+ 545      7200
+ 546              	.LASF12:
+ 547 0174 646F7562 		.ascii	"double\000"
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 14
+
+
+ 547      6C6500
+ 548              	.LASF16:
+ 549 017b 414D7578 		.ascii	"AMuxSeq_1_Stop\000"
+ 549      5365715F 
+ 549      315F5374 
+ 549      6F7000
+ 550              	.LASF10:
+ 551 018a 696E7438 		.ascii	"int8\000"
+ 551      00
+ 552              	.LASF24:
+ 553 018f 414D7578 		.ascii	"AMuxSeq_1_GetChannel\000"
+ 553      5365715F 
+ 553      315F4765 
+ 553      74436861 
+ 553      6E6E656C 
+ 554              	.LASF8:
+ 555 01a4 756E7369 		.ascii	"unsigned int\000"
+ 555      676E6564 
+ 555      20696E74 
+ 555      00
+ 556              	.LASF7:
+ 557 01b1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 557      206C6F6E 
+ 557      6720756E 
+ 557      7369676E 
+ 557      65642069 
+ 558              	.LASF19:
+ 559 01c8 414D7578 		.ascii	"AMuxSeq_1_CYAMUXSIDE_A_curChannel\000"
+ 559      5365715F 
+ 559      315F4359 
+ 559      414D5558 
+ 559      53494445 
+ 560              	.LASF6:
+ 561 01ea 6C6F6E67 		.ascii	"long long int\000"
+ 561      206C6F6E 
+ 561      6720696E 
+ 561      7400
+ 562              	.LASF13:
+ 563 01f8 63686172 		.ascii	"char\000"
+ 563      00
+ 564              	.LASF14:
+ 565 01fd 414D7578 		.ascii	"AMuxSeq_1_Start\000"
+ 565      5365715F 
+ 565      315F5374 
+ 565      61727400 
+ 566              	.LASF2:
+ 567 020d 73686F72 		.ascii	"short int\000"
+ 567      7420696E 
+ 567      7400
+ 568              	.LASF9:
+ 569 0217 75696E74 		.ascii	"uint8\000"
+ 569      3800
+ 570              	.LASF4:
+ 571 021d 6C6F6E67 		.ascii	"long int\000"
+ 571      20696E74 
+ 571      00
+ 572              	.LASF18:
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 15
+
+
+ 573 0226 414D7578 		.ascii	"AMuxSeq_1_DisconnectAll\000"
+ 573      5365715F 
+ 573      315F4469 
+ 573      73636F6E 
+ 573      6E656374 
+ 574              	.LASF0:
+ 575 023e 7369676E 		.ascii	"signed char\000"
+ 575      65642063 
+ 575      68617200 
+ 576              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

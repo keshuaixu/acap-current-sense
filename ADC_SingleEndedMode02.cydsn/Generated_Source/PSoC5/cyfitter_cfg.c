@@ -145,19 +145,19 @@ CYPACKED typedef struct
 #define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x48000058u)
 
 /* IOPINS0_0 Address: CYREG_PRT0_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x480000C0u)
+#define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x480000B8u)
 
 /* IOPINS0_8 Address: CYREG_PRT15_DR Size (bytes): 10 */
-#define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x480000C8u)
+#define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x480000C0u)
 
 /* IOPINS0_1 Address: CYREG_PRT1_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x480000D4u)
+#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x480000CCu)
 
 /* IOPINS0_2 Address: CYREG_PRT2_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x480000DCu)
+#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x480000D4u)
 
 /* CYDEV_CLKDIST_ACFG0_CFG0 Address: CYREG_CLKDIST_ACFG0_CFG0 Size (bytes): 4 */
-#define BS_CYDEV_CLKDIST_ACFG0_CFG0_VAL ((const uint8 CYFAR *)0x480000E4u)
+#define BS_CYDEV_CLKDIST_ACFG0_CFG0_VAL ((const uint8 CYFAR *)0x480000DCu)
 
 
 /*******************************************************************************
@@ -288,10 +288,7 @@ static void AnalogSetDefault(void)
 	uint8 bg_xover_inl_trim = CY_GET_XTND_REG8((void CYFAR *)(CYREG_FLSHID_MFG_CFG_BG_XOVER_INL_TRIM + 1u));
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_BG_DFT0), (bg_xover_inl_trim & 0x07u));
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_BG_DFT1), ((bg_xover_inl_trim >> 4) & 0x0Fu));
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_PRT0_AG, 0x80u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_DAC0_SW3, 0x80u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_DAC0_SW4, 0x02u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_DSM0_SW0, 0x80u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_DSM0_SW0, 0x40u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_DSM0_SW4, 0x02u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_PUMP_CR0, 0x44u);
 }
@@ -329,6 +326,90 @@ void SetAnalogRoutingPumps(uint8 enabled)
 }
 
 #define CY_AMUX_UNUSED CYREG_BOOST_SR
+int8 AMuxSeq_1_CYAMUXSIDE_A_curChannel = -1;
+
+void AMuxSeq_1_CYAMUXSIDE_A_DisconnectAll(void)
+{
+	AMuxSeq_1_CYAMUXSIDE_A_curChannel = -1;
+	CY_SET_REG8((void CYXDATA *)CYREG_PRT0_AG, 0x00u);
+	CY_SET_REG8((void CYXDATA *)CYREG_DSM0_SW0, 0x40u);
+}
+
+#if defined(__C51__) || defined(__CX51__)
+    #pragma OT(5, SPEED)
+#endif
+void AMuxSeq_1_CYAMUXSIDE_A_Next(void)
+{
+	AMuxSeq_1_CYAMUXSIDE_A_curChannel++;
+	switch (AMuxSeq_1_CYAMUXSIDE_A_curChannel)
+	{
+	case 4: /* to force jump table (not executed) */
+		AMuxSeq_1_CYAMUXSIDE_A_curChannel = 4;
+	case 5: /* to force jump table (not executed) */
+		AMuxSeq_1_CYAMUXSIDE_A_curChannel = 5;
+	case 6: /* to force jump table (not executed) */
+		AMuxSeq_1_CYAMUXSIDE_A_curChannel = 6;
+	case 7: /* to force jump table (not executed) */
+		AMuxSeq_1_CYAMUXSIDE_A_curChannel = 7;
+	case 3:
+	default:
+		AMuxSeq_1_CYAMUXSIDE_A_curChannel = 0;
+	case 0:
+		CY_SET_REG8((void CYXDATA *)CYREG_PRT0_AG, 0x80u);
+		CY_SET_REG8((void CYXDATA *)CYREG_DSM0_SW0, 0x40u | 0x80u);
+		break;
+	case 1:
+		CY_SET_REG8((void CYXDATA *)CYREG_DSM0_SW0, 0x40u);
+		CY_SET_REG8((void CYXDATA *)CYREG_PRT0_AG, 0x40u);
+		break;
+	case 2:
+		CY_SET_REG8((void CYXDATA *)CYREG_PRT0_AG, 0x04u);
+		break;
+	}
+}
+
+int8 AMuxSeq_1_CYAMUXSIDE_B_curChannel = -1;
+
+void AMuxSeq_1_CYAMUXSIDE_B_DisconnectAll(void)
+{
+	AMuxSeq_1_CYAMUXSIDE_B_curChannel = -1;
+	CY_SET_REG8((void CYXDATA *)CYREG_PRT15_AG, 0x00u);
+	CY_SET_REG8((void CYXDATA *)CYREG_PRT2_AG, 0x00u);
+}
+
+#if defined(__C51__) || defined(__CX51__)
+    #pragma OT(5, SPEED)
+#endif
+void AMuxSeq_1_CYAMUXSIDE_B_Next(void)
+{
+	AMuxSeq_1_CYAMUXSIDE_B_curChannel++;
+	switch (AMuxSeq_1_CYAMUXSIDE_B_curChannel)
+	{
+	case 4: /* to force jump table (not executed) */
+		AMuxSeq_1_CYAMUXSIDE_B_curChannel = 4;
+	case 5: /* to force jump table (not executed) */
+		AMuxSeq_1_CYAMUXSIDE_B_curChannel = 5;
+	case 6: /* to force jump table (not executed) */
+		AMuxSeq_1_CYAMUXSIDE_B_curChannel = 6;
+	case 7: /* to force jump table (not executed) */
+		AMuxSeq_1_CYAMUXSIDE_B_curChannel = 7;
+	case 3:
+	default:
+		AMuxSeq_1_CYAMUXSIDE_B_curChannel = 0;
+	case 0:
+		CY_SET_REG8((void CYXDATA *)CYREG_PRT2_AG, 0x00u);
+		CY_SET_REG8((void CYXDATA *)CYREG_PRT15_AG, 0x20u);
+		break;
+	case 1:
+		CY_SET_REG8((void CYXDATA *)CYREG_PRT15_AG, 0x00u);
+		CY_SET_REG8((void CYXDATA *)CYREG_PRT2_AG, 0x20u);
+		break;
+	case 2:
+		CY_SET_REG8((void CYXDATA *)CYREG_PRT2_AG, 0x02u);
+		break;
+	}
+}
+
 
 
 /*******************************************************************************

@@ -1,8 +1,9 @@
-C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\ADC_SingleEndedMode02.cyprj|74102c74-3ace-4f63-9b00-364e60df0f84
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|10627494-2bca-4efd-a357-682ed802104c
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|09570319-4bae-4b4d-b3a7-a0be26f2d1c7
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|90d79a22-38b8-4756-8f77-684d3469db73
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|7158508a-a55b-47c6-b83f-5a1cdc3fc28e
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|693cd5ff-d70b-4b0c-8ea3-ec1e229d72e9
-C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode01.cydsn\ADC_SingleEndedMode01.cyprj|a577621d-f4f8-4e17-80a9-5cd5a03e7bff
-C:\Users\Keshuai\Desktop\AN57473\Joystick.cydsn\Joystick.cyprj|7c1fb697-adb2-4014-abe4-5ab6e9ff8e07
+C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\ADC_SingleEndedMode02.cyprj|ca60c921-3c2b-4f33-a144-7ab115aaee31
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|f44856ff-a0ed-465a-be88-cf051b15620b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|80a40aab-b65e-4c89-aef2-5799488dd979
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|3f55156d-986e-474e-b566-9a6cde047d52
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|0b73551d-41df-4582-85ca-4765b9234259
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|aaba3a2c-ca6e-4ef9-873a-9e99f6673600
+C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode01.cydsn\ADC_SingleEndedMode01.cyprj|dd30857b-10bb-42f5-8f14-d14a8f310fc5
+C:\Users\Keshuai\Desktop\AN57473\Joystick.cydsn\Joystick.cyprj|30886c2e-552a-4f27-9aa3-05869a27b081
+C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\USBFS_HID01.cydsn\USBFS_HID01.cyprj|d90bad50-4ed8-4306-8484-4334bc2968d8

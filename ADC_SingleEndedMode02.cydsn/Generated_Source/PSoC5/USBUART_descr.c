@@ -44,112 +44,31 @@ const uint8 CYCODE USBUART_DEVICE0_DESCR[18u] = {
 /* idVendor                                */ 0xB4u, 0x04u,
 /* idProduct                               */ 0x32u, 0xF2u,
 /* bcdDevice                               */ 0x01u, 0x00u,
-/* iManufacturer                           */ 0x01u,
-/* iProduct                                */ 0x04u,
+/* iManufacturer                           */ 0x06u,
+/* iProduct                                */ 0x05u,
 /* iSerialNumber                           */ 0x80u,
 /* bNumConfigurations                      */ 0x01u
 };
 /*********************************************************************
 * Config Descriptor  
 *********************************************************************/
-const uint8 CYCODE USBUART_DEVICE0_CONFIGURATION0_DESCR[92u] = {
+const uint8 CYCODE USBUART_DEVICE0_CONFIGURATION0_DESCR[41u] = {
 /*  Config Descriptor Length               */ 0x09u,
 /*  DescriptorType: CONFIG                 */ 0x02u,
-/*  wTotalLength                           */ 0x5Cu, 0x00u,
-/*  bNumInterfaces                         */ 0x03u,
+/*  wTotalLength                           */ 0x29u, 0x00u,
+/*  bNumInterfaces                         */ 0x01u,
 /*  bConfigurationValue                    */ 0x01u,
 /*  iConfiguration                         */ 0x01u,
 /*  bmAttributes                           */ 0x80u,
 /*  bMaxPower                              */ 0x32u,
 /*********************************************************************
-* CDC Interface Descriptor
+* Interface Descriptor
 *********************************************************************/
 /*  Interface Descriptor Length            */ 0x09u,
 /*  DescriptorType: INTERFACE              */ 0x04u,
 /*  bInterfaceNumber                       */ 0x00u,
 /*  bAlternateSetting                      */ 0x00u,
-/*  bNumEndpoints                          */ 0x01u,
-/*  bInterfaceClass                        */ 0x02u,
-/*  bInterfaceSubClass                     */ 0x02u,
-/*  bInterfaceProtocol                     */ 0x00u,
-/*  iInterface                             */ 0x02u,
-/*********************************************************************
-* Header Descriptor
-*********************************************************************/
-/*  Header Descriptor Length               */ 0x05u,
-/*  DescriptorType: CS_INTERFACE           */ 0x24u,
-/*  bDescriptorSubtype                     */ 0x00u,
-/*  bcdADC                                 */ 0x10u, 0x01u,
-/*********************************************************************
-* Abstract Control Management Descriptor
-*********************************************************************/
-/*  Abstract Control Management Descriptor Length*/ 0x04u,
-/*  DescriptorType: CS_INTERFACE           */ 0x24u,
-/*  bDescriptorSubtype                     */ 0x02u,
-/*  bmCapabilities                         */ 0x02u,
-/*********************************************************************
-* Union Descriptor
-*********************************************************************/
-/*  Union Descriptor Length                */ 0x05u,
-/*  DescriptorType: CS_INTERFACE           */ 0x24u,
-/*  bDescriptorSubtype                     */ 0x06u,
-/*  bControlInterface                      */ 0x00u,
-/*  bSubordinateInterface                  */ 0x01u,
-/*********************************************************************
-* Call Management Descriptor
-*********************************************************************/
-/*  Call Management Descriptor Length      */ 0x05u,
-/*  DescriptorType: CS_INTERFACE           */ 0x24u,
-/*  bDescriptorSubtype                     */ 0x01u,
-/*  bmCapabilities                         */ 0x00u,
-/*  bDataInterface                         */ 0x01u,
-/*********************************************************************
-* Endpoint Descriptor
-*********************************************************************/
-/*  Endpoint Descriptor Length             */ 0x07u,
-/*  DescriptorType: ENDPOINT               */ 0x05u,
-/*  bEndpointAddress                       */ 0x81u,
-/*  bmAttributes                           */ 0x03u,
-/*  wMaxPacketSize                         */ 0x08u, 0x00u,
-/*  bInterval                              */ 0x0Au,
-/*********************************************************************
-* Data Interface Descriptor
-*********************************************************************/
-/*  Interface Descriptor Length            */ 0x09u,
-/*  DescriptorType: INTERFACE              */ 0x04u,
-/*  bInterfaceNumber                       */ 0x01u,
-/*  bAlternateSetting                      */ 0x00u,
 /*  bNumEndpoints                          */ 0x02u,
-/*  bInterfaceClass                        */ 0x0Au,
-/*  bInterfaceSubClass                     */ 0x00u,
-/*  bInterfaceProtocol                     */ 0x00u,
-/*  iInterface                             */ 0x03u,
-/*********************************************************************
-* Endpoint Descriptor
-*********************************************************************/
-/*  Endpoint Descriptor Length             */ 0x07u,
-/*  DescriptorType: ENDPOINT               */ 0x05u,
-/*  bEndpointAddress                       */ 0x82u,
-/*  bmAttributes                           */ 0x02u,
-/*  wMaxPacketSize                         */ 0x40u, 0x00u,
-/*  bInterval                              */ 0x00u,
-/*********************************************************************
-* Endpoint Descriptor
-*********************************************************************/
-/*  Endpoint Descriptor Length             */ 0x07u,
-/*  DescriptorType: ENDPOINT               */ 0x05u,
-/*  bEndpointAddress                       */ 0x03u,
-/*  bmAttributes                           */ 0x02u,
-/*  wMaxPacketSize                         */ 0x40u, 0x00u,
-/*  bInterval                              */ 0x00u,
-/*********************************************************************
-* Interface Descriptor
-*********************************************************************/
-/*  Interface Descriptor Length            */ 0x09u,
-/*  DescriptorType: INTERFACE              */ 0x04u,
-/*  bInterfaceNumber                       */ 0x02u,
-/*  bAlternateSetting                      */ 0x00u,
-/*  bNumEndpoints                          */ 0x01u,
 /*  bInterfaceClass                        */ 0x03u,
 /*  bInterfaceSubClass                     */ 0x00u,
 /*  bInterfaceProtocol                     */ 0x00u,
@@ -172,14 +91,23 @@ const uint8 CYCODE USBUART_DEVICE0_CONFIGURATION0_DESCR[92u] = {
 /*  DescriptorType: ENDPOINT               */ 0x05u,
 /*  bEndpointAddress                       */ 0x83u,
 /*  bmAttributes                           */ 0x03u,
-/*  wMaxPacketSize                         */ 0x08u, 0x00u,
-/*  bInterval                              */ 0x0Au
+/*  wMaxPacketSize                         */ 0x40u, 0x00u,
+/*  bInterval                              */ 0x01u,
+/*********************************************************************
+* Endpoint Descriptor
+*********************************************************************/
+/*  Endpoint Descriptor Length             */ 0x07u,
+/*  DescriptorType: ENDPOINT               */ 0x05u,
+/*  bEndpointAddress                       */ 0x04u,
+/*  bmAttributes                           */ 0x03u,
+/*  wMaxPacketSize                         */ 0x40u, 0x00u,
+/*  bInterval                              */ 0x01u
 };
 
 /*********************************************************************
 * String Descriptor Table
 *********************************************************************/
-const uint8 CYCODE USBUART_STRING_DESCRIPTORS[181u] = {
+const uint8 CYCODE USBUART_STRING_DESCRIPTORS[197u] = {
 /*********************************************************************
 * Language ID Descriptor
 *********************************************************************/
@@ -224,12 +152,20 @@ const uint8 CYCODE USBUART_STRING_DESCRIPTORS[181u] = {
  (uint8)'U', 0u,(uint8)'S', 0u,(uint8)'B', 0u,(uint8)'U', 0u,(uint8)'A', 0u,
  (uint8)'R', 0u,(uint8)'T', 0u,
 /*********************************************************************
-* String Descriptor: "cosjoystik"
+* String Descriptor: "ACAPCurrent"
 *********************************************************************/
-/* Descriptor Length                       */ 0x16u,
+/* Descriptor Length                       */ 0x18u,
 /* DescriptorType: STRING                  */ 0x03u,
- (uint8)'c', 0u,(uint8)'o', 0u,(uint8)'s', 0u,(uint8)'j', 0u,(uint8)'o', 0u,
- (uint8)'y', 0u,(uint8)'s', 0u,(uint8)'t', 0u,(uint8)'i', 0u,(uint8)'k', 0u,
+ (uint8)'A', 0u,(uint8)'C', 0u,(uint8)'A', 0u,(uint8)'P', 0u,(uint8)'C', 0u,
+ (uint8)'u', 0u,(uint8)'r', 0u,(uint8)'r', 0u,(uint8)'e', 0u,(uint8)'n', 0u,
+ (uint8)'t', 0u,
+/*********************************************************************
+* String Descriptor: "Cosine"
+*********************************************************************/
+/* Descriptor Length                       */ 0x0Eu,
+/* DescriptorType: STRING                  */ 0x03u,
+ (uint8)'C', 0u,(uint8)'o', 0u,(uint8)'s', 0u,(uint8)'i', 0u,(uint8)'n', 0u,
+ (uint8)'e', 0u,
 /*********************************************************************/
 /* Marks the end of the list.              */ 0x00u};
 /*********************************************************************/
@@ -244,55 +180,63 @@ const uint8 CYCODE USBUART_SN_STRING_DESCRIPTOR[2] = {
 };
 
 /*********************************************************************
-* HID Report Descriptor: Joystick
+* HID Report Descriptor: 64-Byte Generic HID
 *********************************************************************/
-const uint8 CYCODE USBUART_HIDREPORT_DESCRIPTOR1[52u] = {
+const uint8 CYCODE USBUART_HIDREPORT_DESCRIPTOR1[42u] = {
 /*  Descriptor Size (Not part of descriptor)*/ USBUART_HID_RPT_1_SIZE_LSB,
 USBUART_HID_RPT_1_SIZE_MSB,
-/* USAGE_PAGE                              */ 0x05u, 0x01u, 
-/* USAGE                                   */ 0x09u, 0x04u, 
-/* COLLECTION                              */ 0xA1u, 0x01u, 
+/* USAGE_PAGE                              */ 0x06u, 0x00u, 0xFFu, 
 /* USAGE                                   */ 0x09u, 0x01u, 
-/* COLLECTION                              */ 0xA1u, 0x00u, 
-/* USAGE                                   */ 0x09u, 0x30u, 
-/* USAGE                                   */ 0x09u, 0x31u, 
-/* LOGICAL_MINIMUM                         */ 0x15u, 0x81u, 
-/* LOGICAL_MAXIMUM                         */ 0x25u, 0x7Fu, 
-/* REPORT_SIZE                             */ 0x75u, 0x08u, 
-/* REPORT_COUNT                            */ 0x95u, 0x02u, 
-/* INPUT                                   */ 0x81u, 0x02u, 
-/* END_COLLECTION                          */ 0xC0u, 
-/* USAGE_PAGE                              */ 0x05u, 0x09u, 
-/* USAGE_MINIMUM                           */ 0x19u, 0x01u, 
-/* USAGE_MAXIMUM                           */ 0x29u, 0x05u, 
+/* COLLECTION                              */ 0xA1u, 0x01u, 
+/* USAGE_MINIMUM                           */ 0x19u, 0x00u, 
+/* USAGE_MAXIMUM                           */ 0x29u, 0x40u, 
 /* LOGICAL_MINIMUM                         */ 0x15u, 0x00u, 
-/* LOGICAL_MAXIMUM                         */ 0x25u, 0x01u, 
-/* REPORT_SIZE                             */ 0x75u, 0x01u, 
-/* REPORT_COUNT                            */ 0x95u, 0x05u, 
-/* INPUT                                   */ 0x81u, 0x02u, 
-/* REPORT_COUNT                            */ 0x95u, 0x01u, 
-/* REPORT_SIZE                             */ 0x75u, 0x03u, 
-/* INPUT                                   */ 0x81u, 0x03u, 
+/* LOGICAL_MAXIMUM                         */ 0x26u, 0xFFu, 0x00u, 
+/* REPORT_SIZE                             */ 0x75u, 0x08u, 
+/* REPORT_COUNT                            */ 0x95u, 0x40u, 
+/* OUTPUT                                  */ 0x91u, 0x00u, 
+/* USAGE_MINIMUM                           */ 0x19u, 0x00u, 
+/* USAGE_MAXIMUM                           */ 0x29u, 0x40u, 
+/* LOGICAL_MINIMUM                         */ 0x15u, 0x00u, 
+/* LOGICAL_MAXIMUM                         */ 0x26u, 0xFFu, 0x00u, 
+/* REPORT_SIZE                             */ 0x75u, 0x08u, 
+/* REPORT_COUNT                            */ 0x95u, 0x40u, 
+/* INPUT                                   */ 0x81u, 0x00u, 
 /* END_COLLECTION                          */ 0xC0u, 
 /*********************************************************************/
 /* End of the HID Report Descriptor        */ 0x00u, 0x00u};
 /*********************************************************************/
 
-#if !defined(USER_DEFINE_USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_HID_RPT_STORAGE)
+#if !defined(USER_DEFINE_USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_HID_RPT_STORAGE)
 /*********************************************************************
 * HID Input Report Storage
 *********************************************************************/
-T_USBUART_XFER_STATUS_BLOCK USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_SCB;
-uint8 USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_BUF[
-            USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_BUF_SIZE];
+T_USBUART_XFER_STATUS_BLOCK USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_SCB;
+uint8 USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF[
+            USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF_SIZE];
 
 /*********************************************************************
 * HID Input Report TD Table
 *********************************************************************/
-const T_USBUART_TD CYCODE USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_TABLE[1u] = {
-    {USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_BUF_SIZE,
-    &USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_BUF[0u],
-    &USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_SCB},
+const T_USBUART_TD CYCODE USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE[1u] = {
+    {USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF_SIZE,
+    &USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF[0u],
+    &USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_SCB},
+};
+/*********************************************************************
+* HID Output Report Storage
+*********************************************************************/
+T_USBUART_XFER_STATUS_BLOCK USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_SCB;
+uint8 USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_BUF[
+            USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_BUF_SIZE];
+
+/*********************************************************************
+* HID Output Report TD Table
+*********************************************************************/
+const T_USBUART_TD CYCODE USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_TABLE[1u] = {
+    {USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_BUF_SIZE,
+    &USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_BUF[0u],
+    &USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_SCB},
 };
 /*********************************************************************
 * HID Report Look Up Table         This table has four entries:
@@ -302,21 +246,21 @@ const T_USBUART_TD CYCODE USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_H
 *                                        HID Report Descriptor
 *                                        HID Class Descriptor
 *********************************************************************/
-const T_USBUART_LUT CYCODE USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_TABLE[5u] = {
-    {0x00u,     &USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_TABLE},
-    {0x00u,    NULL},
+const T_USBUART_LUT CYCODE USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE[5u] = {
+    {0x00u,     &USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE},
+    {0x00u,     &USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_OUT_RPT_TABLE},
     {0x00u,    NULL},
     {0x01u,     (const void *)&USBUART_HIDREPORT_DESCRIPTOR1[0]},
-    {0x01u,     (const void *)&USBUART_DEVICE0_CONFIGURATION0_DESCR[76]}
+    {0x01u,     (const void *)&USBUART_DEVICE0_CONFIGURATION0_DESCR[18]}
 };
-#endif /* USER_DEFINE_USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_HID_RPT_STORAGE */
+#endif /* USER_DEFINE_USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_HID_RPT_STORAGE */
 
 /*********************************************************************
 * Interface Dispatch Table -- Points to the Class Dispatch Tables
 *********************************************************************/
-const T_USBUART_LUT CYCODE USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_TABLE[1u] = {
-    {USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_COUNT, 
-    &USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_TABLE}
+const T_USBUART_LUT CYCODE USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE[1u] = {
+    {USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_COUNT, 
+    &USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE}
 };
 /*********************************************************************
 * Endpoint Setting Table -- This table contain the endpoint setting
@@ -325,27 +269,23 @@ const T_USBUART_LUT CYCODE USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_TABLE[1u] =
 *                           configure the endpoint hardware for each
 *                           interface and alternate setting.
 *********************************************************************/
-const T_USBUART_EP_SETTINGS_BLOCK CYCODE USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE[4u] = {
+const T_USBUART_EP_SETTINGS_BLOCK CYCODE USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE[2u] = {
 /* IFC  ALT    EPAddr bmAttr MaxPktSize Class ********************/
-{0x00u, 0x00u, 0x81u, 0x03u, 0x0008u,   0x02u},
-{0x01u, 0x00u, 0x82u, 0x02u, 0x0040u,   0x0Au},
-{0x01u, 0x00u, 0x03u, 0x02u, 0x0040u,   0x0Au},
-{0x02u, 0x00u, 0x83u, 0x03u, 0x0008u,   0x03u}
+{0x00u, 0x00u, 0x83u, 0x03u, 0x0040u,   0x03u},
+{0x00u, 0x00u, 0x04u, 0x03u, 0x0040u,   0x03u}
 };
-const uint8 CYCODE USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS[3u] = {
-0x02u, 0x0Au, 0x03u
+const uint8 CYCODE USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS[1u] = {
+0x03u
 };
 /*********************************************************************
 * Config Dispatch Table -- Points to the Config Descriptor and each of
 *                          and endpoint setup table and to each
 *                          interface table if it specifies a USB Class
 *********************************************************************/
-const T_USBUART_LUT CYCODE USBUART_DEVICE0_CONFIGURATION0_TABLE[6u] = {
+const T_USBUART_LUT CYCODE USBUART_DEVICE0_CONFIGURATION0_TABLE[4u] = {
     {0x01u,     &USBUART_DEVICE0_CONFIGURATION0_DESCR},
-    {0x04u,     &USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE},
-    {0x00u,    NULL},
-    {0x00u,    NULL},
-    {0x01u,     &USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_TABLE},
+    {0x02u,     &USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE},
+    {0x01u,     &USBUART_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE},
     {0x00u,     &USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS}
 };
 /*********************************************************************

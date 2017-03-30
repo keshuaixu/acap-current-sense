@@ -23,6 +23,12 @@ extern void cyfitter_cfg(void);
 
 /* Analog Set/Unset methods */
 extern void SetAnalogRoutingPumps(uint8 enabled);
+extern void AMuxSeq_1_CYAMUXSIDE_A_DisconnectAll(void);
+extern void AMuxSeq_1_CYAMUXSIDE_A_Next(void);
+extern int8 AMuxSeq_1_CYAMUXSIDE_A_curChannel;
+extern void AMuxSeq_1_CYAMUXSIDE_B_DisconnectAll(void);
+extern void AMuxSeq_1_CYAMUXSIDE_B_Next(void);
+extern int8 AMuxSeq_1_CYAMUXSIDE_B_curChannel;
 
 
 #endif /* CYFITTER_CFG_H */

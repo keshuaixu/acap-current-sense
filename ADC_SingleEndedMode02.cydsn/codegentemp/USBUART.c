@@ -81,10 +81,10 @@ uint8 USBUART_initVar = 0u;
     const uint8 USBUART_DmaReqOut[USBUART_MAX_EP] =
     {
         0u,
-        USBUART_ep1_dma__TR_OUTPUT,
-        USBUART_ep2_dma__TR_OUTPUT,
-        USBUART_ep3_dma__TR_OUTPUT,
         0u,
+        0u,
+        USBUART_ep3_dma__TR_OUTPUT,
+        USBUART_ep4_dma__TR_OUTPUT,
         0u,
         0u,
         0u,

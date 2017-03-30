@@ -25,11 +25,6 @@
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\ADC_DelSig_1_PM.c" value="SOURCE_C;CortexM3;;;;ADC_DelSig_1" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\ADC_DelSig_1_INT.c" value="SOURCE_C;CortexM3;;;;ADC_DelSig_1" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\Pin_1_aliases.h" value="HEADER;;;;;Pin_1" />
-  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\Pin_1.c" value="SOURCE_C;CortexM3;;;;Pin_1" />
-  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\Pin_1.h" value="HEADER;;;;;Pin_1" />
-  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\LCD.c" value="SOURCE_C;CortexM3;;;;LCD" />
-  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\LCD.h" value="HEADER;;;;;LCD" />
-  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\LCD_PM.c" value="SOURCE_C;CortexM3;;;;LCD" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\USBUART.c" value="SOURCE_C;CortexM3;;;;USBUART" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\USBUART.h" value="HEADER;;;;;USBUART" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\USBUART_audio.c" value="SOURCE_C;CortexM3;;;;USBUART" />
@@ -53,18 +48,14 @@
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\USBUART_cydmac.h" value="HEADER;;;;;USBUART" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\USBUART_msc.c" value="SOURCE_C;CortexM3;;;;USBUART" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\USBUART_msc.h" value="HEADER;;;;;USBUART" />
-  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\Pin_2_aliases.h" value="HEADER;;;;;Pin_2" />
-  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\Pin_2.c" value="SOURCE_C;CortexM3;;;;Pin_2" />
-  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\Pin_2.h" value="HEADER;;;;;Pin_2" />
+  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\AMuxSeq_1.c" value="SOURCE_C;CortexM3;;;;AMuxSeq_1" />
+  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\AMuxSeq_1.h" value="HEADER;;;;;AMuxSeq_1" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\ADC_DelSig_1_Ext_CP_Clk.c" value="SOURCE_C;CortexM3;;;;ADC_DelSig_1_Ext_CP_Clk" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\ADC_DelSig_1_Ext_CP_Clk.h" value="HEADER;;;;;ADC_DelSig_1_Ext_CP_Clk" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\ADC_DelSig_1_IRQ.c" value="SOURCE_C;CortexM3;;;;ADC_DelSig_1_IRQ" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\ADC_DelSig_1_IRQ.h" value="HEADER;;;;;ADC_DelSig_1_IRQ" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\ADC_DelSig_1_theACLK.c" value="SOURCE_C;CortexM3;;;;ADC_DelSig_1_theACLK" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\ADC_DelSig_1_theACLK.h" value="HEADER;;;;;ADC_DelSig_1_theACLK" />
-  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\LCD_LCDPort_aliases.h" value="HEADER;;;;;LCD_LCDPort" />
-  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\LCD_LCDPort.c" value="SOURCE_C;CortexM3;;;;LCD_LCDPort" />
-  <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\LCD_LCDPort.h" value="HEADER;;;;;LCD_LCDPort" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\USBUART_Dm_aliases.h" value="HEADER;;;;;USBUART_Dm" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\USBUART_Dm.c" value="SOURCE_C;CortexM3;;;;USBUART_Dm" />
   <file name="C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode02.cydsn\codegentemp\USBUART_Dm.h" value="HEADER;;;;;USBUART_Dm" />

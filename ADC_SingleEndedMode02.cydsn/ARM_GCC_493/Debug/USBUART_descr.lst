@@ -1,0 +1,1655 @@
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"USBUART_descr.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	USBUART_DEVICE0_DESCR
+  19              		.section	.rodata
+  20              		.align	2
+  21              		.type	USBUART_DEVICE0_DESCR, %object
+  22              		.size	USBUART_DEVICE0_DESCR, 18
+  23              	USBUART_DEVICE0_DESCR:
+  24 0000 12       		.byte	18
+  25 0001 01       		.byte	1
+  26 0002 00       		.byte	0
+  27 0003 02       		.byte	2
+  28 0004 02       		.byte	2
+  29 0005 00       		.byte	0
+  30 0006 00       		.byte	0
+  31 0007 08       		.byte	8
+  32 0008 B4       		.byte	-76
+  33 0009 04       		.byte	4
+  34 000a 32       		.byte	50
+  35 000b F2       		.byte	-14
+  36 000c 01       		.byte	1
+  37 000d 00       		.byte	0
+  38 000e 01       		.byte	1
+  39 000f 04       		.byte	4
+  40 0010 80       		.byte	-128
+  41 0011 01       		.byte	1
+  42              		.global	USBUART_DEVICE0_CONFIGURATION0_DESCR
+  43 0012 0000     		.align	2
+  44              		.type	USBUART_DEVICE0_CONFIGURATION0_DESCR, %object
+  45              		.size	USBUART_DEVICE0_CONFIGURATION0_DESCR, 92
+  46              	USBUART_DEVICE0_CONFIGURATION0_DESCR:
+  47 0014 09       		.byte	9
+  48 0015 02       		.byte	2
+  49 0016 5C       		.byte	92
+  50 0017 00       		.byte	0
+  51 0018 03       		.byte	3
+  52 0019 01       		.byte	1
+  53 001a 01       		.byte	1
+  54 001b 80       		.byte	-128
+  55 001c 32       		.byte	50
+  56 001d 09       		.byte	9
+  57 001e 04       		.byte	4
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 2
+
+
+  58 001f 00       		.byte	0
+  59 0020 00       		.byte	0
+  60 0021 01       		.byte	1
+  61 0022 02       		.byte	2
+  62 0023 02       		.byte	2
+  63 0024 00       		.byte	0
+  64 0025 02       		.byte	2
+  65 0026 05       		.byte	5
+  66 0027 24       		.byte	36
+  67 0028 00       		.byte	0
+  68 0029 10       		.byte	16
+  69 002a 01       		.byte	1
+  70 002b 04       		.byte	4
+  71 002c 24       		.byte	36
+  72 002d 02       		.byte	2
+  73 002e 02       		.byte	2
+  74 002f 05       		.byte	5
+  75 0030 24       		.byte	36
+  76 0031 06       		.byte	6
+  77 0032 00       		.byte	0
+  78 0033 01       		.byte	1
+  79 0034 05       		.byte	5
+  80 0035 24       		.byte	36
+  81 0036 01       		.byte	1
+  82 0037 00       		.byte	0
+  83 0038 01       		.byte	1
+  84 0039 07       		.byte	7
+  85 003a 05       		.byte	5
+  86 003b 81       		.byte	-127
+  87 003c 03       		.byte	3
+  88 003d 08       		.byte	8
+  89 003e 00       		.byte	0
+  90 003f 0A       		.byte	10
+  91 0040 09       		.byte	9
+  92 0041 04       		.byte	4
+  93 0042 01       		.byte	1
+  94 0043 00       		.byte	0
+  95 0044 02       		.byte	2
+  96 0045 0A       		.byte	10
+  97 0046 00       		.byte	0
+  98 0047 00       		.byte	0
+  99 0048 03       		.byte	3
+ 100 0049 07       		.byte	7
+ 101 004a 05       		.byte	5
+ 102 004b 82       		.byte	-126
+ 103 004c 02       		.byte	2
+ 104 004d 40       		.byte	64
+ 105 004e 00       		.byte	0
+ 106 004f 00       		.byte	0
+ 107 0050 07       		.byte	7
+ 108 0051 05       		.byte	5
+ 109 0052 03       		.byte	3
+ 110 0053 02       		.byte	2
+ 111 0054 40       		.byte	64
+ 112 0055 00       		.byte	0
+ 113 0056 00       		.byte	0
+ 114 0057 09       		.byte	9
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 3
+
+
+ 115 0058 04       		.byte	4
+ 116 0059 02       		.byte	2
+ 117 005a 00       		.byte	0
+ 118 005b 01       		.byte	1
+ 119 005c 03       		.byte	3
+ 120 005d 00       		.byte	0
+ 121 005e 00       		.byte	0
+ 122 005f 05       		.byte	5
+ 123 0060 09       		.byte	9
+ 124 0061 21       		.byte	33
+ 125 0062 11       		.byte	17
+ 126 0063 01       		.byte	1
+ 127 0064 00       		.byte	0
+ 128 0065 01       		.byte	1
+ 129 0066 22       		.byte	34
+ 130 0067 30       		.byte	48
+ 131 0068 00       		.byte	0
+ 132 0069 07       		.byte	7
+ 133 006a 05       		.byte	5
+ 134 006b 83       		.byte	-125
+ 135 006c 03       		.byte	3
+ 136 006d 08       		.byte	8
+ 137 006e 00       		.byte	0
+ 138 006f 0A       		.byte	10
+ 139              		.global	USBUART_STRING_DESCRIPTORS
+ 140              		.align	2
+ 141              		.type	USBUART_STRING_DESCRIPTORS, %object
+ 142              		.size	USBUART_STRING_DESCRIPTORS, 181
+ 143              	USBUART_STRING_DESCRIPTORS:
+ 144 0070 04       		.byte	4
+ 145 0071 03       		.byte	3
+ 146 0072 09       		.byte	9
+ 147 0073 04       		.byte	4
+ 148 0074 2C       		.byte	44
+ 149 0075 03       		.byte	3
+ 150 0076 43       		.byte	67
+ 151 0077 00       		.byte	0
+ 152 0078 79       		.byte	121
+ 153 0079 00       		.byte	0
+ 154 007a 70       		.byte	112
+ 155 007b 00       		.byte	0
+ 156 007c 72       		.byte	114
+ 157 007d 00       		.byte	0
+ 158 007e 65       		.byte	101
+ 159 007f 00       		.byte	0
+ 160 0080 73       		.byte	115
+ 161 0081 00       		.byte	0
+ 162 0082 73       		.byte	115
+ 163 0083 00       		.byte	0
+ 164 0084 20       		.byte	32
+ 165 0085 00       		.byte	0
+ 166 0086 53       		.byte	83
+ 167 0087 00       		.byte	0
+ 168 0088 65       		.byte	101
+ 169 0089 00       		.byte	0
+ 170 008a 6D       		.byte	109
+ 171 008b 00       		.byte	0
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 4
+
+
+ 172 008c 69       		.byte	105
+ 173 008d 00       		.byte	0
+ 174 008e 63       		.byte	99
+ 175 008f 00       		.byte	0
+ 176 0090 6F       		.byte	111
+ 177 0091 00       		.byte	0
+ 178 0092 6E       		.byte	110
+ 179 0093 00       		.byte	0
+ 180 0094 64       		.byte	100
+ 181 0095 00       		.byte	0
+ 182 0096 75       		.byte	117
+ 183 0097 00       		.byte	0
+ 184 0098 63       		.byte	99
+ 185 0099 00       		.byte	0
+ 186 009a 74       		.byte	116
+ 187 009b 00       		.byte	0
+ 188 009c 6F       		.byte	111
+ 189 009d 00       		.byte	0
+ 190 009e 72       		.byte	114
+ 191 009f 00       		.byte	0
+ 192 00a0 38       		.byte	56
+ 193 00a1 03       		.byte	3
+ 194 00a2 43       		.byte	67
+ 195 00a3 00       		.byte	0
+ 196 00a4 44       		.byte	68
+ 197 00a5 00       		.byte	0
+ 198 00a6 43       		.byte	67
+ 199 00a7 00       		.byte	0
+ 200 00a8 20       		.byte	32
+ 201 00a9 00       		.byte	0
+ 202 00aa 43       		.byte	67
+ 203 00ab 00       		.byte	0
+ 204 00ac 6F       		.byte	111
+ 205 00ad 00       		.byte	0
+ 206 00ae 6D       		.byte	109
+ 207 00af 00       		.byte	0
+ 208 00b0 6D       		.byte	109
+ 209 00b1 00       		.byte	0
+ 210 00b2 75       		.byte	117
+ 211 00b3 00       		.byte	0
+ 212 00b4 6E       		.byte	110
+ 213 00b5 00       		.byte	0
+ 214 00b6 69       		.byte	105
+ 215 00b7 00       		.byte	0
+ 216 00b8 63       		.byte	99
+ 217 00b9 00       		.byte	0
+ 218 00ba 61       		.byte	97
+ 219 00bb 00       		.byte	0
+ 220 00bc 74       		.byte	116
+ 221 00bd 00       		.byte	0
+ 222 00be 69       		.byte	105
+ 223 00bf 00       		.byte	0
+ 224 00c0 6F       		.byte	111
+ 225 00c1 00       		.byte	0
+ 226 00c2 6E       		.byte	110
+ 227 00c3 00       		.byte	0
+ 228 00c4 20       		.byte	32
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 5
+
+
+ 229 00c5 00       		.byte	0
+ 230 00c6 49       		.byte	73
+ 231 00c7 00       		.byte	0
+ 232 00c8 6E       		.byte	110
+ 233 00c9 00       		.byte	0
+ 234 00ca 74       		.byte	116
+ 235 00cb 00       		.byte	0
+ 236 00cc 65       		.byte	101
+ 237 00cd 00       		.byte	0
+ 238 00ce 72       		.byte	114
+ 239 00cf 00       		.byte	0
+ 240 00d0 66       		.byte	102
+ 241 00d1 00       		.byte	0
+ 242 00d2 61       		.byte	97
+ 243 00d3 00       		.byte	0
+ 244 00d4 63       		.byte	99
+ 245 00d5 00       		.byte	0
+ 246 00d6 65       		.byte	101
+ 247 00d7 00       		.byte	0
+ 248 00d8 26       		.byte	38
+ 249 00d9 03       		.byte	3
+ 250 00da 43       		.byte	67
+ 251 00db 00       		.byte	0
+ 252 00dc 44       		.byte	68
+ 253 00dd 00       		.byte	0
+ 254 00de 43       		.byte	67
+ 255 00df 00       		.byte	0
+ 256 00e0 20       		.byte	32
+ 257 00e1 00       		.byte	0
+ 258 00e2 44       		.byte	68
+ 259 00e3 00       		.byte	0
+ 260 00e4 61       		.byte	97
+ 261 00e5 00       		.byte	0
+ 262 00e6 74       		.byte	116
+ 263 00e7 00       		.byte	0
+ 264 00e8 61       		.byte	97
+ 265 00e9 00       		.byte	0
+ 266 00ea 20       		.byte	32
+ 267 00eb 00       		.byte	0
+ 268 00ec 49       		.byte	73
+ 269 00ed 00       		.byte	0
+ 270 00ee 6E       		.byte	110
+ 271 00ef 00       		.byte	0
+ 272 00f0 74       		.byte	116
+ 273 00f1 00       		.byte	0
+ 274 00f2 65       		.byte	101
+ 275 00f3 00       		.byte	0
+ 276 00f4 72       		.byte	114
+ 277 00f5 00       		.byte	0
+ 278 00f6 66       		.byte	102
+ 279 00f7 00       		.byte	0
+ 280 00f8 61       		.byte	97
+ 281 00f9 00       		.byte	0
+ 282 00fa 63       		.byte	99
+ 283 00fb 00       		.byte	0
+ 284 00fc 65       		.byte	101
+ 285 00fd 00       		.byte	0
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 6
+
+
+ 286 00fe 10       		.byte	16
+ 287 00ff 03       		.byte	3
+ 288 0100 55       		.byte	85
+ 289 0101 00       		.byte	0
+ 290 0102 53       		.byte	83
+ 291 0103 00       		.byte	0
+ 292 0104 42       		.byte	66
+ 293 0105 00       		.byte	0
+ 294 0106 55       		.byte	85
+ 295 0107 00       		.byte	0
+ 296 0108 41       		.byte	65
+ 297 0109 00       		.byte	0
+ 298 010a 52       		.byte	82
+ 299 010b 00       		.byte	0
+ 300 010c 54       		.byte	84
+ 301 010d 00       		.byte	0
+ 302 010e 16       		.byte	22
+ 303 010f 03       		.byte	3
+ 304 0110 63       		.byte	99
+ 305 0111 00       		.byte	0
+ 306 0112 6F       		.byte	111
+ 307 0113 00       		.byte	0
+ 308 0114 73       		.byte	115
+ 309 0115 00       		.byte	0
+ 310 0116 6A       		.byte	106
+ 311 0117 00       		.byte	0
+ 312 0118 6F       		.byte	111
+ 313 0119 00       		.byte	0
+ 314 011a 79       		.byte	121
+ 315 011b 00       		.byte	0
+ 316 011c 73       		.byte	115
+ 317 011d 00       		.byte	0
+ 318 011e 74       		.byte	116
+ 319 011f 00       		.byte	0
+ 320 0120 69       		.byte	105
+ 321 0121 00       		.byte	0
+ 322 0122 6B       		.byte	107
+ 323 0123 00       		.byte	0
+ 324 0124 00       		.byte	0
+ 325              		.global	USBUART_SN_STRING_DESCRIPTOR
+ 326 0125 000000   		.align	2
+ 327              		.type	USBUART_SN_STRING_DESCRIPTOR, %object
+ 328              		.size	USBUART_SN_STRING_DESCRIPTOR, 2
+ 329              	USBUART_SN_STRING_DESCRIPTOR:
+ 330 0128 02       		.byte	2
+ 331 0129 03       		.byte	3
+ 332              		.global	USBUART_HIDREPORT_DESCRIPTOR1
+ 333 012a 0000     		.align	2
+ 334              		.type	USBUART_HIDREPORT_DESCRIPTOR1, %object
+ 335              		.size	USBUART_HIDREPORT_DESCRIPTOR1, 52
+ 336              	USBUART_HIDREPORT_DESCRIPTOR1:
+ 337 012c 30       		.byte	48
+ 338 012d 00       		.byte	0
+ 339 012e 05       		.byte	5
+ 340 012f 01       		.byte	1
+ 341 0130 09       		.byte	9
+ 342 0131 04       		.byte	4
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 7
+
+
+ 343 0132 A1       		.byte	-95
+ 344 0133 01       		.byte	1
+ 345 0134 09       		.byte	9
+ 346 0135 01       		.byte	1
+ 347 0136 A1       		.byte	-95
+ 348 0137 00       		.byte	0
+ 349 0138 09       		.byte	9
+ 350 0139 30       		.byte	48
+ 351 013a 09       		.byte	9
+ 352 013b 31       		.byte	49
+ 353 013c 15       		.byte	21
+ 354 013d 81       		.byte	-127
+ 355 013e 25       		.byte	37
+ 356 013f 7F       		.byte	127
+ 357 0140 75       		.byte	117
+ 358 0141 08       		.byte	8
+ 359 0142 95       		.byte	-107
+ 360 0143 02       		.byte	2
+ 361 0144 81       		.byte	-127
+ 362 0145 02       		.byte	2
+ 363 0146 C0       		.byte	-64
+ 364 0147 05       		.byte	5
+ 365 0148 09       		.byte	9
+ 366 0149 19       		.byte	25
+ 367 014a 01       		.byte	1
+ 368 014b 29       		.byte	41
+ 369 014c 05       		.byte	5
+ 370 014d 15       		.byte	21
+ 371 014e 00       		.byte	0
+ 372 014f 25       		.byte	37
+ 373 0150 01       		.byte	1
+ 374 0151 75       		.byte	117
+ 375 0152 01       		.byte	1
+ 376 0153 95       		.byte	-107
+ 377 0154 05       		.byte	5
+ 378 0155 81       		.byte	-127
+ 379 0156 02       		.byte	2
+ 380 0157 95       		.byte	-107
+ 381 0158 01       		.byte	1
+ 382 0159 75       		.byte	117
+ 383 015a 03       		.byte	3
+ 384 015b 81       		.byte	-127
+ 385 015c 03       		.byte	3
+ 386 015d C0       		.byte	-64
+ 387 015e 00       		.byte	0
+ 388 015f 00       		.byte	0
+ 389              		.comm	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_SCB,4,4
+ 390              		.comm	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_BUF,4,4
+ 391              		.global	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_TABLE
+ 392              		.align	2
+ 393              		.type	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_TABLE, %object
+ 394              		.size	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_TABLE, 12
+ 395              	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_TABLE:
+ 396 0160 0400     		.short	4
+ 397 0162 0000     		.space	2
+ 398 0164 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_BUF
+ 399 0168 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_SCB
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 8
+
+
+ 400              		.global	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_TABLE
+ 401              		.align	2
+ 402              		.type	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_TABLE, %object
+ 403              		.size	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_TABLE, 40
+ 404              	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_TABLE:
+ 405 016c 00       		.byte	0
+ 406 016d 000000   		.space	3
+ 407 0170 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_TABLE
+ 408 0174 00       		.byte	0
+ 409 0175 000000   		.space	3
+ 410 0178 00000000 		.word	0
+ 411 017c 00       		.byte	0
+ 412 017d 000000   		.space	3
+ 413 0180 00000000 		.word	0
+ 414 0184 01       		.byte	1
+ 415 0185 000000   		.space	3
+ 416 0188 00000000 		.word	USBUART_HIDREPORT_DESCRIPTOR1
+ 417 018c 01       		.byte	1
+ 418 018d 000000   		.space	3
+ 419 0190 4C000000 		.word	USBUART_DEVICE0_CONFIGURATION0_DESCR+76
+ 420              		.global	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_TABLE
+ 421              		.align	2
+ 422              		.type	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_TABLE, %object
+ 423              		.size	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_TABLE, 8
+ 424              	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_TABLE:
+ 425 0194 01       		.byte	1
+ 426 0195 000000   		.space	3
+ 427 0198 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_TABLE
+ 428              		.global	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+ 429              		.align	2
+ 430              		.type	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE, %object
+ 431              		.size	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE, 32
+ 432              	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE:
+ 433 019c 00       		.byte	0
+ 434 019d 00       		.byte	0
+ 435 019e 81       		.byte	-127
+ 436 019f 03       		.byte	3
+ 437 01a0 0800     		.short	8
+ 438 01a2 02       		.byte	2
+ 439 01a3 00       		.space	1
+ 440 01a4 01       		.byte	1
+ 441 01a5 00       		.byte	0
+ 442 01a6 82       		.byte	-126
+ 443 01a7 02       		.byte	2
+ 444 01a8 4000     		.short	64
+ 445 01aa 0A       		.byte	10
+ 446 01ab 00       		.space	1
+ 447 01ac 01       		.byte	1
+ 448 01ad 00       		.byte	0
+ 449 01ae 03       		.byte	3
+ 450 01af 02       		.byte	2
+ 451 01b0 4000     		.short	64
+ 452 01b2 0A       		.byte	10
+ 453 01b3 00       		.space	1
+ 454 01b4 02       		.byte	2
+ 455 01b5 00       		.byte	0
+ 456 01b6 83       		.byte	-125
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 9
+
+
+ 457 01b7 03       		.byte	3
+ 458 01b8 0800     		.short	8
+ 459 01ba 03       		.byte	3
+ 460 01bb 00       		.space	1
+ 461              		.global	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+ 462              		.align	2
+ 463              		.type	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS, %object
+ 464              		.size	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS, 3
+ 465              	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS:
+ 466 01bc 02       		.byte	2
+ 467 01bd 0A       		.byte	10
+ 468 01be 03       		.byte	3
+ 469              		.global	USBUART_DEVICE0_CONFIGURATION0_TABLE
+ 470 01bf 00       		.align	2
+ 471              		.type	USBUART_DEVICE0_CONFIGURATION0_TABLE, %object
+ 472              		.size	USBUART_DEVICE0_CONFIGURATION0_TABLE, 48
+ 473              	USBUART_DEVICE0_CONFIGURATION0_TABLE:
+ 474 01c0 01       		.byte	1
+ 475 01c1 000000   		.space	3
+ 476 01c4 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_DESCR
+ 477 01c8 04       		.byte	4
+ 478 01c9 000000   		.space	3
+ 479 01cc 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+ 480 01d0 00       		.byte	0
+ 481 01d1 000000   		.space	3
+ 482 01d4 00000000 		.word	0
+ 483 01d8 00       		.byte	0
+ 484 01d9 000000   		.space	3
+ 485 01dc 00000000 		.word	0
+ 486 01e0 01       		.byte	1
+ 487 01e1 000000   		.space	3
+ 488 01e4 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_TABLE
+ 489 01e8 00       		.byte	0
+ 490 01e9 000000   		.space	3
+ 491 01ec 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+ 492              		.global	USBUART_DEVICE0_TABLE
+ 493              		.align	2
+ 494              		.type	USBUART_DEVICE0_TABLE, %object
+ 495              		.size	USBUART_DEVICE0_TABLE, 24
+ 496              	USBUART_DEVICE0_TABLE:
+ 497 01f0 01       		.byte	1
+ 498 01f1 000000   		.space	3
+ 499 01f4 00000000 		.word	USBUART_DEVICE0_DESCR
+ 500 01f8 00       		.byte	0
+ 501 01f9 000000   		.space	3
+ 502 01fc 00000000 		.word	0
+ 503 0200 01       		.byte	1
+ 504 0201 000000   		.space	3
+ 505 0204 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_TABLE
+ 506              		.global	USBUART_TABLE
+ 507              		.align	2
+ 508              		.type	USBUART_TABLE, %object
+ 509              		.size	USBUART_TABLE, 8
+ 510              	USBUART_TABLE:
+ 511 0208 01       		.byte	1
+ 512 0209 000000   		.space	3
+ 513 020c 00000000 		.word	USBUART_DEVICE0_TABLE
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 10
+
+
+ 514              		.global	USBUART_MSOS_DESCRIPTOR
+ 515              		.align	2
+ 516              		.type	USBUART_MSOS_DESCRIPTOR, %object
+ 517              		.size	USBUART_MSOS_DESCRIPTOR, 18
+ 518              	USBUART_MSOS_DESCRIPTOR:
+ 519 0210 12       		.byte	18
+ 520 0211 03       		.byte	3
+ 521 0212 4D       		.byte	77
+ 522 0213 00       		.byte	0
+ 523 0214 53       		.byte	83
+ 524 0215 00       		.byte	0
+ 525 0216 46       		.byte	70
+ 526 0217 00       		.byte	0
+ 527 0218 54       		.byte	84
+ 528 0219 00       		.byte	0
+ 529 021a 31       		.byte	49
+ 530 021b 00       		.byte	0
+ 531 021c 30       		.byte	48
+ 532 021d 00       		.byte	0
+ 533 021e 30       		.byte	48
+ 534 021f 00       		.byte	0
+ 535 0220 01       		.byte	1
+ 536 0221 00       		.byte	0
+ 537              		.global	USBUART_MSOS_CONFIGURATION_DESCR
+ 538 0222 0000     		.align	2
+ 539              		.type	USBUART_MSOS_CONFIGURATION_DESCR, %object
+ 540              		.size	USBUART_MSOS_CONFIGURATION_DESCR, 40
+ 541              	USBUART_MSOS_CONFIGURATION_DESCR:
+ 542 0224 28       		.byte	40
+ 543 0225 00       		.byte	0
+ 544 0226 00       		.byte	0
+ 545 0227 00       		.byte	0
+ 546 0228 00       		.byte	0
+ 547 0229 01       		.byte	1
+ 548 022a 04       		.byte	4
+ 549 022b 00       		.byte	0
+ 550 022c 01       		.byte	1
+ 551 022d 00       		.byte	0
+ 552 022e 00       		.byte	0
+ 553 022f 00       		.byte	0
+ 554 0230 00       		.byte	0
+ 555 0231 00       		.byte	0
+ 556 0232 00       		.byte	0
+ 557 0233 00       		.byte	0
+ 558 0234 00       		.byte	0
+ 559 0235 01       		.byte	1
+ 560 0236 43       		.byte	67
+ 561 0237 59       		.byte	89
+ 562 0238 55       		.byte	85
+ 563 0239 53       		.byte	83
+ 564 023a 42       		.byte	66
+ 565 023b 00       		.byte	0
+ 566 023c 00       		.byte	0
+ 567 023d 00       		.byte	0
+ 568 023e 30       		.byte	48
+ 569 023f 30       		.byte	48
+ 570 0240 30       		.byte	48
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 11
+
+
+ 571 0241 30       		.byte	48
+ 572 0242 31       		.byte	49
+ 573 0243 00       		.byte	0
+ 574 0244 00       		.byte	0
+ 575 0245 00       		.byte	0
+ 576 0246 00       		.byte	0
+ 577 0247 00       		.byte	0
+ 578 0248 00       		.byte	0
+ 579 0249 00       		.byte	0
+ 580 024a 00       		.byte	0
+ 581 024b 00       		.byte	0
+ 582              		.comm	USBUART_idSerialNumberStringDescriptor,34,4
+ 583              		.text
+ 584              	.Letext0:
+ 585              		.file 1 "Generated_Source\\PSoC5\\cytypes.h"
+ 586              		.file 2 "Generated_Source\\PSoC5\\USBUART.h"
+ 587              		.file 3 "Generated_Source\\PSoC5\\USBUART_descr.c"
+ 588              		.section	.debug_info,"",%progbits
+ 589              	.Ldebug_info0:
+ 590 0000 10040000 		.4byte	0x410
+ 591 0004 0400     		.2byte	0x4
+ 592 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 593 000a 04       		.byte	0x4
+ 594 000b 01       		.uleb128 0x1
+ 595 000c 10030000 		.4byte	.LASF49
+ 596 0010 01       		.byte	0x1
+ 597 0011 CD000000 		.4byte	.LASF50
+ 598 0015 80010000 		.4byte	.LASF51
+ 599 0019 00000000 		.4byte	.Ldebug_line0
+ 600 001d 02       		.uleb128 0x2
+ 601 001e 01       		.byte	0x1
+ 602 001f 06       		.byte	0x6
+ 603 0020 F2040000 		.4byte	.LASF0
+ 604 0024 02       		.uleb128 0x2
+ 605 0025 01       		.byte	0x1
+ 606 0026 08       		.byte	0x8
+ 607 0027 59020000 		.4byte	.LASF1
+ 608 002b 02       		.uleb128 0x2
+ 609 002c 02       		.byte	0x2
+ 610 002d 05       		.byte	0x5
+ 611 002e CF040000 		.4byte	.LASF2
+ 612 0032 02       		.uleb128 0x2
+ 613 0033 02       		.byte	0x2
+ 614 0034 07       		.byte	0x7
+ 615 0035 FE040000 		.4byte	.LASF3
+ 616 0039 02       		.uleb128 0x2
+ 617 003a 04       		.byte	0x4
+ 618 003b 05       		.byte	0x5
+ 619 003c E9040000 		.4byte	.LASF4
+ 620 0040 02       		.uleb128 0x2
+ 621 0041 04       		.byte	0x4
+ 622 0042 07       		.byte	0x7
+ 623 0043 9B020000 		.4byte	.LASF5
+ 624 0047 02       		.uleb128 0x2
+ 625 0048 08       		.byte	0x8
+ 626 0049 05       		.byte	0x5
+ 627 004a A3040000 		.4byte	.LASF6
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 12
+
+
+ 628 004e 02       		.uleb128 0x2
+ 629 004f 08       		.byte	0x8
+ 630 0050 07       		.byte	0x7
+ 631 0051 25040000 		.4byte	.LASF7
+ 632 0055 03       		.uleb128 0x3
+ 633 0056 04       		.byte	0x4
+ 634 0057 05       		.byte	0x5
+ 635 0058 696E7400 		.ascii	"int\000"
+ 636 005c 02       		.uleb128 0x2
+ 637 005d 04       		.byte	0x4
+ 638 005e 07       		.byte	0x7
+ 639 005f 0A040000 		.4byte	.LASF8
+ 640 0063 04       		.uleb128 0x4
+ 641 0064 D9040000 		.4byte	.LASF9
+ 642 0068 01       		.byte	0x1
+ 643 0069 9201     		.2byte	0x192
+ 644 006b 24000000 		.4byte	0x24
+ 645 006f 04       		.uleb128 0x4
+ 646 0070 A5030000 		.4byte	.LASF10
+ 647 0074 01       		.byte	0x1
+ 648 0075 9301     		.2byte	0x193
+ 649 0077 32000000 		.4byte	0x32
+ 650 007b 02       		.uleb128 0x2
+ 651 007c 04       		.byte	0x4
+ 652 007d 04       		.byte	0x4
+ 653 007e E7010000 		.4byte	.LASF11
+ 654 0082 02       		.uleb128 0x2
+ 655 0083 08       		.byte	0x8
+ 656 0084 04       		.byte	0x4
+ 657 0085 9E030000 		.4byte	.LASF12
+ 658 0089 02       		.uleb128 0x2
+ 659 008a 01       		.byte	0x1
+ 660 008b 08       		.byte	0x8
+ 661 008c B1040000 		.4byte	.LASF13
+ 662 0090 05       		.uleb128 0x5
+ 663 0091 63000000 		.4byte	0x63
+ 664 0095 02       		.uleb128 0x2
+ 665 0096 04       		.byte	0x4
+ 666 0097 07       		.byte	0x7
+ 667 0098 84040000 		.4byte	.LASF14
+ 668 009c 06       		.uleb128 0x6
+ 669 009d 08       		.byte	0x8
+ 670 009e 02       		.byte	0x2
+ 671 009f A1       		.byte	0xa1
+ 672 00a0 ED000000 		.4byte	0xed
+ 673 00a4 07       		.uleb128 0x7
+ 674 00a5 DF040000 		.4byte	.LASF15
+ 675 00a9 02       		.byte	0x2
+ 676 00aa A3       		.byte	0xa3
+ 677 00ab 63000000 		.4byte	0x63
+ 678 00af 00       		.byte	0
+ 679 00b0 07       		.uleb128 0x7
+ 680 00b1 4E020000 		.4byte	.LASF16
+ 681 00b5 02       		.byte	0x2
+ 682 00b6 A4       		.byte	0xa4
+ 683 00b7 63000000 		.4byte	0x63
+ 684 00bb 01       		.byte	0x1
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 13
+
+
+ 685 00bc 07       		.uleb128 0x7
+ 686 00bd C5020000 		.4byte	.LASF17
+ 687 00c1 02       		.byte	0x2
+ 688 00c2 A5       		.byte	0xa5
+ 689 00c3 63000000 		.4byte	0x63
+ 690 00c7 02       		.byte	0x2
+ 691 00c8 07       		.uleb128 0x7
+ 692 00c9 74020000 		.4byte	.LASF18
+ 693 00cd 02       		.byte	0x2
+ 694 00ce A6       		.byte	0xa6
+ 695 00cf 63000000 		.4byte	0x63
+ 696 00d3 03       		.byte	0x3
+ 697 00d4 07       		.uleb128 0x7
+ 698 00d5 B6040000 		.4byte	.LASF19
+ 699 00d9 02       		.byte	0x2
+ 700 00da A7       		.byte	0xa7
+ 701 00db 6F000000 		.4byte	0x6f
+ 702 00df 04       		.byte	0x4
+ 703 00e0 07       		.uleb128 0x7
+ 704 00e1 18050000 		.4byte	.LASF20
+ 705 00e5 02       		.byte	0x2
+ 706 00e6 A8       		.byte	0xa8
+ 707 00e7 63000000 		.4byte	0x63
+ 708 00eb 06       		.byte	0x6
+ 709 00ec 00       		.byte	0
+ 710 00ed 08       		.uleb128 0x8
+ 711 00ee 7F020000 		.4byte	.LASF21
+ 712 00f2 02       		.byte	0x2
+ 713 00f3 A9       		.byte	0xa9
+ 714 00f4 9C000000 		.4byte	0x9c
+ 715 00f8 06       		.uleb128 0x6
+ 716 00f9 04       		.byte	0x4
+ 717 00fa 02       		.byte	0x2
+ 718 00fb AB       		.byte	0xab
+ 719 00fc 19010000 		.4byte	0x119
+ 720 0100 07       		.uleb128 0x7
+ 721 0101 DA010000 		.4byte	.LASF22
+ 722 0105 02       		.byte	0x2
+ 723 0106 AD       		.byte	0xad
+ 724 0107 63000000 		.4byte	0x63
+ 725 010b 00       		.byte	0
+ 726 010c 07       		.uleb128 0x7
+ 727 010d 11050000 		.4byte	.LASF23
+ 728 0111 02       		.byte	0x2
+ 729 0112 AE       		.byte	0xae
+ 730 0113 6F000000 		.4byte	0x6f
+ 731 0117 02       		.byte	0x2
+ 732 0118 00       		.byte	0
+ 733 0119 08       		.uleb128 0x8
+ 734 011a 68040000 		.4byte	.LASF24
+ 735 011e 02       		.byte	0x2
+ 736 011f AF       		.byte	0xaf
+ 737 0120 F8000000 		.4byte	0xf8
+ 738 0124 06       		.uleb128 0x6
+ 739 0125 0C       		.byte	0xc
+ 740 0126 02       		.byte	0x2
+ 741 0127 B1       		.byte	0xb1
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 14
+
+
+ 742 0128 51010000 		.4byte	0x151
+ 743 012c 07       		.uleb128 0x7
+ 744 012d C7000000 		.4byte	.LASF25
+ 745 0131 02       		.byte	0x2
+ 746 0132 B3       		.byte	0xb3
+ 747 0133 6F000000 		.4byte	0x6f
+ 748 0137 00       		.byte	0
+ 749 0138 07       		.uleb128 0x7
+ 750 0139 E1010000 		.4byte	.LASF26
+ 751 013d 02       		.byte	0x2
+ 752 013e B4       		.byte	0xb4
+ 753 013f 51010000 		.4byte	0x151
+ 754 0143 04       		.byte	0x4
+ 755 0144 07       		.uleb128 0x7
+ 756 0145 2F000000 		.4byte	.LASF27
+ 757 0149 02       		.byte	0x2
+ 758 014a B5       		.byte	0xb5
+ 759 014b 57010000 		.4byte	0x157
+ 760 014f 08       		.byte	0x8
+ 761 0150 00       		.byte	0
+ 762 0151 09       		.uleb128 0x9
+ 763 0152 04       		.byte	0x4
+ 764 0153 90000000 		.4byte	0x90
+ 765 0157 09       		.uleb128 0x9
+ 766 0158 04       		.byte	0x4
+ 767 0159 19010000 		.4byte	0x119
+ 768 015d 08       		.uleb128 0x8
+ 769 015e 67020000 		.4byte	.LASF28
+ 770 0162 02       		.byte	0x2
+ 771 0163 B6       		.byte	0xb6
+ 772 0164 24010000 		.4byte	0x124
+ 773 0168 06       		.uleb128 0x6
+ 774 0169 08       		.byte	0x8
+ 775 016a 02       		.byte	0x2
+ 776 016b B8       		.byte	0xb8
+ 777 016c 87010000 		.4byte	0x187
+ 778 0170 0A       		.uleb128 0xa
+ 779 0171 6300     		.ascii	"c\000"
+ 780 0173 02       		.byte	0x2
+ 781 0174 BA       		.byte	0xba
+ 782 0175 63000000 		.4byte	0x63
+ 783 0179 00       		.byte	0
+ 784 017a 07       		.uleb128 0x7
+ 785 017b 61040000 		.4byte	.LASF29
+ 786 017f 02       		.byte	0x2
+ 787 0180 BB       		.byte	0xbb
+ 788 0181 87010000 		.4byte	0x187
+ 789 0185 04       		.byte	0x4
+ 790 0186 00       		.byte	0
+ 791 0187 09       		.uleb128 0x9
+ 792 0188 04       		.byte	0x4
+ 793 0189 8D010000 		.4byte	0x18d
+ 794 018d 0B       		.uleb128 0xb
+ 795 018e 08       		.uleb128 0x8
+ 796 018f 17040000 		.4byte	.LASF30
+ 797 0193 02       		.byte	0x2
+ 798 0194 BC       		.byte	0xbc
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 15
+
+
+ 799 0195 68010000 		.4byte	0x168
+ 800 0199 0C       		.uleb128 0xc
+ 801 019a 63000000 		.4byte	0x63
+ 802 019e A9010000 		.4byte	0x1a9
+ 803 01a2 0D       		.uleb128 0xd
+ 804 01a3 95000000 		.4byte	0x95
+ 805 01a7 11       		.byte	0x11
+ 806 01a8 00       		.byte	0
+ 807 01a9 0E       		.uleb128 0xe
+ 808 01aa F4000000 		.4byte	.LASF31
+ 809 01ae 03       		.byte	0x3
+ 810 01af 24       		.byte	0x24
+ 811 01b0 BA010000 		.4byte	0x1ba
+ 812 01b4 05       		.uleb128 0x5
+ 813 01b5 03       		.byte	0x3
+ 814 01b6 00000000 		.4byte	USBUART_DEVICE0_DESCR
+ 815 01ba 0F       		.uleb128 0xf
+ 816 01bb 99010000 		.4byte	0x199
+ 817 01bf 0C       		.uleb128 0xc
+ 818 01c0 63000000 		.4byte	0x63
+ 819 01c4 CF010000 		.4byte	0x1cf
+ 820 01c8 0D       		.uleb128 0xd
+ 821 01c9 95000000 		.4byte	0x95
+ 822 01cd 5B       		.byte	0x5b
+ 823 01ce 00       		.byte	0
+ 824 01cf 0E       		.uleb128 0xe
+ 825 01d0 3C040000 		.4byte	.LASF32
+ 826 01d4 03       		.byte	0x3
+ 827 01d5 37       		.byte	0x37
+ 828 01d6 E0010000 		.4byte	0x1e0
+ 829 01da 05       		.uleb128 0x5
+ 830 01db 03       		.byte	0x3
+ 831 01dc 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_DESCR
+ 832 01e0 0F       		.uleb128 0xf
+ 833 01e1 BF010000 		.4byte	0x1bf
+ 834 01e5 0C       		.uleb128 0xc
+ 835 01e6 8E010000 		.4byte	0x18e
+ 836 01ea F5010000 		.4byte	0x1f5
+ 837 01ee 0D       		.uleb128 0xd
+ 838 01ef 95000000 		.4byte	0x95
+ 839 01f3 00       		.byte	0
+ 840 01f4 00       		.byte	0
+ 841 01f5 10       		.uleb128 0x10
+ 842 01f6 0A010000 		.4byte	.LASF33
+ 843 01fa 03       		.byte	0x3
+ 844 01fb 3D01     		.2byte	0x13d
+ 845 01fd 07020000 		.4byte	0x207
+ 846 0201 05       		.uleb128 0x5
+ 847 0202 03       		.byte	0x3
+ 848 0203 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_TABLE
+ 849 0207 0F       		.uleb128 0xf
+ 850 0208 E5010000 		.4byte	0x1e5
+ 851 020c 0C       		.uleb128 0xc
+ 852 020d ED000000 		.4byte	0xed
+ 853 0211 1C020000 		.4byte	0x21c
+ 854 0215 0D       		.uleb128 0xd
+ 855 0216 95000000 		.4byte	0x95
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 16
+
+
+ 856 021a 03       		.byte	0x3
+ 857 021b 00       		.byte	0
+ 858 021c 10       		.uleb128 0x10
+ 859 021d 57000000 		.4byte	.LASF34
+ 860 0221 03       		.byte	0x3
+ 861 0222 4801     		.2byte	0x148
+ 862 0224 2E020000 		.4byte	0x22e
+ 863 0228 05       		.uleb128 0x5
+ 864 0229 03       		.byte	0x3
+ 865 022a 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+ 866 022e 0F       		.uleb128 0xf
+ 867 022f 0C020000 		.4byte	0x20c
+ 868 0233 0C       		.uleb128 0xc
+ 869 0234 63000000 		.4byte	0x63
+ 870 0238 43020000 		.4byte	0x243
+ 871 023c 0D       		.uleb128 0xd
+ 872 023d 95000000 		.4byte	0x95
+ 873 0241 02       		.byte	0x2
+ 874 0242 00       		.byte	0
+ 875 0243 10       		.uleb128 0x10
+ 876 0244 00000000 		.4byte	.LASF35
+ 877 0248 03       		.byte	0x3
+ 878 0249 4F01     		.2byte	0x14f
+ 879 024b 55020000 		.4byte	0x255
+ 880 024f 05       		.uleb128 0x5
+ 881 0250 03       		.byte	0x3
+ 882 0251 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+ 883 0255 0F       		.uleb128 0xf
+ 884 0256 33020000 		.4byte	0x233
+ 885 025a 0C       		.uleb128 0xc
+ 886 025b 8E010000 		.4byte	0x18e
+ 887 025f 6A020000 		.4byte	0x26a
+ 888 0263 0D       		.uleb128 0xd
+ 889 0264 95000000 		.4byte	0x95
+ 890 0268 05       		.byte	0x5
+ 891 0269 00       		.byte	0
+ 892 026a 10       		.uleb128 0x10
+ 893 026b CA020000 		.4byte	.LASF36
+ 894 026f 03       		.byte	0x3
+ 895 0270 5701     		.2byte	0x157
+ 896 0272 7C020000 		.4byte	0x27c
+ 897 0276 05       		.uleb128 0x5
+ 898 0277 03       		.byte	0x3
+ 899 0278 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_TABLE
+ 900 027c 0F       		.uleb128 0xf
+ 901 027d 5A020000 		.4byte	0x25a
+ 902 0281 0C       		.uleb128 0xc
+ 903 0282 8E010000 		.4byte	0x18e
+ 904 0286 91020000 		.4byte	0x291
+ 905 028a 0D       		.uleb128 0xd
+ 906 028b 95000000 		.4byte	0x95
+ 907 028f 02       		.byte	0x2
+ 908 0290 00       		.byte	0
+ 909 0291 10       		.uleb128 0x10
+ 910 0292 8D040000 		.4byte	.LASF37
+ 911 0296 03       		.byte	0x3
+ 912 0297 6301     		.2byte	0x163
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 17
+
+
+ 913 0299 A3020000 		.4byte	0x2a3
+ 914 029d 05       		.uleb128 0x5
+ 915 029e 03       		.byte	0x3
+ 916 029f 00000000 		.4byte	USBUART_DEVICE0_TABLE
+ 917 02a3 0F       		.uleb128 0xf
+ 918 02a4 81020000 		.4byte	0x281
+ 919 02a8 10       		.uleb128 0x10
+ 920 02a9 C1040000 		.4byte	.LASF38
+ 921 02ad 03       		.byte	0x3
+ 922 02ae 6B01     		.2byte	0x16b
+ 923 02b0 BA020000 		.4byte	0x2ba
+ 924 02b4 05       		.uleb128 0x5
+ 925 02b5 03       		.byte	0x3
+ 926 02b6 00000000 		.4byte	USBUART_TABLE
+ 927 02ba 0F       		.uleb128 0xf
+ 928 02bb E5010000 		.4byte	0x1e5
+ 929 02bf 0C       		.uleb128 0xc
+ 930 02c0 63000000 		.4byte	0x63
+ 931 02c4 CF020000 		.4byte	0x2cf
+ 932 02c8 0D       		.uleb128 0xd
+ 933 02c9 95000000 		.4byte	0x95
+ 934 02cd 01       		.byte	0x1
+ 935 02ce 00       		.byte	0
+ 936 02cf 0E       		.uleb128 0xe
+ 937 02d0 ED010000 		.4byte	.LASF39
+ 938 02d4 03       		.byte	0x3
+ 939 02d5 F0       		.byte	0xf0
+ 940 02d6 E0020000 		.4byte	0x2e0
+ 941 02da 05       		.uleb128 0x5
+ 942 02db 03       		.byte	0x3
+ 943 02dc 00000000 		.4byte	USBUART_SN_STRING_DESCRIPTOR
+ 944 02e0 0F       		.uleb128 0xf
+ 945 02e1 BF020000 		.4byte	0x2bf
+ 946 02e5 0C       		.uleb128 0xc
+ 947 02e6 63000000 		.4byte	0x63
+ 948 02ea F5020000 		.4byte	0x2f5
+ 949 02ee 0D       		.uleb128 0xd
+ 950 02ef 95000000 		.4byte	0x95
+ 951 02f3 B4       		.byte	0xb4
+ 952 02f4 00       		.byte	0
+ 953 02f5 0E       		.uleb128 0xe
+ 954 02f6 3C000000 		.4byte	.LASF40
+ 955 02fa 03       		.byte	0x3
+ 956 02fb B6       		.byte	0xb6
+ 957 02fc 06030000 		.4byte	0x306
+ 958 0300 05       		.uleb128 0x5
+ 959 0301 03       		.byte	0x3
+ 960 0302 00000000 		.4byte	USBUART_STRING_DESCRIPTORS
+ 961 0306 0F       		.uleb128 0xf
+ 962 0307 E5020000 		.4byte	0x2e5
+ 963 030b 10       		.uleb128 0x10
+ 964 030c 0A020000 		.4byte	.LASF41
+ 965 0310 03       		.byte	0x3
+ 966 0311 1D01     		.2byte	0x11d
+ 967 0313 19010000 		.4byte	0x119
+ 968 0317 05       		.uleb128 0x5
+ 969 0318 03       		.byte	0x3
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 18
+
+
+ 970 0319 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_SCB
+ 971 031d 0C       		.uleb128 0xc
+ 972 031e 63000000 		.4byte	0x63
+ 973 0322 2D030000 		.4byte	0x32d
+ 974 0326 0D       		.uleb128 0xd
+ 975 0327 95000000 		.4byte	0x95
+ 976 032b 03       		.byte	0x3
+ 977 032c 00       		.byte	0
+ 978 032d 10       		.uleb128 0x10
+ 979 032e AC030000 		.4byte	.LASF42
+ 980 0332 03       		.byte	0x3
+ 981 0333 1E01     		.2byte	0x11e
+ 982 0335 1D030000 		.4byte	0x31d
+ 983 0339 05       		.uleb128 0x5
+ 984 033a 03       		.byte	0x3
+ 985 033b 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_BUF
+ 986 033f 0C       		.uleb128 0xc
+ 987 0340 63000000 		.4byte	0x63
+ 988 0344 4F030000 		.4byte	0x34f
+ 989 0348 0D       		.uleb128 0xd
+ 990 0349 95000000 		.4byte	0x95
+ 991 034d 33       		.byte	0x33
+ 992 034e 00       		.byte	0
+ 993 034f 0E       		.uleb128 0xe
+ 994 0350 EC030000 		.4byte	.LASF43
+ 995 0354 03       		.byte	0x3
+ 996 0355 F9       		.byte	0xf9
+ 997 0356 60030000 		.4byte	0x360
+ 998 035a 05       		.uleb128 0x5
+ 999 035b 03       		.byte	0x3
+ 1000 035c 00000000 		.4byte	USBUART_HIDREPORT_DESCRIPTOR1
+ 1001 0360 0F       		.uleb128 0xf
+ 1002 0361 3F030000 		.4byte	0x33f
+ 1003 0365 0C       		.uleb128 0xc
+ 1004 0366 5D010000 		.4byte	0x15d
+ 1005 036a 75030000 		.4byte	0x375
+ 1006 036e 0D       		.uleb128 0xd
+ 1007 036f 95000000 		.4byte	0x95
+ 1008 0373 00       		.byte	0
+ 1009 0374 00       		.byte	0
+ 1010 0375 10       		.uleb128 0x10
+ 1011 0376 3A010000 		.4byte	.LASF44
+ 1012 037a 03       		.byte	0x3
+ 1013 037b 2401     		.2byte	0x124
+ 1014 037d 87030000 		.4byte	0x387
+ 1015 0381 05       		.uleb128 0x5
+ 1016 0382 03       		.byte	0x3
+ 1017 0383 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_IN_RPT_TABLE
+ 1018 0387 0F       		.uleb128 0xf
+ 1019 0388 65030000 		.4byte	0x365
+ 1020 038c 0C       		.uleb128 0xc
+ 1021 038d 8E010000 		.4byte	0x18e
+ 1022 0391 9C030000 		.4byte	0x39c
+ 1023 0395 0D       		.uleb128 0xd
+ 1024 0396 95000000 		.4byte	0x95
+ 1025 039a 04       		.byte	0x4
+ 1026 039b 00       		.byte	0
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 19
+
+
+ 1027 039c 10       		.uleb128 0x10
+ 1028 039d 88000000 		.4byte	.LASF45
+ 1029 03a1 03       		.byte	0x3
+ 1030 03a2 3101     		.2byte	0x131
+ 1031 03a4 AE030000 		.4byte	0x3ae
+ 1032 03a8 05       		.uleb128 0x5
+ 1033 03a9 03       		.byte	0x3
+ 1034 03aa 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE0_HID_TABLE
+ 1035 03ae 0F       		.uleb128 0xf
+ 1036 03af 8C030000 		.4byte	0x38c
+ 1037 03b3 10       		.uleb128 0x10
+ 1038 03b4 AD020000 		.4byte	.LASF46
+ 1039 03b8 03       		.byte	0x3
+ 1040 03b9 7B01     		.2byte	0x17b
+ 1041 03bb C5030000 		.4byte	0x3c5
+ 1042 03bf 05       		.uleb128 0x5
+ 1043 03c0 03       		.byte	0x3
+ 1044 03c1 00000000 		.4byte	USBUART_MSOS_DESCRIPTOR
+ 1045 03c5 0F       		.uleb128 0xf
+ 1046 03c6 99010000 		.4byte	0x199
+ 1047 03ca 0C       		.uleb128 0xc
+ 1048 03cb 63000000 		.4byte	0x63
+ 1049 03cf DA030000 		.4byte	0x3da
+ 1050 03d3 0D       		.uleb128 0xd
+ 1051 03d4 95000000 		.4byte	0x95
+ 1052 03d8 27       		.byte	0x27
+ 1053 03d9 00       		.byte	0
+ 1054 03da 10       		.uleb128 0x10
+ 1055 03db EF020000 		.4byte	.LASF47
+ 1056 03df 03       		.byte	0x3
+ 1057 03e0 8601     		.2byte	0x186
+ 1058 03e2 EC030000 		.4byte	0x3ec
+ 1059 03e6 05       		.uleb128 0x5
+ 1060 03e7 03       		.byte	0x3
+ 1061 03e8 00000000 		.4byte	USBUART_MSOS_CONFIGURATION_DESCR
+ 1062 03ec 0F       		.uleb128 0xf
+ 1063 03ed CA030000 		.4byte	0x3ca
+ 1064 03f1 0C       		.uleb128 0xc
+ 1065 03f2 63000000 		.4byte	0x63
+ 1066 03f6 01040000 		.4byte	0x401
+ 1067 03fa 0D       		.uleb128 0xd
+ 1068 03fb 95000000 		.4byte	0x95
+ 1069 03ff 21       		.byte	0x21
+ 1070 0400 00       		.byte	0
+ 1071 0401 10       		.uleb128 0x10
+ 1072 0402 1E050000 		.4byte	.LASF48
+ 1073 0406 03       		.byte	0x3
+ 1074 0407 9901     		.2byte	0x199
+ 1075 0409 F1030000 		.4byte	0x3f1
+ 1076 040d 05       		.uleb128 0x5
+ 1077 040e 03       		.byte	0x3
+ 1078 040f 00000000 		.4byte	USBUART_idSerialNumberStringDescriptor
+ 1079 0413 00       		.byte	0
+ 1080              		.section	.debug_abbrev,"",%progbits
+ 1081              	.Ldebug_abbrev0:
+ 1082 0000 01       		.uleb128 0x1
+ 1083 0001 11       		.uleb128 0x11
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 20
+
+
+ 1084 0002 01       		.byte	0x1
+ 1085 0003 25       		.uleb128 0x25
+ 1086 0004 0E       		.uleb128 0xe
+ 1087 0005 13       		.uleb128 0x13
+ 1088 0006 0B       		.uleb128 0xb
+ 1089 0007 03       		.uleb128 0x3
+ 1090 0008 0E       		.uleb128 0xe
+ 1091 0009 1B       		.uleb128 0x1b
+ 1092 000a 0E       		.uleb128 0xe
+ 1093 000b 10       		.uleb128 0x10
+ 1094 000c 17       		.uleb128 0x17
+ 1095 000d 00       		.byte	0
+ 1096 000e 00       		.byte	0
+ 1097 000f 02       		.uleb128 0x2
+ 1098 0010 24       		.uleb128 0x24
+ 1099 0011 00       		.byte	0
+ 1100 0012 0B       		.uleb128 0xb
+ 1101 0013 0B       		.uleb128 0xb
+ 1102 0014 3E       		.uleb128 0x3e
+ 1103 0015 0B       		.uleb128 0xb
+ 1104 0016 03       		.uleb128 0x3
+ 1105 0017 0E       		.uleb128 0xe
+ 1106 0018 00       		.byte	0
+ 1107 0019 00       		.byte	0
+ 1108 001a 03       		.uleb128 0x3
+ 1109 001b 24       		.uleb128 0x24
+ 1110 001c 00       		.byte	0
+ 1111 001d 0B       		.uleb128 0xb
+ 1112 001e 0B       		.uleb128 0xb
+ 1113 001f 3E       		.uleb128 0x3e
+ 1114 0020 0B       		.uleb128 0xb
+ 1115 0021 03       		.uleb128 0x3
+ 1116 0022 08       		.uleb128 0x8
+ 1117 0023 00       		.byte	0
+ 1118 0024 00       		.byte	0
+ 1119 0025 04       		.uleb128 0x4
+ 1120 0026 16       		.uleb128 0x16
+ 1121 0027 00       		.byte	0
+ 1122 0028 03       		.uleb128 0x3
+ 1123 0029 0E       		.uleb128 0xe
+ 1124 002a 3A       		.uleb128 0x3a
+ 1125 002b 0B       		.uleb128 0xb
+ 1126 002c 3B       		.uleb128 0x3b
+ 1127 002d 05       		.uleb128 0x5
+ 1128 002e 49       		.uleb128 0x49
+ 1129 002f 13       		.uleb128 0x13
+ 1130 0030 00       		.byte	0
+ 1131 0031 00       		.byte	0
+ 1132 0032 05       		.uleb128 0x5
+ 1133 0033 35       		.uleb128 0x35
+ 1134 0034 00       		.byte	0
+ 1135 0035 49       		.uleb128 0x49
+ 1136 0036 13       		.uleb128 0x13
+ 1137 0037 00       		.byte	0
+ 1138 0038 00       		.byte	0
+ 1139 0039 06       		.uleb128 0x6
+ 1140 003a 13       		.uleb128 0x13
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 21
+
+
+ 1141 003b 01       		.byte	0x1
+ 1142 003c 0B       		.uleb128 0xb
+ 1143 003d 0B       		.uleb128 0xb
+ 1144 003e 3A       		.uleb128 0x3a
+ 1145 003f 0B       		.uleb128 0xb
+ 1146 0040 3B       		.uleb128 0x3b
+ 1147 0041 0B       		.uleb128 0xb
+ 1148 0042 01       		.uleb128 0x1
+ 1149 0043 13       		.uleb128 0x13
+ 1150 0044 00       		.byte	0
+ 1151 0045 00       		.byte	0
+ 1152 0046 07       		.uleb128 0x7
+ 1153 0047 0D       		.uleb128 0xd
+ 1154 0048 00       		.byte	0
+ 1155 0049 03       		.uleb128 0x3
+ 1156 004a 0E       		.uleb128 0xe
+ 1157 004b 3A       		.uleb128 0x3a
+ 1158 004c 0B       		.uleb128 0xb
+ 1159 004d 3B       		.uleb128 0x3b
+ 1160 004e 0B       		.uleb128 0xb
+ 1161 004f 49       		.uleb128 0x49
+ 1162 0050 13       		.uleb128 0x13
+ 1163 0051 38       		.uleb128 0x38
+ 1164 0052 0B       		.uleb128 0xb
+ 1165 0053 00       		.byte	0
+ 1166 0054 00       		.byte	0
+ 1167 0055 08       		.uleb128 0x8
+ 1168 0056 16       		.uleb128 0x16
+ 1169 0057 00       		.byte	0
+ 1170 0058 03       		.uleb128 0x3
+ 1171 0059 0E       		.uleb128 0xe
+ 1172 005a 3A       		.uleb128 0x3a
+ 1173 005b 0B       		.uleb128 0xb
+ 1174 005c 3B       		.uleb128 0x3b
+ 1175 005d 0B       		.uleb128 0xb
+ 1176 005e 49       		.uleb128 0x49
+ 1177 005f 13       		.uleb128 0x13
+ 1178 0060 00       		.byte	0
+ 1179 0061 00       		.byte	0
+ 1180 0062 09       		.uleb128 0x9
+ 1181 0063 0F       		.uleb128 0xf
+ 1182 0064 00       		.byte	0
+ 1183 0065 0B       		.uleb128 0xb
+ 1184 0066 0B       		.uleb128 0xb
+ 1185 0067 49       		.uleb128 0x49
+ 1186 0068 13       		.uleb128 0x13
+ 1187 0069 00       		.byte	0
+ 1188 006a 00       		.byte	0
+ 1189 006b 0A       		.uleb128 0xa
+ 1190 006c 0D       		.uleb128 0xd
+ 1191 006d 00       		.byte	0
+ 1192 006e 03       		.uleb128 0x3
+ 1193 006f 08       		.uleb128 0x8
+ 1194 0070 3A       		.uleb128 0x3a
+ 1195 0071 0B       		.uleb128 0xb
+ 1196 0072 3B       		.uleb128 0x3b
+ 1197 0073 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 22
+
+
+ 1198 0074 49       		.uleb128 0x49
+ 1199 0075 13       		.uleb128 0x13
+ 1200 0076 38       		.uleb128 0x38
+ 1201 0077 0B       		.uleb128 0xb
+ 1202 0078 00       		.byte	0
+ 1203 0079 00       		.byte	0
+ 1204 007a 0B       		.uleb128 0xb
+ 1205 007b 26       		.uleb128 0x26
+ 1206 007c 00       		.byte	0
+ 1207 007d 00       		.byte	0
+ 1208 007e 00       		.byte	0
+ 1209 007f 0C       		.uleb128 0xc
+ 1210 0080 01       		.uleb128 0x1
+ 1211 0081 01       		.byte	0x1
+ 1212 0082 49       		.uleb128 0x49
+ 1213 0083 13       		.uleb128 0x13
+ 1214 0084 01       		.uleb128 0x1
+ 1215 0085 13       		.uleb128 0x13
+ 1216 0086 00       		.byte	0
+ 1217 0087 00       		.byte	0
+ 1218 0088 0D       		.uleb128 0xd
+ 1219 0089 21       		.uleb128 0x21
+ 1220 008a 00       		.byte	0
+ 1221 008b 49       		.uleb128 0x49
+ 1222 008c 13       		.uleb128 0x13
+ 1223 008d 2F       		.uleb128 0x2f
+ 1224 008e 0B       		.uleb128 0xb
+ 1225 008f 00       		.byte	0
+ 1226 0090 00       		.byte	0
+ 1227 0091 0E       		.uleb128 0xe
+ 1228 0092 34       		.uleb128 0x34
+ 1229 0093 00       		.byte	0
+ 1230 0094 03       		.uleb128 0x3
+ 1231 0095 0E       		.uleb128 0xe
+ 1232 0096 3A       		.uleb128 0x3a
+ 1233 0097 0B       		.uleb128 0xb
+ 1234 0098 3B       		.uleb128 0x3b
+ 1235 0099 0B       		.uleb128 0xb
+ 1236 009a 49       		.uleb128 0x49
+ 1237 009b 13       		.uleb128 0x13
+ 1238 009c 3F       		.uleb128 0x3f
+ 1239 009d 19       		.uleb128 0x19
+ 1240 009e 02       		.uleb128 0x2
+ 1241 009f 18       		.uleb128 0x18
+ 1242 00a0 00       		.byte	0
+ 1243 00a1 00       		.byte	0
+ 1244 00a2 0F       		.uleb128 0xf
+ 1245 00a3 26       		.uleb128 0x26
+ 1246 00a4 00       		.byte	0
+ 1247 00a5 49       		.uleb128 0x49
+ 1248 00a6 13       		.uleb128 0x13
+ 1249 00a7 00       		.byte	0
+ 1250 00a8 00       		.byte	0
+ 1251 00a9 10       		.uleb128 0x10
+ 1252 00aa 34       		.uleb128 0x34
+ 1253 00ab 00       		.byte	0
+ 1254 00ac 03       		.uleb128 0x3
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 23
+
+
+ 1255 00ad 0E       		.uleb128 0xe
+ 1256 00ae 3A       		.uleb128 0x3a
+ 1257 00af 0B       		.uleb128 0xb
+ 1258 00b0 3B       		.uleb128 0x3b
+ 1259 00b1 05       		.uleb128 0x5
+ 1260 00b2 49       		.uleb128 0x49
+ 1261 00b3 13       		.uleb128 0x13
+ 1262 00b4 3F       		.uleb128 0x3f
+ 1263 00b5 19       		.uleb128 0x19
+ 1264 00b6 02       		.uleb128 0x2
+ 1265 00b7 18       		.uleb128 0x18
+ 1266 00b8 00       		.byte	0
+ 1267 00b9 00       		.byte	0
+ 1268 00ba 00       		.byte	0
+ 1269              		.section	.debug_aranges,"",%progbits
+ 1270 0000 14000000 		.4byte	0x14
+ 1271 0004 0200     		.2byte	0x2
+ 1272 0006 00000000 		.4byte	.Ldebug_info0
+ 1273 000a 04       		.byte	0x4
+ 1274 000b 00       		.byte	0
+ 1275 000c 0000     		.2byte	0
+ 1276 000e 0000     		.2byte	0
+ 1277 0010 00000000 		.4byte	0
+ 1278 0014 00000000 		.4byte	0
+ 1279              		.section	.debug_line,"",%progbits
+ 1280              	.Ldebug_line0:
+ 1281 0000 5D000000 		.section	.debug_str,"MS",%progbits,1
+ 1281      02005700 
+ 1281      00000201 
+ 1281      FB0E0D00 
+ 1281      01010101 
+ 1282              	.LASF35:
+ 1283 0000 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS\000"
+ 1283      4152545F 
+ 1283      44455649 
+ 1283      4345305F 
+ 1283      434F4E46 
+ 1284              	.LASF27:
+ 1285 002f 70537461 		.ascii	"pStatusBlock\000"
+ 1285      74757342 
+ 1285      6C6F636B 
+ 1285      00
+ 1286              	.LASF40:
+ 1287 003c 55534255 		.ascii	"USBUART_STRING_DESCRIPTORS\000"
+ 1287      4152545F 
+ 1287      53545249 
+ 1287      4E475F44 
+ 1287      45534352 
+ 1288              	.LASF34:
+ 1289 0057 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE\000"
+ 1289      4152545F 
+ 1289      44455649 
+ 1289      4345305F 
+ 1289      434F4E46 
+ 1290              	.LASF45:
+ 1291 0088 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE"
+ 1291      4152545F 
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 24
+
+
+ 1291      44455649 
+ 1291      4345305F 
+ 1291      434F4E46 
+ 1292 00bb 305F4849 		.ascii	"0_HID_TABLE\000"
+ 1292      445F5441 
+ 1292      424C4500 
+ 1293              	.LASF25:
+ 1294 00c7 636F756E 		.ascii	"count\000"
+ 1294      7400
+ 1295              	.LASF50:
+ 1296 00cd 47656E65 		.ascii	"Generated_Source\\PSoC5\\USBUART_descr.c\000"
+ 1296      72617465 
+ 1296      645F536F 
+ 1296      75726365 
+ 1296      5C50536F 
+ 1297              	.LASF31:
+ 1298 00f4 55534255 		.ascii	"USBUART_DEVICE0_DESCR\000"
+ 1298      4152545F 
+ 1298      44455649 
+ 1298      4345305F 
+ 1298      44455343 
+ 1299              	.LASF33:
+ 1300 010a 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_TABLE\000"
+ 1300      4152545F 
+ 1300      44455649 
+ 1300      4345305F 
+ 1300      434F4E46 
+ 1301              	.LASF44:
+ 1302 013a 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE"
+ 1302      4152545F 
+ 1302      44455649 
+ 1302      4345305F 
+ 1302      434F4E46 
+ 1303 016d 305F4849 		.ascii	"0_HID_IN_RPT_TABLE\000"
+ 1303      445F494E 
+ 1303      5F525054 
+ 1303      5F544142 
+ 1303      4C4500
+ 1304              	.LASF51:
+ 1305 0180 433A5C55 		.ascii	"C:\\Users\\Keshuai\\Documents\\PSoC Creator\\ADC_Si"
+ 1305      73657273 
+ 1305      5C4B6573 
+ 1305      68756169 
+ 1305      5C446F63 
+ 1306 01ae 6E676C65 		.ascii	"ngleEndedMode01\\ADC_SingleEndedMode02.cydsn\000"
+ 1306      456E6465 
+ 1306      644D6F64 
+ 1306      6530315C 
+ 1306      4144435F 
+ 1307              	.LASF22:
+ 1308 01da 73746174 		.ascii	"status\000"
+ 1308      757300
+ 1309              	.LASF26:
+ 1310 01e1 70446174 		.ascii	"pData\000"
+ 1310      6100
+ 1311              	.LASF11:
+ 1312 01e7 666C6F61 		.ascii	"float\000"
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 25
+
+
+ 1312      7400
+ 1313              	.LASF39:
+ 1314 01ed 55534255 		.ascii	"USBUART_SN_STRING_DESCRIPTOR\000"
+ 1314      4152545F 
+ 1314      534E5F53 
+ 1314      5452494E 
+ 1314      475F4445 
+ 1315              	.LASF41:
+ 1316 020a 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE"
+ 1316      4152545F 
+ 1316      44455649 
+ 1316      4345305F 
+ 1316      434F4E46 
+ 1317 023d 305F4849 		.ascii	"0_HID_IN_RPT_SCB\000"
+ 1317      445F494E 
+ 1317      5F525054 
+ 1317      5F534342 
+ 1317      00
+ 1318              	.LASF16:
+ 1319 024e 616C7453 		.ascii	"altSetting\000"
+ 1319      65747469 
+ 1319      6E6700
+ 1320              	.LASF1:
+ 1321 0259 756E7369 		.ascii	"unsigned char\000"
+ 1321      676E6564 
+ 1321      20636861 
+ 1321      7200
+ 1322              	.LASF28:
+ 1323 0267 545F5553 		.ascii	"T_USBUART_TD\000"
+ 1323      42554152 
+ 1323      545F5444 
+ 1323      00
+ 1324              	.LASF18:
+ 1325 0274 61747472 		.ascii	"attributes\000"
+ 1325      69627574 
+ 1325      657300
+ 1326              	.LASF21:
+ 1327 027f 545F5553 		.ascii	"T_USBUART_EP_SETTINGS_BLOCK\000"
+ 1327      42554152 
+ 1327      545F4550 
+ 1327      5F534554 
+ 1327      54494E47 
+ 1328              	.LASF5:
+ 1329 029b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1329      20756E73 
+ 1329      69676E65 
+ 1329      6420696E 
+ 1329      7400
+ 1330              	.LASF46:
+ 1331 02ad 55534255 		.ascii	"USBUART_MSOS_DESCRIPTOR\000"
+ 1331      4152545F 
+ 1331      4D534F53 
+ 1331      5F444553 
+ 1331      43524950 
+ 1332              	.LASF17:
+ 1333 02c5 61646472 		.ascii	"addr\000"
+ 1333      00
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 26
+
+
+ 1334              	.LASF36:
+ 1335 02ca 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_TABLE\000"
+ 1335      4152545F 
+ 1335      44455649 
+ 1335      4345305F 
+ 1335      434F4E46 
+ 1336              	.LASF47:
+ 1337 02ef 55534255 		.ascii	"USBUART_MSOS_CONFIGURATION_DESCR\000"
+ 1337      4152545F 
+ 1337      4D534F53 
+ 1337      5F434F4E 
+ 1337      46494755 
+ 1338              	.LASF49:
+ 1339 0310 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1339      4320342E 
+ 1339      392E3320 
+ 1339      32303135 
+ 1339      30333033 
+ 1340 0343 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1340      20726576 
+ 1340      6973696F 
+ 1340      6E203232 
+ 1340      31323230 
+ 1341 0376 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1341      66756E63 
+ 1341      74696F6E 
+ 1341      2D736563 
+ 1341      74696F6E 
+ 1342              	.LASF12:
+ 1343 039e 646F7562 		.ascii	"double\000"
+ 1343      6C6500
+ 1344              	.LASF10:
+ 1345 03a5 75696E74 		.ascii	"uint16\000"
+ 1345      313600
+ 1346              	.LASF42:
+ 1347 03ac 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_INTERFACE2_ALTERNATE"
+ 1347      4152545F 
+ 1347      44455649 
+ 1347      4345305F 
+ 1347      434F4E46 
+ 1348 03df 305F4849 		.ascii	"0_HID_IN_BUF\000"
+ 1348      445F494E 
+ 1348      5F425546 
+ 1348      00
+ 1349              	.LASF43:
+ 1350 03ec 55534255 		.ascii	"USBUART_HIDREPORT_DESCRIPTOR1\000"
+ 1350      4152545F 
+ 1350      48494452 
+ 1350      45504F52 
+ 1350      545F4445 
+ 1351              	.LASF8:
+ 1352 040a 756E7369 		.ascii	"unsigned int\000"
+ 1352      676E6564 
+ 1352      20696E74 
+ 1352      00
+ 1353              	.LASF30:
+ 1354 0417 545F5553 		.ascii	"T_USBUART_LUT\000"
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 27
+
+
+ 1354      42554152 
+ 1354      545F4C55 
+ 1354      5400
+ 1355              	.LASF7:
+ 1356 0425 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1356      206C6F6E 
+ 1356      6720756E 
+ 1356      7369676E 
+ 1356      65642069 
+ 1357              	.LASF32:
+ 1358 043c 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_DESCR\000"
+ 1358      4152545F 
+ 1358      44455649 
+ 1358      4345305F 
+ 1358      434F4E46 
+ 1359              	.LASF29:
+ 1360 0461 705F6C69 		.ascii	"p_list\000"
+ 1360      737400
+ 1361              	.LASF24:
+ 1362 0468 545F5553 		.ascii	"T_USBUART_XFER_STATUS_BLOCK\000"
+ 1362      42554152 
+ 1362      545F5846 
+ 1362      45525F53 
+ 1362      54415455 
+ 1363              	.LASF14:
+ 1364 0484 73697A65 		.ascii	"sizetype\000"
+ 1364      74797065 
+ 1364      00
+ 1365              	.LASF37:
+ 1366 048d 55534255 		.ascii	"USBUART_DEVICE0_TABLE\000"
+ 1366      4152545F 
+ 1366      44455649 
+ 1366      4345305F 
+ 1366      5441424C 
+ 1367              	.LASF6:
+ 1368 04a3 6C6F6E67 		.ascii	"long long int\000"
+ 1368      206C6F6E 
+ 1368      6720696E 
+ 1368      7400
+ 1369              	.LASF13:
+ 1370 04b1 63686172 		.ascii	"char\000"
+ 1370      00
+ 1371              	.LASF19:
+ 1372 04b6 62756666 		.ascii	"bufferSize\000"
+ 1372      65725369 
+ 1372      7A6500
+ 1373              	.LASF38:
+ 1374 04c1 55534255 		.ascii	"USBUART_TABLE\000"
+ 1374      4152545F 
+ 1374      5441424C 
+ 1374      4500
+ 1375              	.LASF2:
+ 1376 04cf 73686F72 		.ascii	"short int\000"
+ 1376      7420696E 
+ 1376      7400
+ 1377              	.LASF9:
+ 1378 04d9 75696E74 		.ascii	"uint8\000"
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccp58ZQJ.s 			page 28
+
+
+ 1378      3800
+ 1379              	.LASF15:
+ 1380 04df 696E7465 		.ascii	"interface\000"
+ 1380      72666163 
+ 1380      6500
+ 1381              	.LASF4:
+ 1382 04e9 6C6F6E67 		.ascii	"long int\000"
+ 1382      20696E74 
+ 1382      00
+ 1383              	.LASF0:
+ 1384 04f2 7369676E 		.ascii	"signed char\000"
+ 1384      65642063 
+ 1384      68617200 
+ 1385              	.LASF3:
+ 1386 04fe 73686F72 		.ascii	"short unsigned int\000"
+ 1386      7420756E 
+ 1386      7369676E 
+ 1386      65642069 
+ 1386      6E7400
+ 1387              	.LASF23:
+ 1388 0511 6C656E67 		.ascii	"length\000"
+ 1388      746800
+ 1389              	.LASF20:
+ 1390 0518 624D6973 		.ascii	"bMisc\000"
+ 1390      6300
+ 1391              	.LASF48:
+ 1392 051e 55534255 		.ascii	"USBUART_idSerialNumberStringDescriptor\000"
+ 1392      4152545F 
+ 1392      69645365 
+ 1392      7269616C 
+ 1392      4E756D62 
+ 1393              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

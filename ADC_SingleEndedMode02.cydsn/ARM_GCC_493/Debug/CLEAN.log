@@ -1,0 +1,6 @@
+--------------- Clean Started: 03/07/2017 00:27:43 Project: ADC_SingleEndedMode02, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
+Deleting file ".\ADC_SingleEndedMode02.cycdx"
+Deleting file ".\ADC_SingleEndedMode02.svd"
+Deleting file ".\ADC_SingleEndedMode02.rpt"
+Deleting file ".\ADC_SingleEndedMode02_timing.html"
+--------------- Clean Succeeded: 03/07/2017 00:27:43 ---------------

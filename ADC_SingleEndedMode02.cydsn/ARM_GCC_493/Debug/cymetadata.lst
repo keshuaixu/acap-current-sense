@@ -1,0 +1,732 @@
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_meta_configecc
+  19              		.section	.cyconfigecc,"a",%progbits
+  20              		.align	2
+  21              		.type	cy_meta_configecc, %object
+  22              		.size	cy_meta_configecc, 232
+  23              	cy_meta_configecc:
+  24 0000 01       		.byte	1
+  25 0001 45       		.byte	69
+  26 0002 00       		.byte	0
+  27 0003 40       		.byte	64
+  28 0004 01       		.byte	1
+  29 0005 52       		.byte	82
+  30 0006 00       		.byte	0
+  31 0007 40       		.byte	64
+  32 0008 01       		.byte	1
+  33 0009 09       		.byte	9
+  34 000a 01       		.byte	1
+  35 000b 40       		.byte	64
+  36 000c 04       		.byte	4
+  37 000d 0A       		.byte	10
+  38 000e 01       		.byte	1
+  39 000f 40       		.byte	64
+  40 0010 01       		.byte	1
+  41 0011 0B       		.byte	11
+  42 0012 01       		.byte	1
+  43 0013 40       		.byte	64
+  44 0014 01       		.byte	1
+  45 0015 15       		.byte	21
+  46 0016 01       		.byte	1
+  47 0017 40       		.byte	64
+  48 0018 02       		.byte	2
+  49 0019 17       		.byte	23
+  50 001a 01       		.byte	1
+  51 001b 40       		.byte	64
+  52 001c 02       		.byte	2
+  53 001d 19       		.byte	25
+  54 001e 01       		.byte	1
+  55 001f 40       		.byte	64
+  56 0020 01       		.byte	1
+  57 0021 1B       		.byte	27
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 2
+
+
+  58 0022 01       		.byte	1
+  59 0023 40       		.byte	64
+  60 0024 03       		.byte	3
+  61 0025 40       		.byte	64
+  62 0026 01       		.byte	1
+  63 0027 40       		.byte	64
+  64 0028 03       		.byte	3
+  65 0029 41       		.byte	65
+  66 002a 01       		.byte	1
+  67 002b 40       		.byte	64
+  68 002c 03       		.byte	3
+  69 002d 42       		.byte	66
+  70 002e 01       		.byte	1
+  71 002f 40       		.byte	64
+  72 0030 03       		.byte	3
+  73 0031 43       		.byte	67
+  74 0032 01       		.byte	1
+  75 0033 40       		.byte	64
+  76 0034 02       		.byte	2
+  77 0035 44       		.byte	68
+  78 0036 01       		.byte	1
+  79 0037 40       		.byte	64
+  80 0038 01       		.byte	1
+  81 0039 45       		.byte	69
+  82 003a 01       		.byte	1
+  83 003b 40       		.byte	64
+  84 003c 03       		.byte	3
+  85 003d 46       		.byte	70
+  86 003e 01       		.byte	1
+  87 003f 40       		.byte	64
+  88 0040 07       		.byte	7
+  89 0041 47       		.byte	71
+  90 0042 01       		.byte	1
+  91 0043 40       		.byte	64
+  92 0044 06       		.byte	6
+  93 0045 48       		.byte	72
+  94 0046 01       		.byte	1
+  95 0047 40       		.byte	64
+  96 0048 01       		.byte	1
+  97 0049 49       		.byte	73
+  98 004a 01       		.byte	1
+  99 004b 40       		.byte	64
+ 100 004c 03       		.byte	3
+ 101 004d 4C       		.byte	76
+ 102 004e 01       		.byte	1
+ 103 004f 40       		.byte	64
+ 104 0050 02       		.byte	2
+ 105 0051 4D       		.byte	77
+ 106 0052 01       		.byte	1
+ 107 0053 40       		.byte	64
+ 108 0054 01       		.byte	1
+ 109 0055 51       		.byte	81
+ 110 0056 01       		.byte	1
+ 111 0057 40       		.byte	64
+ 112 0058 7E       		.byte	126
+ 113 0059 02       		.byte	2
+ 114 005a 7C       		.byte	124
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 3
+
+
+ 115 005b 40       		.byte	64
+ 116 005c B5       		.byte	-75
+ 117 005d 02       		.byte	2
+ 118 005e B8       		.byte	-72
+ 119 005f 02       		.byte	2
+ 120 0060 BE       		.byte	-66
+ 121 0061 01       		.byte	1
+ 122 0062 D8       		.byte	-40
+ 123 0063 04       		.byte	4
+ 124 0064 DF       		.byte	-33
+ 125 0065 01       		.byte	1
+ 126 0066 1D       		.byte	29
+ 127 0067 02       		.byte	2
+ 128 0068 EC       		.byte	-20
+ 129 0069 10       		.byte	16
+ 130 006a EA       		.byte	-22
+ 131 006b 02       		.byte	2
+ 132 006c EE       		.byte	-18
+ 133 006d 0A       		.byte	10
+ 134 006e EA       		.byte	-22
+ 135 006f 02       		.byte	2
+ 136 0070 EE       		.byte	-18
+ 137 0071 0A       		.byte	10
+ 138 0072 EC       		.byte	-20
+ 139 0073 10       		.byte	16
+ 140 0074 33       		.byte	51
+ 141 0075 81       		.byte	-127
+ 142 0076 36       		.byte	54
+ 143 0077 40       		.byte	64
+ 144 0078 CC       		.byte	-52
+ 145 0079 70       		.byte	112
+ 146 007a 9F       		.byte	-97
+ 147 007b 01       		.byte	1
+ 148 007c A6       		.byte	-90
+ 149 007d 40       		.byte	64
+ 150 007e A7       		.byte	-89
+ 151 007f 80       		.byte	-128
+ 152 0080 9F       		.byte	-97
+ 153 0081 01       		.byte	1
+ 154 0082 A6       		.byte	-90
+ 155 0083 40       		.byte	64
+ 156 0084 A7       		.byte	-89
+ 157 0085 80       		.byte	-128
+ 158 0086 9F       		.byte	-97
+ 159 0087 01       		.byte	1
+ 160 0088 A6       		.byte	-90
+ 161 0089 40       		.byte	64
+ 162 008a A7       		.byte	-89
+ 163 008b 80       		.byte	-128
+ 164 008c 7C       		.byte	124
+ 165 008d 01       		.byte	1
+ 166 008e DE       		.byte	-34
+ 167 008f 01       		.byte	1
+ 168 0090 94       		.byte	-108
+ 169 0091 01       		.byte	1
+ 170 0092 45       		.byte	69
+ 171 0093 08       		.byte	8
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 4
+
+
+ 172 0094 94       		.byte	-108
+ 173 0095 01       		.byte	1
+ 174 0096 D0       		.byte	-48
+ 175 0097 01       		.byte	1
+ 176 0098 08       		.byte	8
+ 177 0099 08       		.byte	8
+ 178 009a 0B       		.byte	11
+ 179 009b 04       		.byte	4
+ 180 009c 0F       		.byte	15
+ 181 009d 40       		.byte	64
+ 182 009e A5       		.byte	-91
+ 183 009f 08       		.byte	8
+ 184 00a0 B4       		.byte	-76
+ 185 00a1 01       		.byte	1
+ 186 00a2 C2       		.byte	-62
+ 187 00a3 0E       		.byte	14
+ 188 00a4 EC       		.byte	-20
+ 189 00a5 08       		.byte	8
+ 190 00a6 25       		.byte	37
+ 191 00a7 10       		.byte	16
+ 192 00a8 AE       		.byte	-82
+ 193 00a9 40       		.byte	64
+ 194 00aa AF       		.byte	-81
+ 195 00ab 81       		.byte	-127
+ 196 00ac C8       		.byte	-56
+ 197 00ad 20       		.byte	32
+ 198 00ae EA       		.byte	-22
+ 199 00af 40       		.byte	64
+ 200 00b0 EE       		.byte	-18
+ 201 00b1 50       		.byte	80
+ 202 00b2 B5       		.byte	-75
+ 203 00b3 10       		.byte	16
+ 204 00b4 A5       		.byte	-91
+ 205 00b5 08       		.byte	8
+ 206 00b6 AC       		.byte	-84
+ 207 00b7 08       		.byte	8
+ 208 00b8 AF       		.byte	-81
+ 209 00b9 44       		.byte	68
+ 210 00ba B5       		.byte	-75
+ 211 00bb 08       		.byte	8
+ 212 00bc EC       		.byte	-20
+ 213 00bd 08       		.byte	8
+ 214 00be 00       		.byte	0
+ 215 00bf 2A       		.byte	42
+ 216 00c0 00       		.byte	0
+ 217 00c1 00       		.byte	0
+ 218 00c2 00       		.byte	0
+ 219 00c3 00       		.byte	0
+ 220 00c4 00       		.byte	0
+ 221 00c5 00       		.byte	0
+ 222 00c6 C0       		.byte	-64
+ 223 00c7 00       		.byte	0
+ 224 00c8 40       		.byte	64
+ 225 00c9 00       		.byte	0
+ 226 00ca 00       		.byte	0
+ 227 00cb 00       		.byte	0
+ 228 00cc 00       		.byte	0
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 5
+
+
+ 229 00cd 00       		.byte	0
+ 230 00ce 00       		.byte	0
+ 231 00cf 00       		.byte	0
+ 232 00d0 C0       		.byte	-64
+ 233 00d1 00       		.byte	0
+ 234 00d2 00       		.byte	0
+ 235 00d3 00       		.byte	0
+ 236 00d4 00       		.byte	0
+ 237 00d5 0B       		.byte	11
+ 238 00d6 0B       		.byte	11
+ 239 00d7 00       		.byte	0
+ 240 00d8 00       		.byte	0
+ 241 00d9 00       		.byte	0
+ 242 00da 00       		.byte	0
+ 243 00db 00       		.byte	0
+ 244 00dc 00       		.byte	0
+ 245 00dd 7F       		.byte	127
+ 246 00de 7F       		.byte	127
+ 247 00df 00       		.byte	0
+ 248 00e0 00       		.byte	0
+ 249 00e1 00       		.byte	0
+ 250 00e2 00       		.byte	0
+ 251 00e3 00       		.byte	0
+ 252 00e4 07       		.byte	7
+ 253 00e5 00       		.byte	0
+ 254 00e6 18       		.byte	24
+ 255 00e7 01       		.byte	1
+ 256              		.global	cy_meta_custnvl
+ 257              		.section	.cycustnvl,"a",%progbits
+ 258              		.align	2
+ 259              		.type	cy_meta_custnvl, %object
+ 260              		.size	cy_meta_custnvl, 4
+ 261              	cy_meta_custnvl:
+ 262 0000 00       		.byte	0
+ 263 0001 00       		.byte	0
+ 264 0002 40       		.byte	64
+ 265 0003 05       		.byte	5
+ 266              		.global	cy_meta_wonvl
+ 267              		.section	.cywolatch,"a",%progbits
+ 268              		.align	2
+ 269              		.type	cy_meta_wonvl, %object
+ 270              		.size	cy_meta_wonvl, 4
+ 271              	cy_meta_wonvl:
+ 272 0000 BC       		.byte	-68
+ 273 0001 90       		.byte	-112
+ 274 0002 AC       		.byte	-84
+ 275 0003 AF       		.byte	-81
+ 276              		.global	cy_meta_flashprotect
+ 277              		.section	.cyflashprotect,"a",%progbits
+ 278              		.align	2
+ 279              		.type	cy_meta_flashprotect, %object
+ 280              		.size	cy_meta_flashprotect, 256
+ 281              	cy_meta_flashprotect:
+ 282 0000 00000000 		.space	256
+ 282      00000000 
+ 282      00000000 
+ 282      00000000 
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 6
+
+
+ 282      00000000 
+ 283              		.global	cy_metadata
+ 284              		.section	.cymeta,"a",%progbits
+ 285              		.align	2
+ 286              		.type	cy_metadata, %object
+ 287              		.size	cy_metadata, 12
+ 288              	cy_metadata:
+ 289 0000 00       		.byte	0
+ 290 0001 01       		.byte	1
+ 291 0002 2E       		.byte	46
+ 292 0003 16       		.byte	22
+ 293 0004 10       		.byte	16
+ 294 0005 69       		.byte	105
+ 295 0006 00       		.byte	0
+ 296 0007 01       		.byte	1
+ 297 0008 00       		.byte	0
+ 298 0009 00       		.byte	0
+ 299 000a 00       		.byte	0
+ 300 000b 00       		.byte	0
+ 301              		.text
+ 302              	.Letext0:
+ 303              		.file 1 "Generated_Source\\PSoC5\\cymetadata.c"
+ 304              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 305              		.section	.debug_info,"",%progbits
+ 306              	.Ldebug_info0:
+ 307 0000 36010000 		.4byte	0x136
+ 308 0004 0400     		.2byte	0x4
+ 309 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 310 000a 04       		.byte	0x4
+ 311 000b 01       		.uleb128 0x1
+ 312 000c 00000000 		.4byte	.LASF18
+ 313 0010 01       		.byte	0x1
+ 314 0011 DE010000 		.4byte	.LASF19
+ 315 0015 8E000000 		.4byte	.LASF20
+ 316 0019 00000000 		.4byte	.Ldebug_line0
+ 317 001d 02       		.uleb128 0x2
+ 318 001e 01       		.byte	0x1
+ 319 001f 06       		.byte	0x6
+ 320 0020 D2010000 		.4byte	.LASF0
+ 321 0024 02       		.uleb128 0x2
+ 322 0025 01       		.byte	0x1
+ 323 0026 08       		.byte	0x8
+ 324 0027 FA000000 		.4byte	.LASF1
+ 325 002b 02       		.uleb128 0x2
+ 326 002c 02       		.byte	0x2
+ 327 002d 05       		.byte	0x5
+ 328 002e B9010000 		.4byte	.LASF2
+ 329 0032 02       		.uleb128 0x2
+ 330 0033 02       		.byte	0x2
+ 331 0034 07       		.byte	0x7
+ 332 0035 1A010000 		.4byte	.LASF3
+ 333 0039 02       		.uleb128 0x2
+ 334 003a 04       		.byte	0x4
+ 335 003b 05       		.byte	0x5
+ 336 003c C9010000 		.4byte	.LASF4
+ 337 0040 02       		.uleb128 0x2
+ 338 0041 04       		.byte	0x4
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 7
+
+
+ 339 0042 07       		.byte	0x7
+ 340 0043 08010000 		.4byte	.LASF5
+ 341 0047 02       		.uleb128 0x2
+ 342 0048 08       		.byte	0x8
+ 343 0049 05       		.byte	0x5
+ 344 004a A6010000 		.4byte	.LASF6
+ 345 004e 02       		.uleb128 0x2
+ 346 004f 08       		.byte	0x8
+ 347 0050 07       		.byte	0x7
+ 348 0051 63010000 		.4byte	.LASF7
+ 349 0055 03       		.uleb128 0x3
+ 350 0056 04       		.byte	0x4
+ 351 0057 05       		.byte	0x5
+ 352 0058 696E7400 		.ascii	"int\000"
+ 353 005c 02       		.uleb128 0x2
+ 354 005d 04       		.byte	0x4
+ 355 005e 07       		.byte	0x7
+ 356 005f 56010000 		.4byte	.LASF8
+ 357 0063 04       		.uleb128 0x4
+ 358 0064 C3010000 		.4byte	.LASF21
+ 359 0068 02       		.byte	0x2
+ 360 0069 9201     		.2byte	0x192
+ 361 006b 24000000 		.4byte	0x24
+ 362 006f 02       		.uleb128 0x2
+ 363 0070 04       		.byte	0x4
+ 364 0071 04       		.byte	0x4
+ 365 0072 F4000000 		.4byte	.LASF9
+ 366 0076 02       		.uleb128 0x2
+ 367 0077 08       		.byte	0x8
+ 368 0078 04       		.byte	0x4
+ 369 0079 2D010000 		.4byte	.LASF10
+ 370 007d 02       		.uleb128 0x2
+ 371 007e 01       		.byte	0x1
+ 372 007f 08       		.byte	0x8
+ 373 0080 B4010000 		.4byte	.LASF11
+ 374 0084 05       		.uleb128 0x5
+ 375 0085 63000000 		.4byte	0x63
+ 376 0089 94000000 		.4byte	0x94
+ 377 008d 06       		.uleb128 0x6
+ 378 008e 94000000 		.4byte	0x94
+ 379 0092 E7       		.byte	0xe7
+ 380 0093 00       		.byte	0
+ 381 0094 02       		.uleb128 0x2
+ 382 0095 04       		.byte	0x4
+ 383 0096 07       		.byte	0x7
+ 384 0097 9D010000 		.4byte	.LASF12
+ 385 009b 07       		.uleb128 0x7
+ 386 009c 44010000 		.4byte	.LASF13
+ 387 00a0 01       		.byte	0x1
+ 388 00a1 1F       		.byte	0x1f
+ 389 00a2 AC000000 		.4byte	0xac
+ 390 00a6 05       		.uleb128 0x5
+ 391 00a7 03       		.byte	0x3
+ 392 00a8 00000000 		.4byte	cy_meta_configecc
+ 393 00ac 08       		.uleb128 0x8
+ 394 00ad 84000000 		.4byte	0x84
+ 395 00b1 05       		.uleb128 0x5
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 8
+
+
+ 396 00b2 63000000 		.4byte	0x63
+ 397 00b6 C1000000 		.4byte	0xc1
+ 398 00ba 06       		.uleb128 0x6
+ 399 00bb 94000000 		.4byte	0x94
+ 400 00bf 03       		.byte	0x3
+ 401 00c0 00       		.byte	0
+ 402 00c1 07       		.uleb128 0x7
+ 403 00c2 34010000 		.4byte	.LASF14
+ 404 00c6 01       		.byte	0x1
+ 405 00c7 49       		.byte	0x49
+ 406 00c8 D2000000 		.4byte	0xd2
+ 407 00cc 05       		.uleb128 0x5
+ 408 00cd 03       		.byte	0x3
+ 409 00ce 00000000 		.4byte	cy_meta_custnvl
+ 410 00d2 08       		.uleb128 0x8
+ 411 00d3 B1000000 		.4byte	0xb1
+ 412 00d7 07       		.uleb128 0x7
+ 413 00d8 8F010000 		.4byte	.LASF15
+ 414 00dc 01       		.byte	0x1
+ 415 00dd 57       		.byte	0x57
+ 416 00de E8000000 		.4byte	0xe8
+ 417 00e2 05       		.uleb128 0x5
+ 418 00e3 03       		.byte	0x3
+ 419 00e4 00000000 		.4byte	cy_meta_wonvl
+ 420 00e8 08       		.uleb128 0x8
+ 421 00e9 B1000000 		.4byte	0xb1
+ 422 00ed 05       		.uleb128 0x5
+ 423 00ee 63000000 		.4byte	0x63
+ 424 00f2 FD000000 		.4byte	0xfd
+ 425 00f6 06       		.uleb128 0x6
+ 426 00f7 94000000 		.4byte	0x94
+ 427 00fb FF       		.byte	0xff
+ 428 00fc 00       		.byte	0
+ 429 00fd 07       		.uleb128 0x7
+ 430 00fe 7A010000 		.4byte	.LASF16
+ 431 0102 01       		.byte	0x1
+ 432 0103 65       		.byte	0x65
+ 433 0104 0E010000 		.4byte	0x10e
+ 434 0108 05       		.uleb128 0x5
+ 435 0109 03       		.byte	0x3
+ 436 010a 00000000 		.4byte	cy_meta_flashprotect
+ 437 010e 08       		.uleb128 0x8
+ 438 010f ED000000 		.4byte	0xed
+ 439 0113 05       		.uleb128 0x5
+ 440 0114 63000000 		.4byte	0x63
+ 441 0118 23010000 		.4byte	0x123
+ 442 011c 06       		.uleb128 0x6
+ 443 011d 94000000 		.4byte	0x94
+ 444 0121 0B       		.byte	0xb
+ 445 0122 00       		.byte	0
+ 446 0123 07       		.uleb128 0x7
+ 447 0124 E8000000 		.4byte	.LASF17
+ 448 0128 01       		.byte	0x1
+ 449 0129 92       		.byte	0x92
+ 450 012a 34010000 		.4byte	0x134
+ 451 012e 05       		.uleb128 0x5
+ 452 012f 03       		.byte	0x3
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 9
+
+
+ 453 0130 00000000 		.4byte	cy_metadata
+ 454 0134 08       		.uleb128 0x8
+ 455 0135 13010000 		.4byte	0x113
+ 456 0139 00       		.byte	0
+ 457              		.section	.debug_abbrev,"",%progbits
+ 458              	.Ldebug_abbrev0:
+ 459 0000 01       		.uleb128 0x1
+ 460 0001 11       		.uleb128 0x11
+ 461 0002 01       		.byte	0x1
+ 462 0003 25       		.uleb128 0x25
+ 463 0004 0E       		.uleb128 0xe
+ 464 0005 13       		.uleb128 0x13
+ 465 0006 0B       		.uleb128 0xb
+ 466 0007 03       		.uleb128 0x3
+ 467 0008 0E       		.uleb128 0xe
+ 468 0009 1B       		.uleb128 0x1b
+ 469 000a 0E       		.uleb128 0xe
+ 470 000b 10       		.uleb128 0x10
+ 471 000c 17       		.uleb128 0x17
+ 472 000d 00       		.byte	0
+ 473 000e 00       		.byte	0
+ 474 000f 02       		.uleb128 0x2
+ 475 0010 24       		.uleb128 0x24
+ 476 0011 00       		.byte	0
+ 477 0012 0B       		.uleb128 0xb
+ 478 0013 0B       		.uleb128 0xb
+ 479 0014 3E       		.uleb128 0x3e
+ 480 0015 0B       		.uleb128 0xb
+ 481 0016 03       		.uleb128 0x3
+ 482 0017 0E       		.uleb128 0xe
+ 483 0018 00       		.byte	0
+ 484 0019 00       		.byte	0
+ 485 001a 03       		.uleb128 0x3
+ 486 001b 24       		.uleb128 0x24
+ 487 001c 00       		.byte	0
+ 488 001d 0B       		.uleb128 0xb
+ 489 001e 0B       		.uleb128 0xb
+ 490 001f 3E       		.uleb128 0x3e
+ 491 0020 0B       		.uleb128 0xb
+ 492 0021 03       		.uleb128 0x3
+ 493 0022 08       		.uleb128 0x8
+ 494 0023 00       		.byte	0
+ 495 0024 00       		.byte	0
+ 496 0025 04       		.uleb128 0x4
+ 497 0026 16       		.uleb128 0x16
+ 498 0027 00       		.byte	0
+ 499 0028 03       		.uleb128 0x3
+ 500 0029 0E       		.uleb128 0xe
+ 501 002a 3A       		.uleb128 0x3a
+ 502 002b 0B       		.uleb128 0xb
+ 503 002c 3B       		.uleb128 0x3b
+ 504 002d 05       		.uleb128 0x5
+ 505 002e 49       		.uleb128 0x49
+ 506 002f 13       		.uleb128 0x13
+ 507 0030 00       		.byte	0
+ 508 0031 00       		.byte	0
+ 509 0032 05       		.uleb128 0x5
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 10
+
+
+ 510 0033 01       		.uleb128 0x1
+ 511 0034 01       		.byte	0x1
+ 512 0035 49       		.uleb128 0x49
+ 513 0036 13       		.uleb128 0x13
+ 514 0037 01       		.uleb128 0x1
+ 515 0038 13       		.uleb128 0x13
+ 516 0039 00       		.byte	0
+ 517 003a 00       		.byte	0
+ 518 003b 06       		.uleb128 0x6
+ 519 003c 21       		.uleb128 0x21
+ 520 003d 00       		.byte	0
+ 521 003e 49       		.uleb128 0x49
+ 522 003f 13       		.uleb128 0x13
+ 523 0040 2F       		.uleb128 0x2f
+ 524 0041 0B       		.uleb128 0xb
+ 525 0042 00       		.byte	0
+ 526 0043 00       		.byte	0
+ 527 0044 07       		.uleb128 0x7
+ 528 0045 34       		.uleb128 0x34
+ 529 0046 00       		.byte	0
+ 530 0047 03       		.uleb128 0x3
+ 531 0048 0E       		.uleb128 0xe
+ 532 0049 3A       		.uleb128 0x3a
+ 533 004a 0B       		.uleb128 0xb
+ 534 004b 3B       		.uleb128 0x3b
+ 535 004c 0B       		.uleb128 0xb
+ 536 004d 49       		.uleb128 0x49
+ 537 004e 13       		.uleb128 0x13
+ 538 004f 3F       		.uleb128 0x3f
+ 539 0050 19       		.uleb128 0x19
+ 540 0051 02       		.uleb128 0x2
+ 541 0052 18       		.uleb128 0x18
+ 542 0053 00       		.byte	0
+ 543 0054 00       		.byte	0
+ 544 0055 08       		.uleb128 0x8
+ 545 0056 26       		.uleb128 0x26
+ 546 0057 00       		.byte	0
+ 547 0058 49       		.uleb128 0x49
+ 548 0059 13       		.uleb128 0x13
+ 549 005a 00       		.byte	0
+ 550 005b 00       		.byte	0
+ 551 005c 00       		.byte	0
+ 552              		.section	.debug_aranges,"",%progbits
+ 553 0000 14000000 		.4byte	0x14
+ 554 0004 0200     		.2byte	0x2
+ 555 0006 00000000 		.4byte	.Ldebug_info0
+ 556 000a 04       		.byte	0x4
+ 557 000b 00       		.byte	0
+ 558 000c 0000     		.2byte	0
+ 559 000e 0000     		.2byte	0
+ 560 0010 00000000 		.4byte	0
+ 561 0014 00000000 		.4byte	0
+ 562              		.section	.debug_line,"",%progbits
+ 563              	.Ldebug_line0:
+ 564 0000 4D000000 		.section	.debug_str,"MS",%progbits,1
+ 564      02004700 
+ 564      00000201 
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 11
+
+
+ 564      FB0E0D00 
+ 564      01010101 
+ 565              	.LASF18:
+ 566 0000 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 566      4320342E 
+ 566      392E3320 
+ 566      32303135 
+ 566      30333033 
+ 567 0033 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 567      20726576 
+ 567      6973696F 
+ 567      6E203232 
+ 567      31323230 
+ 568 0066 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 568      66756E63 
+ 568      74696F6E 
+ 568      2D736563 
+ 568      74696F6E 
+ 569              	.LASF20:
+ 570 008e 433A5C55 		.ascii	"C:\\Users\\Keshuai\\Documents\\PSoC Creator\\ADC_Si"
+ 570      73657273 
+ 570      5C4B6573 
+ 570      68756169 
+ 570      5C446F63 
+ 571 00bc 6E676C65 		.ascii	"ngleEndedMode01\\ADC_SingleEndedMode02.cydsn\000"
+ 571      456E6465 
+ 571      644D6F64 
+ 571      6530315C 
+ 571      4144435F 
+ 572              	.LASF17:
+ 573 00e8 63795F6D 		.ascii	"cy_metadata\000"
+ 573      65746164 
+ 573      61746100 
+ 574              	.LASF9:
+ 575 00f4 666C6F61 		.ascii	"float\000"
+ 575      7400
+ 576              	.LASF1:
+ 577 00fa 756E7369 		.ascii	"unsigned char\000"
+ 577      676E6564 
+ 577      20636861 
+ 577      7200
+ 578              	.LASF5:
+ 579 0108 6C6F6E67 		.ascii	"long unsigned int\000"
+ 579      20756E73 
+ 579      69676E65 
+ 579      6420696E 
+ 579      7400
+ 580              	.LASF3:
+ 581 011a 73686F72 		.ascii	"short unsigned int\000"
+ 581      7420756E 
+ 581      7369676E 
+ 581      65642069 
+ 581      6E7400
+ 582              	.LASF10:
+ 583 012d 646F7562 		.ascii	"double\000"
+ 583      6C6500
+ 584              	.LASF14:
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 12
+
+
+ 585 0134 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 585      6574615F 
+ 585      63757374 
+ 585      6E766C00 
+ 586              	.LASF13:
+ 587 0144 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 587      6574615F 
+ 587      636F6E66 
+ 587      69676563 
+ 587      6300
+ 588              	.LASF8:
+ 589 0156 756E7369 		.ascii	"unsigned int\000"
+ 589      676E6564 
+ 589      20696E74 
+ 589      00
+ 590              	.LASF7:
+ 591 0163 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 591      206C6F6E 
+ 591      6720756E 
+ 591      7369676E 
+ 591      65642069 
+ 592              	.LASF16:
+ 593 017a 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 593      6574615F 
+ 593      666C6173 
+ 593      6870726F 
+ 593      74656374 
+ 594              	.LASF15:
+ 595 018f 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 595      6574615F 
+ 595      776F6E76 
+ 595      6C00
+ 596              	.LASF12:
+ 597 019d 73697A65 		.ascii	"sizetype\000"
+ 597      74797065 
+ 597      00
+ 598              	.LASF6:
+ 599 01a6 6C6F6E67 		.ascii	"long long int\000"
+ 599      206C6F6E 
+ 599      6720696E 
+ 599      7400
+ 600              	.LASF11:
+ 601 01b4 63686172 		.ascii	"char\000"
+ 601      00
+ 602              	.LASF2:
+ 603 01b9 73686F72 		.ascii	"short int\000"
+ 603      7420696E 
+ 603      7400
+ 604              	.LASF21:
+ 605 01c3 75696E74 		.ascii	"uint8\000"
+ 605      3800
+ 606              	.LASF4:
+ 607 01c9 6C6F6E67 		.ascii	"long int\000"
+ 607      20696E74 
+ 607      00
+ 608              	.LASF0:
+ 609 01d2 7369676E 		.ascii	"signed char\000"
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc9JFQnu.s 			page 13
+
+
+ 609      65642063 
+ 609      68617200 
+ 610              	.LASF19:
+ 611 01de 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 611      72617465 
+ 611      645F536F 
+ 611      75726365 
+ 611      5C50536F 
+ 612              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

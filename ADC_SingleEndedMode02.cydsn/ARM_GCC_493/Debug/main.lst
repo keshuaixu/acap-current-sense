@@ -1,0 +1,964 @@
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"main.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.bss
+  19              		.align	1
+  20              	X_Axis:
+  21 0000 0000     		.space	2
+  22              		.align	1
+  23              	Y_Axis:
+  24 0002 0000     		.space	2
+  25              		.align	1
+  26              	X_Data:
+  27 0004 0000     		.space	2
+  28              		.align	1
+  29              	Y_Data:
+  30 0006 0000     		.space	2
+  31              		.align	2
+  32              	Joystick_Data:
+  33 0008 000000   		.space	3
+  34              	Buttons:
+  35 000b 00       		.space	1
+  36              		.section	.rodata
+  37              		.align	2
+  38              	.LC0:
+  39 0000 4144435F 		.ascii	"ADC_Output\000"
+  39      4F757470 
+  39      757400
+  40 000b 00       		.align	2
+  41              	.LC1:
+  42 000c 523A2025 		.ascii	"R: %ld\012\000"
+  42      6C640A00 
+  43              		.section	.text.main,"ax",%progbits
+  44              		.align	2
+  45              		.global	main
+  46              		.thumb
+  47              		.thumb_func
+  48              		.type	main, %function
+  49              	main:
+  50              	.LFB63:
+  51              		.file 1 "main.c"
+   1:main.c        **** /*******************************************************************************
+   2:main.c        **** * File Name: main.c
+   3:main.c        **** *
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 2
+
+
+   4:main.c        **** * Version: 2.20
+   5:main.c        **** *
+   6:main.c        **** * Description:
+   7:main.c        **** *   This is a source code for example project of ADC single ended mode.
+   8:main.c        **** *
+   9:main.c        **** *   Variable resistor(pot) is connected to +ve input of ADC using the I/O pin.
+  10:main.c        **** *   P0.0. When voltage to positive terminal of ADC is 0, the output displayed
+  11:main.c        **** *   on the LCD pannel is 0x0000. As voltage on positive terminal goes on
+  12:main.c        **** *   increasing, the  converted value goes on increasing from 0x0000 and reaches
+  13:main.c        **** *   0xFFFF when voltage becomes 1.024V. Futher increase in voltage value,
+  14:main.c        **** *   doesn't cause any changes to values displayed in the LCD.
+  15:main.c        **** *
+  16:main.c        **** * Hardware Connections:
+  17:main.c        **** *  Connect analog input from Variable resistor to port P0[0] of DVK1 board.
+  18:main.c        **** *
+  19:main.c        **** ********************************************************************************
+  20:main.c        **** * Copyright 2012-2015, Cypress Semiconductor Corporation. All rights reserved.
+  21:main.c        **** * This software is owned by Cypress Semiconductor Corporation and is protected
+  22:main.c        **** * by and subject to worldwide patent and copyright laws and treaties.
+  23:main.c        **** * Therefore, you may use this software only as provided in the license agreement
+  24:main.c        **** * accompanying the software package from which you obtained this software.
+  25:main.c        **** * CYPRESS AND ITS SUPPLIERS MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  26:main.c        **** * WITH REGARD TO THIS SOFTWARE, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT,
+  27:main.c        **** * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  28:main.c        **** *******************************************************************************/
+  29:main.c        **** 
+  30:main.c        **** #include <project.h>
+  31:main.c        **** #include "stdio.h"
+  32:main.c        **** 
+  33:main.c        **** /*******************************************************************************
+  34:main.c        **** * Function Name: main
+  35:main.c        **** ********************************************************************************
+  36:main.c        **** *
+  37:main.c        **** * Summary:
+  38:main.c        **** *  main() performs following functions:
+  39:main.c        **** *  1: Initializes the LCD
+  40:main.c        **** *  2: Starts ADC
+  41:main.c        **** *  3: Starts ADC converstion.
+  42:main.c        **** *  4: Gets the converted result and displays it in LCD.
+  43:main.c        **** *
+  44:main.c        **** * Parameters:
+  45:main.c        **** *  None.
+  46:main.c        **** *
+  47:main.c        **** * Return:
+  48:main.c        **** *  None.
+  49:main.c        **** *
+  50:main.c        **** *******************************************************************************/
+  51:main.c        **** 
+  52:main.c        **** #define USBFS_DEVICE    (0u)
+  53:main.c        **** 
+  54:main.c        **** /* The buffer size is equal to the maximum packet size of the IN and OUT bulk
+  55:main.c        **** * endpoints.
+  56:main.c        **** */
+  57:main.c        **** #define USBUART_BUFFER_SIZE (64u)
+  58:main.c        **** #define LINE_STR_LENGTH     (20u)
+  59:main.c        **** 
+  60:main.c        **** static uint16 X_Axis=0, Y_Axis=0;
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 3
+
+
+  61:main.c        **** static int16 X_Data, Y_Data;
+  62:main.c        **** static int8 Joystick_Data[3] = {0, 0, 0}; /*[0] = X-Axis, [1] = Y-Axis, [2] = Buttons */
+  63:main.c        **** static unsigned char Buttons;
+  64:main.c        **** 
+  65:main.c        **** 
+  66:main.c        **** int main()
+  67:main.c        **** {
+  52              		.loc 1 67 0
+  53              		.cfi_startproc
+  54              		@ args = 0, pretend = 0, frame = 72
+  55              		@ frame_needed = 1, uses_anonymous_args = 0
+  56 0000 80B5     		push	{r7, lr}
+  57              		.cfi_def_cfa_offset 8
+  58              		.cfi_offset 7, -8
+  59              		.cfi_offset 14, -4
+  60 0002 92B0     		sub	sp, sp, #72
+  61              		.cfi_def_cfa_offset 80
+  62 0004 00AF     		add	r7, sp, #0
+  63              		.cfi_def_cfa_register 7
+  68:main.c        ****     int32 output;
+  69:main.c        ****         uint16 count;
+  70:main.c        ****     char buffer[USBUART_BUFFER_SIZE];
+  71:main.c        ****     
+  72:main.c        ****         CyGlobalIntEnable;
+  64              		.loc 1 72 0
+  65              	@ 72 "main.c" 1
+  66 0006 62B6     		CPSIE   i
+  67              	@ 0 "" 2
+  73:main.c        **** 
+  74:main.c        ****     /* Start USBFS operation with 5-V operation. */
+  75:main.c        ****     USBUART_Start(USBFS_DEVICE, USBUART_5V_OPERATION);
+  68              		.loc 1 75 0
+  69              		.thumb
+  70 0008 0020     		movs	r0, #0
+  71 000a 0121     		movs	r1, #1
+  72 000c FFF7FEFF 		bl	USBUART_Start
+  76:main.c        ****  while(!USBUART_bGetConfiguration());
+  73              		.loc 1 76 0
+  74 0010 00BF     		nop
+  75              	.L2:
+  76              		.loc 1 76 0 is_stmt 0 discriminator 1
+  77 0012 FFF7FEFF 		bl	USBUART_GetConfiguration
+  78 0016 0346     		mov	r3, r0
+  79 0018 002B     		cmp	r3, #0
+  80 001a FAD0     		beq	.L2
+  77:main.c        ****  USBUART_CDC_Init();
+  81              		.loc 1 77 0 is_stmt 1
+  82 001c FFF7FEFF 		bl	USBUART_CDC_Init
+  78:main.c        **** 
+  79:main.c        ****     /* Start the components */
+  80:main.c        **** 
+  81:main.c        ****     LCD_Start();
+  83              		.loc 1 81 0
+  84 0020 FFF7FEFF 		bl	LCD_Start
+  82:main.c        ****     ADC_DelSig_1_Start();
+  85              		.loc 1 82 0
+  86 0024 FFF7FEFF 		bl	ADC_DelSig_1_Start
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 4
+
+
+  83:main.c        **** 
+  84:main.c        ****     /* Start the ADC conversion */
+  85:main.c        ****     ADC_DelSig_1_StartConvert();
+  87              		.loc 1 85 0
+  88 0028 FFF7FEFF 		bl	ADC_DelSig_1_StartConvert
+  86:main.c        **** 
+  87:main.c        ****     /* Display the value of ADC output on LCD */
+  88:main.c        ****     LCD_Position(0u, 0u);
+  89              		.loc 1 88 0
+  90 002c 0020     		movs	r0, #0
+  91 002e 0021     		movs	r1, #0
+  92 0030 FFF7FEFF 		bl	LCD_Position
+  89:main.c        ****     LCD_PrintString("ADC_Output");
+  93              		.loc 1 89 0
+  94 0034 2448     		ldr	r0, .L7
+  95 0036 FFF7FEFF 		bl	LCD_PrintString
+  90:main.c        ****     USBUART_LoadInEP(3, (uint8 *)Joystick_Data, 3);
+  96              		.loc 1 90 0
+  97 003a 0320     		movs	r0, #3
+  98 003c 2349     		ldr	r1, .L7+4
+  99 003e 0322     		movs	r2, #3
+ 100 0040 FFF7FEFF 		bl	USBUART_LoadInEP
+ 101              	.L6:
+  91:main.c        ****     
+  92:main.c        **** 
+  93:main.c        ****     for(;;)
+  94:main.c        ****     {
+  95:main.c        ****         if(ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_RETURN_STATUS))
+ 102              		.loc 1 95 0
+ 103 0044 0120     		movs	r0, #1
+ 104 0046 FFF7FEFF 		bl	ADC_DelSig_1_IsEndConversion
+ 105 004a 0346     		mov	r3, r0
+ 106 004c 002B     		cmp	r3, #0
+ 107 004e 3AD0     		beq	.L3
+ 108              	.LBB2:
+  96:main.c        ****         {
+  97:main.c        ****             output = ADC_DelSig_1_GetResult32();
+ 109              		.loc 1 97 0
+ 110 0050 FFF7FEFF 		bl	ADC_DelSig_1_GetResult32
+ 111 0054 7864     		str	r0, [r7, #68]
+  98:main.c        ****             
+  99:main.c        ****             
+ 100:main.c        ****             output = (ADC_DelSig_1_CountsTo_uVolts(output)) / 8;
+ 112              		.loc 1 100 0
+ 113 0056 786C     		ldr	r0, [r7, #68]
+ 114 0058 FFF7FEFF 		bl	ADC_DelSig_1_CountsTo_uVolts
+ 115 005c 0346     		mov	r3, r0
+ 116 005e 002B     		cmp	r3, #0
+ 117 0060 00DA     		bge	.L4
+ 118 0062 0733     		adds	r3, r3, #7
+ 119              	.L4:
+ 120 0064 DB10     		asrs	r3, r3, #3
+ 121 0066 7B64     		str	r3, [r7, #68]
+ 101:main.c        ****             
+ 102:main.c        ****             int c = sprintf(buffer,"R: %ld\n", output);
+ 122              		.loc 1 102 0
+ 123 0068 3B46     		mov	r3, r7
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 5
+
+
+ 124 006a 1846     		mov	r0, r3
+ 125 006c 1849     		ldr	r1, .L7+8
+ 126 006e 7A6C     		ldr	r2, [r7, #68]
+ 127 0070 FFF7FEFF 		bl	sprintf
+ 128 0074 3864     		str	r0, [r7, #64]
+ 103:main.c        ****                                 while (0u == USBUART_CDCIsReady())
+ 129              		.loc 1 103 0
+ 130 0076 00BF     		nop
+ 131              	.L5:
+ 132              		.loc 1 103 0 is_stmt 0 discriminator 1
+ 133 0078 FFF7FEFF 		bl	USBUART_CDCIsReady
+ 134 007c 0346     		mov	r3, r0
+ 135 007e 002B     		cmp	r3, #0
+ 136 0080 FAD0     		beq	.L5
+ 104:main.c        ****                     {
+ 105:main.c        ****                     }
+ 106:main.c        ****             
+ 107:main.c        ****             USBUART_PutData((uint8_t*)buffer, c);
+ 137              		.loc 1 107 0 is_stmt 1
+ 138 0082 3B6C     		ldr	r3, [r7, #64]
+ 139 0084 9BB2     		uxth	r3, r3
+ 140 0086 3A46     		mov	r2, r7
+ 141 0088 1046     		mov	r0, r2
+ 142 008a 1946     		mov	r1, r3
+ 143 008c FFF7FEFF 		bl	USBUART_PutData
+ 108:main.c        ****             X_Data = output;
+ 144              		.loc 1 108 0
+ 145 0090 7B6C     		ldr	r3, [r7, #68]
+ 146 0092 9AB2     		uxth	r2, r3
+ 147 0094 0F4B     		ldr	r3, .L7+12
+ 148 0096 1A80     		strh	r2, [r3]	@ movhi
+ 109:main.c        ****             Y_Data = 101;
+ 149              		.loc 1 109 0
+ 150 0098 0F4B     		ldr	r3, .L7+16
+ 151 009a 6522     		movs	r2, #101
+ 152 009c 1A80     		strh	r2, [r3]	@ movhi
+ 110:main.c        ****             Joystick_Data[0] = X_Data;		
+ 153              		.loc 1 110 0
+ 154 009e 0D4B     		ldr	r3, .L7+12
+ 155 00a0 1B88     		ldrh	r3, [r3]
+ 156 00a2 DAB2     		uxtb	r2, r3
+ 157 00a4 094B     		ldr	r3, .L7+4
+ 158 00a6 1A70     		strb	r2, [r3]
+ 111:main.c        **** 		    Joystick_Data[1] = Y_Data;
+ 159              		.loc 1 111 0
+ 160 00a8 0B4B     		ldr	r3, .L7+16
+ 161 00aa 1B88     		ldrh	r3, [r3]
+ 162 00ac DAB2     		uxtb	r2, r3
+ 163 00ae 074B     		ldr	r3, .L7+4
+ 164 00b0 5A70     		strb	r2, [r3, #1]
+ 112:main.c        **** 		    Joystick_Data[2] = Buttons;
+ 165              		.loc 1 112 0
+ 166 00b2 0A4B     		ldr	r3, .L7+20
+ 167 00b4 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 168 00b6 DAB2     		uxtb	r2, r3
+ 169 00b8 044B     		ldr	r3, .L7+4
+ 170 00ba 9A70     		strb	r2, [r3, #2]
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 6
+
+
+ 113:main.c        ****             USBUART_LoadInEP(3, (uint8 *)Joystick_Data, 3);
+ 171              		.loc 1 113 0
+ 172 00bc 0320     		movs	r0, #3
+ 173 00be 0349     		ldr	r1, .L7+4
+ 174 00c0 0322     		movs	r2, #3
+ 175 00c2 FFF7FEFF 		bl	USBUART_LoadInEP
+ 176              	.L3:
+ 177              	.LBE2:
+ 114:main.c        ****         }
+ 115:main.c        ****     }
+ 178              		.loc 1 115 0
+ 179 00c6 BDE7     		b	.L6
+ 180              	.L8:
+ 181              		.align	2
+ 182              	.L7:
+ 183 00c8 00000000 		.word	.LC0
+ 184 00cc 08000000 		.word	Joystick_Data
+ 185 00d0 0C000000 		.word	.LC1
+ 186 00d4 04000000 		.word	X_Data
+ 187 00d8 06000000 		.word	Y_Data
+ 188 00dc 0B000000 		.word	Buttons
+ 189              		.cfi_endproc
+ 190              	.LFE63:
+ 191              		.size	main, .-main
+ 192              		.text
+ 193              	.Letext0:
+ 194              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.
+ 195              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.
+ 196              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 197              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 198              		.section	.debug_info,"",%progbits
+ 199              	.Ldebug_info0:
+ 200 0000 DB010000 		.4byte	0x1db
+ 201 0004 0400     		.2byte	0x4
+ 202 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 203 000a 04       		.byte	0x4
+ 204 000b 01       		.uleb128 0x1
+ 205 000c 29000000 		.4byte	.LASF30
+ 206 0010 01       		.byte	0x1
+ 207 0011 C9010000 		.4byte	.LASF31
+ 208 0015 B7000000 		.4byte	.LASF32
+ 209 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 210 001d 00000000 		.4byte	0
+ 211 0021 00000000 		.4byte	.Ldebug_line0
+ 212 0025 02       		.uleb128 0x2
+ 213 0026 01       		.byte	0x1
+ 214 0027 06       		.byte	0x6
+ 215 0028 02020000 		.4byte	.LASF0
+ 216 002c 03       		.uleb128 0x3
+ 217 002d 00000000 		.4byte	.LASF4
+ 218 0031 02       		.byte	0x2
+ 219 0032 1D       		.byte	0x1d
+ 220 0033 37000000 		.4byte	0x37
+ 221 0037 02       		.uleb128 0x2
+ 222 0038 01       		.byte	0x1
+ 223 0039 08       		.byte	0x8
+ 224 003a 17010000 		.4byte	.LASF1
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 7
+
+
+ 225 003e 02       		.uleb128 0x2
+ 226 003f 02       		.byte	0x2
+ 227 0040 05       		.byte	0x5
+ 228 0041 E2010000 		.4byte	.LASF2
+ 229 0045 02       		.uleb128 0x2
+ 230 0046 02       		.byte	0x2
+ 231 0047 07       		.byte	0x7
+ 232 0048 15020000 		.4byte	.LASF3
+ 233 004c 03       		.uleb128 0x3
+ 234 004d 18000000 		.4byte	.LASF5
+ 235 0051 02       		.byte	0x2
+ 236 0052 3F       		.byte	0x3f
+ 237 0053 57000000 		.4byte	0x57
+ 238 0057 02       		.uleb128 0x2
+ 239 0058 04       		.byte	0x4
+ 240 0059 05       		.byte	0x5
+ 241 005a F9010000 		.4byte	.LASF6
+ 242 005e 02       		.uleb128 0x2
+ 243 005f 04       		.byte	0x4
+ 244 0060 07       		.byte	0x7
+ 245 0061 33010000 		.4byte	.LASF7
+ 246 0065 02       		.uleb128 0x2
+ 247 0066 08       		.byte	0x8
+ 248 0067 05       		.byte	0x5
+ 249 0068 BB010000 		.4byte	.LASF8
+ 250 006c 02       		.uleb128 0x2
+ 251 006d 08       		.byte	0x8
+ 252 006e 07       		.byte	0x7
+ 253 006f 7D010000 		.4byte	.LASF9
+ 254 0073 04       		.uleb128 0x4
+ 255 0074 04       		.byte	0x4
+ 256 0075 05       		.byte	0x5
+ 257 0076 696E7400 		.ascii	"int\000"
+ 258 007a 02       		.uleb128 0x2
+ 259 007b 04       		.byte	0x4
+ 260 007c 07       		.byte	0x7
+ 261 007d 70010000 		.4byte	.LASF10
+ 262 0081 03       		.uleb128 0x3
+ 263 0082 94010000 		.4byte	.LASF11
+ 264 0086 03       		.byte	0x3
+ 265 0087 15       		.byte	0x15
+ 266 0088 2C000000 		.4byte	0x2c
+ 267 008c 03       		.uleb128 0x3
+ 268 008d AA010000 		.4byte	.LASF12
+ 269 0091 03       		.byte	0x3
+ 270 0092 2C       		.byte	0x2c
+ 271 0093 4C000000 		.4byte	0x4c
+ 272 0097 05       		.uleb128 0x5
+ 273 0098 F3010000 		.4byte	.LASF13
+ 274 009c 04       		.byte	0x4
+ 275 009d 9201     		.2byte	0x192
+ 276 009f 37000000 		.4byte	0x37
+ 277 00a3 05       		.uleb128 0x5
+ 278 00a4 64010000 		.4byte	.LASF14
+ 279 00a8 04       		.byte	0x4
+ 280 00a9 9301     		.2byte	0x193
+ 281 00ab 45000000 		.4byte	0x45
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 8
+
+
+ 282 00af 05       		.uleb128 0x5
+ 283 00b0 6B010000 		.4byte	.LASF15
+ 284 00b4 04       		.byte	0x4
+ 285 00b5 9501     		.2byte	0x195
+ 286 00b7 25000000 		.4byte	0x25
+ 287 00bb 05       		.uleb128 0x5
+ 288 00bc 2D010000 		.4byte	.LASF16
+ 289 00c0 04       		.byte	0x4
+ 290 00c1 9601     		.2byte	0x196
+ 291 00c3 3E000000 		.4byte	0x3e
+ 292 00c7 05       		.uleb128 0x5
+ 293 00c8 45010000 		.4byte	.LASF17
+ 294 00cc 04       		.byte	0x4
+ 295 00cd 9701     		.2byte	0x197
+ 296 00cf 57000000 		.4byte	0x57
+ 297 00d3 02       		.uleb128 0x2
+ 298 00d4 04       		.byte	0x4
+ 299 00d5 04       		.byte	0x4
+ 300 00d6 11010000 		.4byte	.LASF18
+ 301 00da 02       		.uleb128 0x2
+ 302 00db 08       		.byte	0x8
+ 303 00dc 04       		.byte	0x4
+ 304 00dd 0E020000 		.4byte	.LASF19
+ 305 00e1 02       		.uleb128 0x2
+ 306 00e2 01       		.byte	0x1
+ 307 00e3 08       		.byte	0x8
+ 308 00e4 D0010000 		.4byte	.LASF20
+ 309 00e8 02       		.uleb128 0x2
+ 310 00e9 04       		.byte	0x4
+ 311 00ea 07       		.byte	0x7
+ 312 00eb B2010000 		.4byte	.LASF21
+ 313 00ef 06       		.uleb128 0x6
+ 314 00f0 5F010000 		.4byte	.LASF33
+ 315 00f4 01       		.byte	0x1
+ 316 00f5 42       		.byte	0x42
+ 317 00f6 73000000 		.4byte	0x73
+ 318 00fa 00000000 		.4byte	.LFB63
+ 319 00fe E0000000 		.4byte	.LFE63-.LFB63
+ 320 0102 01       		.uleb128 0x1
+ 321 0103 9C       		.byte	0x9c
+ 322 0104 47010000 		.4byte	0x147
+ 323 0108 07       		.uleb128 0x7
+ 324 0109 EC010000 		.4byte	.LASF22
+ 325 010d 01       		.byte	0x1
+ 326 010e 44       		.byte	0x44
+ 327 010f C7000000 		.4byte	0xc7
+ 328 0113 02       		.uleb128 0x2
+ 329 0114 91       		.byte	0x91
+ 330 0115 74       		.sleb128 -12
+ 331 0116 08       		.uleb128 0x8
+ 332 0117 DC010000 		.4byte	.LASF34
+ 333 011b 01       		.byte	0x1
+ 334 011c 45       		.byte	0x45
+ 335 011d A3000000 		.4byte	0xa3
+ 336 0121 07       		.uleb128 0x7
+ 337 0122 0A000000 		.4byte	.LASF23
+ 338 0126 01       		.byte	0x1
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 9
+
+
+ 339 0127 46       		.byte	0x46
+ 340 0128 47010000 		.4byte	0x147
+ 341 012c 03       		.uleb128 0x3
+ 342 012d 91       		.byte	0x91
+ 343 012e B07F     		.sleb128 -80
+ 344 0130 09       		.uleb128 0x9
+ 345 0131 50000000 		.4byte	.LBB2
+ 346 0135 76000000 		.4byte	.LBE2-.LBB2
+ 347 0139 0A       		.uleb128 0xa
+ 348 013a 6300     		.ascii	"c\000"
+ 349 013c 01       		.byte	0x1
+ 350 013d 66       		.byte	0x66
+ 351 013e 73000000 		.4byte	0x73
+ 352 0142 02       		.uleb128 0x2
+ 353 0143 91       		.byte	0x91
+ 354 0144 70       		.sleb128 -16
+ 355 0145 00       		.byte	0
+ 356 0146 00       		.byte	0
+ 357 0147 0B       		.uleb128 0xb
+ 358 0148 E1000000 		.4byte	0xe1
+ 359 014c 57010000 		.4byte	0x157
+ 360 0150 0C       		.uleb128 0xc
+ 361 0151 E8000000 		.4byte	0xe8
+ 362 0155 3F       		.byte	0x3f
+ 363 0156 00       		.byte	0
+ 364 0157 07       		.uleb128 0x7
+ 365 0158 D5010000 		.4byte	.LASF24
+ 366 015c 01       		.byte	0x1
+ 367 015d 3C       		.byte	0x3c
+ 368 015e A3000000 		.4byte	0xa3
+ 369 0162 05       		.uleb128 0x5
+ 370 0163 03       		.byte	0x3
+ 371 0164 00000000 		.4byte	X_Axis
+ 372 0168 07       		.uleb128 0x7
+ 373 0169 22000000 		.4byte	.LASF25
+ 374 016d 01       		.byte	0x1
+ 375 016e 3C       		.byte	0x3c
+ 376 016f A3000000 		.4byte	0xa3
+ 377 0173 05       		.uleb128 0x5
+ 378 0174 03       		.byte	0x3
+ 379 0175 02000000 		.4byte	Y_Axis
+ 380 0179 07       		.uleb128 0x7
+ 381 017a 11000000 		.4byte	.LASF26
+ 382 017e 01       		.byte	0x1
+ 383 017f 3D       		.byte	0x3d
+ 384 0180 BB000000 		.4byte	0xbb
+ 385 0184 05       		.uleb128 0x5
+ 386 0185 03       		.byte	0x3
+ 387 0186 04000000 		.4byte	X_Data
+ 388 018a 07       		.uleb128 0x7
+ 389 018b 58010000 		.4byte	.LASF27
+ 390 018f 01       		.byte	0x1
+ 391 0190 3D       		.byte	0x3d
+ 392 0191 BB000000 		.4byte	0xbb
+ 393 0195 05       		.uleb128 0x5
+ 394 0196 03       		.byte	0x3
+ 395 0197 06000000 		.4byte	Y_Data
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 10
+
+
+ 396 019b 0B       		.uleb128 0xb
+ 397 019c AF000000 		.4byte	0xaf
+ 398 01a0 AB010000 		.4byte	0x1ab
+ 399 01a4 0C       		.uleb128 0xc
+ 400 01a5 E8000000 		.4byte	0xe8
+ 401 01a9 02       		.byte	0x2
+ 402 01aa 00       		.byte	0
+ 403 01ab 07       		.uleb128 0x7
+ 404 01ac 9C010000 		.4byte	.LASF28
+ 405 01b0 01       		.byte	0x1
+ 406 01b1 3E       		.byte	0x3e
+ 407 01b2 9B010000 		.4byte	0x19b
+ 408 01b6 05       		.uleb128 0x5
+ 409 01b7 03       		.byte	0x3
+ 410 01b8 08000000 		.4byte	Joystick_Data
+ 411 01bc 07       		.uleb128 0x7
+ 412 01bd 25010000 		.4byte	.LASF29
+ 413 01c1 01       		.byte	0x1
+ 414 01c2 3F       		.byte	0x3f
+ 415 01c3 37000000 		.4byte	0x37
+ 416 01c7 05       		.uleb128 0x5
+ 417 01c8 03       		.byte	0x3
+ 418 01c9 0B000000 		.4byte	Buttons
+ 419 01cd 0D       		.uleb128 0xd
+ 420 01ce 4B010000 		.4byte	.LASF35
+ 421 01d2 05       		.byte	0x5
+ 422 01d3 9606     		.2byte	0x696
+ 423 01d5 D9010000 		.4byte	0x1d9
+ 424 01d9 0E       		.uleb128 0xe
+ 425 01da 8C000000 		.4byte	0x8c
+ 426 01de 00       		.byte	0
+ 427              		.section	.debug_abbrev,"",%progbits
+ 428              	.Ldebug_abbrev0:
+ 429 0000 01       		.uleb128 0x1
+ 430 0001 11       		.uleb128 0x11
+ 431 0002 01       		.byte	0x1
+ 432 0003 25       		.uleb128 0x25
+ 433 0004 0E       		.uleb128 0xe
+ 434 0005 13       		.uleb128 0x13
+ 435 0006 0B       		.uleb128 0xb
+ 436 0007 03       		.uleb128 0x3
+ 437 0008 0E       		.uleb128 0xe
+ 438 0009 1B       		.uleb128 0x1b
+ 439 000a 0E       		.uleb128 0xe
+ 440 000b 55       		.uleb128 0x55
+ 441 000c 17       		.uleb128 0x17
+ 442 000d 11       		.uleb128 0x11
+ 443 000e 01       		.uleb128 0x1
+ 444 000f 10       		.uleb128 0x10
+ 445 0010 17       		.uleb128 0x17
+ 446 0011 00       		.byte	0
+ 447 0012 00       		.byte	0
+ 448 0013 02       		.uleb128 0x2
+ 449 0014 24       		.uleb128 0x24
+ 450 0015 00       		.byte	0
+ 451 0016 0B       		.uleb128 0xb
+ 452 0017 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 11
+
+
+ 453 0018 3E       		.uleb128 0x3e
+ 454 0019 0B       		.uleb128 0xb
+ 455 001a 03       		.uleb128 0x3
+ 456 001b 0E       		.uleb128 0xe
+ 457 001c 00       		.byte	0
+ 458 001d 00       		.byte	0
+ 459 001e 03       		.uleb128 0x3
+ 460 001f 16       		.uleb128 0x16
+ 461 0020 00       		.byte	0
+ 462 0021 03       		.uleb128 0x3
+ 463 0022 0E       		.uleb128 0xe
+ 464 0023 3A       		.uleb128 0x3a
+ 465 0024 0B       		.uleb128 0xb
+ 466 0025 3B       		.uleb128 0x3b
+ 467 0026 0B       		.uleb128 0xb
+ 468 0027 49       		.uleb128 0x49
+ 469 0028 13       		.uleb128 0x13
+ 470 0029 00       		.byte	0
+ 471 002a 00       		.byte	0
+ 472 002b 04       		.uleb128 0x4
+ 473 002c 24       		.uleb128 0x24
+ 474 002d 00       		.byte	0
+ 475 002e 0B       		.uleb128 0xb
+ 476 002f 0B       		.uleb128 0xb
+ 477 0030 3E       		.uleb128 0x3e
+ 478 0031 0B       		.uleb128 0xb
+ 479 0032 03       		.uleb128 0x3
+ 480 0033 08       		.uleb128 0x8
+ 481 0034 00       		.byte	0
+ 482 0035 00       		.byte	0
+ 483 0036 05       		.uleb128 0x5
+ 484 0037 16       		.uleb128 0x16
+ 485 0038 00       		.byte	0
+ 486 0039 03       		.uleb128 0x3
+ 487 003a 0E       		.uleb128 0xe
+ 488 003b 3A       		.uleb128 0x3a
+ 489 003c 0B       		.uleb128 0xb
+ 490 003d 3B       		.uleb128 0x3b
+ 491 003e 05       		.uleb128 0x5
+ 492 003f 49       		.uleb128 0x49
+ 493 0040 13       		.uleb128 0x13
+ 494 0041 00       		.byte	0
+ 495 0042 00       		.byte	0
+ 496 0043 06       		.uleb128 0x6
+ 497 0044 2E       		.uleb128 0x2e
+ 498 0045 01       		.byte	0x1
+ 499 0046 3F       		.uleb128 0x3f
+ 500 0047 19       		.uleb128 0x19
+ 501 0048 03       		.uleb128 0x3
+ 502 0049 0E       		.uleb128 0xe
+ 503 004a 3A       		.uleb128 0x3a
+ 504 004b 0B       		.uleb128 0xb
+ 505 004c 3B       		.uleb128 0x3b
+ 506 004d 0B       		.uleb128 0xb
+ 507 004e 49       		.uleb128 0x49
+ 508 004f 13       		.uleb128 0x13
+ 509 0050 11       		.uleb128 0x11
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 12
+
+
+ 510 0051 01       		.uleb128 0x1
+ 511 0052 12       		.uleb128 0x12
+ 512 0053 06       		.uleb128 0x6
+ 513 0054 40       		.uleb128 0x40
+ 514 0055 18       		.uleb128 0x18
+ 515 0056 9642     		.uleb128 0x2116
+ 516 0058 19       		.uleb128 0x19
+ 517 0059 01       		.uleb128 0x1
+ 518 005a 13       		.uleb128 0x13
+ 519 005b 00       		.byte	0
+ 520 005c 00       		.byte	0
+ 521 005d 07       		.uleb128 0x7
+ 522 005e 34       		.uleb128 0x34
+ 523 005f 00       		.byte	0
+ 524 0060 03       		.uleb128 0x3
+ 525 0061 0E       		.uleb128 0xe
+ 526 0062 3A       		.uleb128 0x3a
+ 527 0063 0B       		.uleb128 0xb
+ 528 0064 3B       		.uleb128 0x3b
+ 529 0065 0B       		.uleb128 0xb
+ 530 0066 49       		.uleb128 0x49
+ 531 0067 13       		.uleb128 0x13
+ 532 0068 02       		.uleb128 0x2
+ 533 0069 18       		.uleb128 0x18
+ 534 006a 00       		.byte	0
+ 535 006b 00       		.byte	0
+ 536 006c 08       		.uleb128 0x8
+ 537 006d 34       		.uleb128 0x34
+ 538 006e 00       		.byte	0
+ 539 006f 03       		.uleb128 0x3
+ 540 0070 0E       		.uleb128 0xe
+ 541 0071 3A       		.uleb128 0x3a
+ 542 0072 0B       		.uleb128 0xb
+ 543 0073 3B       		.uleb128 0x3b
+ 544 0074 0B       		.uleb128 0xb
+ 545 0075 49       		.uleb128 0x49
+ 546 0076 13       		.uleb128 0x13
+ 547 0077 00       		.byte	0
+ 548 0078 00       		.byte	0
+ 549 0079 09       		.uleb128 0x9
+ 550 007a 0B       		.uleb128 0xb
+ 551 007b 01       		.byte	0x1
+ 552 007c 11       		.uleb128 0x11
+ 553 007d 01       		.uleb128 0x1
+ 554 007e 12       		.uleb128 0x12
+ 555 007f 06       		.uleb128 0x6
+ 556 0080 00       		.byte	0
+ 557 0081 00       		.byte	0
+ 558 0082 0A       		.uleb128 0xa
+ 559 0083 34       		.uleb128 0x34
+ 560 0084 00       		.byte	0
+ 561 0085 03       		.uleb128 0x3
+ 562 0086 08       		.uleb128 0x8
+ 563 0087 3A       		.uleb128 0x3a
+ 564 0088 0B       		.uleb128 0xb
+ 565 0089 3B       		.uleb128 0x3b
+ 566 008a 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 13
+
+
+ 567 008b 49       		.uleb128 0x49
+ 568 008c 13       		.uleb128 0x13
+ 569 008d 02       		.uleb128 0x2
+ 570 008e 18       		.uleb128 0x18
+ 571 008f 00       		.byte	0
+ 572 0090 00       		.byte	0
+ 573 0091 0B       		.uleb128 0xb
+ 574 0092 01       		.uleb128 0x1
+ 575 0093 01       		.byte	0x1
+ 576 0094 49       		.uleb128 0x49
+ 577 0095 13       		.uleb128 0x13
+ 578 0096 01       		.uleb128 0x1
+ 579 0097 13       		.uleb128 0x13
+ 580 0098 00       		.byte	0
+ 581 0099 00       		.byte	0
+ 582 009a 0C       		.uleb128 0xc
+ 583 009b 21       		.uleb128 0x21
+ 584 009c 00       		.byte	0
+ 585 009d 49       		.uleb128 0x49
+ 586 009e 13       		.uleb128 0x13
+ 587 009f 2F       		.uleb128 0x2f
+ 588 00a0 0B       		.uleb128 0xb
+ 589 00a1 00       		.byte	0
+ 590 00a2 00       		.byte	0
+ 591 00a3 0D       		.uleb128 0xd
+ 592 00a4 34       		.uleb128 0x34
+ 593 00a5 00       		.byte	0
+ 594 00a6 03       		.uleb128 0x3
+ 595 00a7 0E       		.uleb128 0xe
+ 596 00a8 3A       		.uleb128 0x3a
+ 597 00a9 0B       		.uleb128 0xb
+ 598 00aa 3B       		.uleb128 0x3b
+ 599 00ab 05       		.uleb128 0x5
+ 600 00ac 49       		.uleb128 0x49
+ 601 00ad 13       		.uleb128 0x13
+ 602 00ae 3F       		.uleb128 0x3f
+ 603 00af 19       		.uleb128 0x19
+ 604 00b0 3C       		.uleb128 0x3c
+ 605 00b1 19       		.uleb128 0x19
+ 606 00b2 00       		.byte	0
+ 607 00b3 00       		.byte	0
+ 608 00b4 0E       		.uleb128 0xe
+ 609 00b5 35       		.uleb128 0x35
+ 610 00b6 00       		.byte	0
+ 611 00b7 49       		.uleb128 0x49
+ 612 00b8 13       		.uleb128 0x13
+ 613 00b9 00       		.byte	0
+ 614 00ba 00       		.byte	0
+ 615 00bb 00       		.byte	0
+ 616              		.section	.debug_aranges,"",%progbits
+ 617 0000 1C000000 		.4byte	0x1c
+ 618 0004 0200     		.2byte	0x2
+ 619 0006 00000000 		.4byte	.Ldebug_info0
+ 620 000a 04       		.byte	0x4
+ 621 000b 00       		.byte	0
+ 622 000c 0000     		.2byte	0
+ 623 000e 0000     		.2byte	0
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 14
+
+
+ 624 0010 00000000 		.4byte	.LFB63
+ 625 0014 E0000000 		.4byte	.LFE63-.LFB63
+ 626 0018 00000000 		.4byte	0
+ 627 001c 00000000 		.4byte	0
+ 628              		.section	.debug_ranges,"",%progbits
+ 629              	.Ldebug_ranges0:
+ 630 0000 00000000 		.4byte	.LFB63
+ 631 0004 E0000000 		.4byte	.LFE63
+ 632 0008 00000000 		.4byte	0
+ 633 000c 00000000 		.4byte	0
+ 634              		.section	.debug_line,"",%progbits
+ 635              	.Ldebug_line0:
+ 636 0000 82010000 		.section	.debug_str,"MS",%progbits,1
+ 636      02004701 
+ 636      00000201 
+ 636      FB0E0D00 
+ 636      01010101 
+ 637              	.LASF4:
+ 638 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 638      6E74385F 
+ 638      7400
+ 639              	.LASF23:
+ 640 000a 62756666 		.ascii	"buffer\000"
+ 640      657200
+ 641              	.LASF26:
+ 642 0011 585F4461 		.ascii	"X_Data\000"
+ 642      746100
+ 643              	.LASF5:
+ 644 0018 5F5F696E 		.ascii	"__int32_t\000"
+ 644      7433325F 
+ 644      7400
+ 645              	.LASF25:
+ 646 0022 595F4178 		.ascii	"Y_Axis\000"
+ 646      697300
+ 647              	.LASF30:
+ 648 0029 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 648      4320342E 
+ 648      392E3320 
+ 648      32303135 
+ 648      30333033 
+ 649 005c 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 649      20726576 
+ 649      6973696F 
+ 649      6E203232 
+ 649      31323230 
+ 650 008f 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 650      66756E63 
+ 650      74696F6E 
+ 650      2D736563 
+ 650      74696F6E 
+ 651              	.LASF32:
+ 652 00b7 433A5C55 		.ascii	"C:\\Users\\Keshuai\\Documents\\PSoC Creator\\ADC_Si"
+ 652      73657273 
+ 652      5C4B6573 
+ 652      68756169 
+ 652      5C446F63 
+ 653 00e5 6E676C65 		.ascii	"ngleEndedMode01\\ADC_SingleEndedMode02.cydsn\000"
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 15
+
+
+ 653      456E6465 
+ 653      644D6F64 
+ 653      6530315C 
+ 653      4144435F 
+ 654              	.LASF18:
+ 655 0111 666C6F61 		.ascii	"float\000"
+ 655      7400
+ 656              	.LASF1:
+ 657 0117 756E7369 		.ascii	"unsigned char\000"
+ 657      676E6564 
+ 657      20636861 
+ 657      7200
+ 658              	.LASF29:
+ 659 0125 42757474 		.ascii	"Buttons\000"
+ 659      6F6E7300 
+ 660              	.LASF16:
+ 661 012d 696E7431 		.ascii	"int16\000"
+ 661      3600
+ 662              	.LASF7:
+ 663 0133 6C6F6E67 		.ascii	"long unsigned int\000"
+ 663      20756E73 
+ 663      69676E65 
+ 663      6420696E 
+ 663      7400
+ 664              	.LASF17:
+ 665 0145 696E7433 		.ascii	"int32\000"
+ 665      3200
+ 666              	.LASF35:
+ 667 014b 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 667      52784275 
+ 667      66666572 
+ 667      00
+ 668              	.LASF27:
+ 669 0158 595F4461 		.ascii	"Y_Data\000"
+ 669      746100
+ 670              	.LASF33:
+ 671 015f 6D61696E 		.ascii	"main\000"
+ 671      00
+ 672              	.LASF14:
+ 673 0164 75696E74 		.ascii	"uint16\000"
+ 673      313600
+ 674              	.LASF15:
+ 675 016b 696E7438 		.ascii	"int8\000"
+ 675      00
+ 676              	.LASF10:
+ 677 0170 756E7369 		.ascii	"unsigned int\000"
+ 677      676E6564 
+ 677      20696E74 
+ 677      00
+ 678              	.LASF9:
+ 679 017d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 679      206C6F6E 
+ 679      6720756E 
+ 679      7369676E 
+ 679      65642069 
+ 680              	.LASF11:
+ 681 0194 75696E74 		.ascii	"uint8_t\000"
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 16
+
+
+ 681      385F7400 
+ 682              	.LASF28:
+ 683 019c 4A6F7973 		.ascii	"Joystick_Data\000"
+ 683      7469636B 
+ 683      5F446174 
+ 683      6100
+ 684              	.LASF12:
+ 685 01aa 696E7433 		.ascii	"int32_t\000"
+ 685      325F7400 
+ 686              	.LASF21:
+ 687 01b2 73697A65 		.ascii	"sizetype\000"
+ 687      74797065 
+ 687      00
+ 688              	.LASF8:
+ 689 01bb 6C6F6E67 		.ascii	"long long int\000"
+ 689      206C6F6E 
+ 689      6720696E 
+ 689      7400
+ 690              	.LASF31:
+ 691 01c9 6D61696E 		.ascii	"main.c\000"
+ 691      2E6300
+ 692              	.LASF20:
+ 693 01d0 63686172 		.ascii	"char\000"
+ 693      00
+ 694              	.LASF24:
+ 695 01d5 585F4178 		.ascii	"X_Axis\000"
+ 695      697300
+ 696              	.LASF34:
+ 697 01dc 636F756E 		.ascii	"count\000"
+ 697      7400
+ 698              	.LASF2:
+ 699 01e2 73686F72 		.ascii	"short int\000"
+ 699      7420696E 
+ 699      7400
+ 700              	.LASF22:
+ 701 01ec 6F757470 		.ascii	"output\000"
+ 701      757400
+ 702              	.LASF13:
+ 703 01f3 75696E74 		.ascii	"uint8\000"
+ 703      3800
+ 704              	.LASF6:
+ 705 01f9 6C6F6E67 		.ascii	"long int\000"
+ 705      20696E74 
+ 705      00
+ 706              	.LASF0:
+ 707 0202 7369676E 		.ascii	"signed char\000"
+ 707      65642063 
+ 707      68617200 
+ 708              	.LASF19:
+ 709 020e 646F7562 		.ascii	"double\000"
+ 709      6C6500
+ 710              	.LASF3:
+ 711 0215 73686F72 		.ascii	"short unsigned int\000"
+ 711      7420756E 
+ 711      7369676E 
+ 711      65642069 
+ 711      6E7400
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrw6e3.s 			page 17
+
+
+ 712              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

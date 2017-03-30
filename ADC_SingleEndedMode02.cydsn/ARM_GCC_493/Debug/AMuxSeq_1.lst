@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
   23:Generated_Source\PSoC5/AMuxSeq_1.c **** * Function Name: AMuxSeq_1_Start
   24:Generated_Source\PSoC5/AMuxSeq_1.c **** ********************************************************************************
   25:Generated_Source\PSoC5/AMuxSeq_1.c **** * Summary:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 2
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 2
 
 
   26:Generated_Source\PSoC5/AMuxSeq_1.c **** *  Disconnect all channels. The next time Next is called, channel 0 will be
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
   47:Generated_Source\PSoC5/AMuxSeq_1.c **** *  Disconnect all channels. The next time Next is called, channel 0 will be
   48:Generated_Source\PSoC5/AMuxSeq_1.c **** *  connected.
   49:Generated_Source\PSoC5/AMuxSeq_1.c **** *
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 3
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 3
 
 
   50:Generated_Source\PSoC5/AMuxSeq_1.c **** * Parameters:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
   91              		.loc 1 78 0
   92              		.cfi_startproc
   93              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 4
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 4
 
 
   94              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
  101:Generated_Source\PSoC5/AMuxSeq_1.c ****     AMuxSeq_1_CYAMUXSIDE_A_Next();
  126              		.loc 1 101 0
  127 0004 FFF7FEFF 		bl	AMuxSeq_1_CYAMUXSIDE_A_Next
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 5
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 5
 
 
  102:Generated_Source\PSoC5/AMuxSeq_1.c ****     AMuxSeq_1_CYAMUXSIDE_B_Next();
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
  159              		.cfi_endproc
  160              	.LFE4:
  161              		.size	AMuxSeq_1_DisconnectAll, .-AMuxSeq_1_DisconnectAll
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 6
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 6
 
 
  162 000e 00BF     		.section	.text.AMuxSeq_1_GetChannel,"ax",%progbits
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
  196 0014 00000000 		.word	AMuxSeq_1_CYAMUXSIDE_A_curChannel
  197              		.cfi_endproc
  198              	.LFE5:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 7
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 7
 
 
  199              		.size	AMuxSeq_1_GetChannel, .-AMuxSeq_1_GetChannel
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
  253 0060 696E7400 		.ascii	"int\000"
  254 0064 02       		.uleb128 0x2
  255 0065 04       		.byte	0x4
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 8
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 8
 
 
  256 0066 07       		.byte	0x7
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
  310 00da 01       		.uleb128 0x1
  311 00db 9C       		.byte	0x9c
  312 00dc 05       		.uleb128 0x5
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 9
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 9
 
 
  313 00dd 26020000 		.4byte	.LASF18
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
  367 0016 0B       		.uleb128 0xb
  368 0017 0B       		.uleb128 0xb
  369 0018 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 10
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 10
 
 
  370 0019 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
  424 0050 00       		.byte	0
  425 0051 3F       		.uleb128 0x3f
  426 0052 19       		.uleb128 0x19
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 11
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 11
 
 
  427 0053 03       		.uleb128 0x3
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
  481 008a 00       		.byte	0
  482              		.section	.debug_aranges,"",%progbits
  483 0000 44000000 		.4byte	0x44
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 12
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 12
 
 
  484 0004 0200     		.2byte	0x2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
  528 001e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  528      4320342E 
  528      392E3320 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 13
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 13
 
 
  528      32303135 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
  545      7200
  546              	.LASF12:
  547 0174 646F7562 		.ascii	"double\000"
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 14
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 14
 
 
  547      6C6500
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 1
  571      20696E74 
  571      00
  572              	.LASF18:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccGbVnv3.s 			page 15
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccwrXc7e.s 			page 15
 
 
  573 0226 414D7578 		.ascii	"AMuxSeq_1_DisconnectAll\000"

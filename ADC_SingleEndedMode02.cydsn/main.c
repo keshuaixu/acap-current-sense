@@ -85,6 +85,7 @@ int main()
 	/* Start the components */
 
 	ADC_DelSig_1_Start();
+    AMuxSeq_1_Start();
 
 	/* Start the ADC conversion */
 	ADC_DelSig_1_StartConvert();
@@ -96,37 +97,30 @@ int main()
 	//USBUART_LoadInEP(3, (uint8*)Joystick_Data, 12);
     conv.integer = Joystick_Data;
 	
+    uint8 channel = 0;
 
 	for(;;)
 	{
 		/* Wait for ACK before loading data. */
         //while (0u == USBUART_GetEPAckState(3))
+        
         if (USBUART_GetEPState(3) == USBUART_IN_BUFFER_EMPTY){
         
         Joystick_Data[0] += 0x1000;
         //USBUART_LoadInEP(3, (uint8*){0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08}, 8);
         USBUART_LoadInEP(3, conv.byte, 64);
         }
-        continue;
         
         if(ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_RETURN_STATUS))
 		{
-            output = ADC_DelSig_1_GetResult32();
             
-            
+            output = ADC_DelSig_1_GetResult32();           
             output = (ADC_DelSig_1_CountsTo_uVolts(output)) / 8;
+            Joystick_Data[AMuxSeq_1_GetChannel()] = output;
+            ADC_DelSig_1_StopConvert();
+            AMuxSeq_1_Next();
+            ADC_DelSig_1_StartConvert();
             
-            int c = sprintf(buffer,"R: %ld\n", output);
-                                while (0u == USBUART_CDCIsReady())
-                    {
-                    }
-            
-            //USBUART_PutData((uint8_t*)buffer, c);
-            X_Data = output;
-            Y_Data = 101;
-            Joystick_Data[0] = X_Data;		
-            Joystick_Data[1] = Y_Data;
-            Joystick_Data[2] = Buttons;
 			//USBUART_LoadInEP(3, (uint8 *)Joystick_Data, 3);
 		}
 	}

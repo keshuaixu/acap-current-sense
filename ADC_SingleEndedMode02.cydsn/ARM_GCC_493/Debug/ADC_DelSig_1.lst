@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
   55              		.thumb_func
   56              		.type	ADC_DelSig_1_Init, %function
   57              	ADC_DelSig_1_Init:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 2
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 2
 
 
   58              	.LFB0:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
   53:Generated_Source\PSoC5/ADC_DelSig_1.c **** volatile int32 ADC_DelSig_1_CountsPerVolt;
   54:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
   55:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 3
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 3
 
 
   56:Generated_Source\PSoC5/ADC_DelSig_1.c **** /***************************************
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
   75 000a 1A70     		strb	r2, [r3]
   95:Generated_Source\PSoC5/ADC_DelSig_1.c ****     ADC_DelSig_1_convDone = 0u;
   76              		.loc 1 95 0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 4
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 4
 
 
   77 000c 314B     		ldr	r3, .L2+4
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  112 004a 0022     		movs	r2, #0
  113 004c 1A70     		strb	r2, [r3]
  115:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 5
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 5
 
 
  116:Generated_Source\PSoC5/ADC_DelSig_1.c ****     ADC_DelSig_1_DSM_OUT0_REG    = ADC_DelSig_1_CFG1_DSM_OUT0;
@@ -298,13 +298,13 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  150              		.loc 1 133 0
  151 0084 0123     		movs	r3, #1
  152 0086 0093     		str	r3, [sp]
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 6
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 6
 
 
  153 0088 0520     		movs	r0, #5
  154 008a 49F25B11 		movw	r1, #37211
  155 008e 4FF40042 		mov	r2, #32768
- 156 0092 1423     		movs	r3, #20
+ 156 0092 1223     		movs	r3, #18
  157 0094 FFF7FEFF 		bl	ADC_DelSig_1_GainCompensation
  134:Generated_Source\PSoC5/ADC_DelSig_1.c ****                                       ADC_DelSig_1_CFG1_IDEAL_DEC_GAIN,
  135:Generated_Source\PSoC5/ADC_DelSig_1.c ****                                       ADC_DelSig_1_CFG1_IDEAL_ODDDEC_GAIN,
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  163:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
  164:Generated_Source\PSoC5/ADC_DelSig_1.c ****     /* Initialize the registers with default customizer settings for config1 */
  165:Generated_Source\PSoC5/ADC_DelSig_1.c ****     ADC_DelSig_1_InitConfig(ADC_DelSig_1_Config);
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 7
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 7
 
 
  178              		.loc 1 165 0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  176:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
  177:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Parameters:
  178:Generated_Source\PSoC5/ADC_DelSig_1.c **** *  None
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 8
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 8
 
 
  179:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  197:Generated_Source\PSoC5/ADC_DelSig_1.c ****      /* Enable alternative active mode power for ADC */
  198:Generated_Source\PSoC5/ADC_DelSig_1.c ****     ADC_DelSig_1_STBY_PWRMGR_DEC_REG |= ADC_DelSig_1_STBY_PWR_DEC_EN;
  258              		.loc 1 198 0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 9
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 9
 
 
  259 0034 3C4A     		ldr	r2, .L5+8
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  214:Generated_Source\PSoC5/ADC_DelSig_1.c ****           ((ADC_DelSig_1_CFG3_REFERENCE == ADC_DelSig_1_EXT_REF_ON_P03) ||  \
  215:Generated_Source\PSoC5/ADC_DelSig_1.c ****            (ADC_DelSig_1_CFG3_REFERENCE == ADC_DelSig_1_EXT_REF_ON_P32))) || \
  216:Generated_Source\PSoC5/ADC_DelSig_1.c ****          ((ADC_DelSig_1_DEFAULT_NUM_CONFIGS > 3) && \
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 10
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 10
 
 
  217:Generated_Source\PSoC5/ADC_DelSig_1.c ****           ((ADC_DelSig_1_CFG4_REFERENCE == ADC_DelSig_1_EXT_REF_ON_P03) || \
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  271:Generated_Source\PSoC5/ADC_DelSig_1.c ****     CyDelayUs(ADC_DelSig_1_PRES_DELAY_TIME);
  298              		.loc 1 271 0
  299 0084 0320     		movs	r0, #3
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 11
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 11
 
 
  300 0086 FFF7FEFF 		bl	CyDelayUs
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  339 00d2 1C4B     		ldr	r3, .L5+36
  340 00d4 1B78     		ldrb	r3, [r3]
  341 00d6 DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 12
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 12
 
 
  342 00d8 43F00103 		orr	r3, r3, #1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  380              	.L6:
  381 011e 00BF     		.align	2
  382              	.L5:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 13
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 13
 
 
  383 0120 00000000 		.word	ADC_DelSig_1_Config
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  409              		.cfi_startproc
  410              		@ args = 0, pretend = 0, frame = 0
  411              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 14
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 14
 
 
  412 0000 80B5     		push	{r7, lr}
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  454              		.type	ADC_DelSig_1_Stop, %function
  455              	ADC_DelSig_1_Stop:
  456              	.LFB3:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 15
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 15
 
 
  343:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  484 0022 1B78     		ldrb	r3, [r3]
  485 0024 DBB2     		uxtb	r3, r3
  486 0026 43F00403 		orr	r3, r3, #4
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 16
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 16
 
 
  487 002a DBB2     		uxtb	r3, r3
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  527 0078 1B78     		ldrb	r3, [r3]
  528 007a DBB2     		uxtb	r3, r3
  529 007c 23F00203 		bic	r3, r3, #2
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 17
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 17
 
 
  530 0080 DBB2     		uxtb	r3, r3
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  396:Generated_Source\PSoC5/ADC_DelSig_1.c ****    /* Disable negative pumps for DSM  */
  397:Generated_Source\PSoC5/ADC_DelSig_1.c ****     ADC_DelSig_1_PUMP_CR1_REG &= (uint8)~(ADC_DelSig_1_PUMP_CR1_CLKSEL | ADC_DelSig_1_PUMP_CR1_FORC
  572              		.loc 1 397 0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 18
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 18
 
 
  573 00d4 234A     		ldr	r2, .L13+32
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  615 0128 1B78     		ldrb	r3, [r3]
  616 012a DBB2     		uxtb	r3, r3
  617 012c 23F00103 		bic	r3, r3, #1
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 19
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 19
 
 
  618 0130 DBB2     		uxtb	r3, r3
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  423:Generated_Source\PSoC5/ADC_DelSig_1.c **** *  gain:  Two bit value to select a gain of 1, 2, 4, or 8.
  424:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
  425:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Return:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 20
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 20
 
 
  426:Generated_Source\PSoC5/ADC_DelSig_1.c **** *  None
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  703              		.align	2
  704              	.L16:
  705 0038 9B580040 		.word	1073764507
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 21
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 21
 
 
  706              		.cfi_endproc
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  729 0006 0346     		mov	r3, r0
  730 0008 FB71     		strb	r3, [r7, #7]
  467:Generated_Source\PSoC5/ADC_DelSig_1.c ****     uint8 tmpReg;
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 22
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 22
 
 
  468:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  474:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
  475:Generated_Source\PSoC5/ADC_DelSig_1.c **** /*******************************************************************************
  476:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Function Name: ADC_DelSig_1_SetGCOR
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 23
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 23
 
 
  477:Generated_Source\PSoC5/ADC_DelSig_1.c **** ********************************************************************************
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  798 0012 32F82330 		ldrh	r3, [r2, r3, lsl #2]	@ movhi
  799 0016 BB81     		strh	r3, [r7, #12]	@ movhi
  512:Generated_Source\PSoC5/ADC_DelSig_1.c ****     tmpValue = ((float32)tmpReg / (float32)ADC_DelSig_1_IDEAL_GAIN_CONST);
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 24
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 24
 
 
  800              		.loc 1 512 0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  844 0076 BB81     		strh	r3, [r7, #12]	@ movhi
  523:Generated_Source\PSoC5/ADC_DelSig_1.c ****         CY_SET_REG16(ADC_DelSig_1_DEC_GCOR_16B_PTR, tmpReg);
  845              		.loc 1 523 0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 25
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 25
 
 
  846 0078 0D4A     		ldr	r2, .L28+16
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  534:Generated_Source\PSoC5/ADC_DelSig_1.c **** /******************************************************************************
  535:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Function Name: ADC_DelSig_1_ReadGCOR
  536:Generated_Source\PSoC5/ADC_DelSig_1.c **** *******************************************************************************
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 26
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 26
 
 
  537:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  918 0020 9340     		lsls	r3, r3, r2
  919 0022 FB80     		strh	r3, [r7, #6]	@ movhi
  920              	.L31:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 27
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 27
 
 
  563:Generated_Source\PSoC5/ADC_DelSig_1.c ****     }
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  950              		.loc 1 587 0
  951              		.cfi_startproc
  952              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 28
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 28
 
 
  953              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  604:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
  605:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Return:
  606:Generated_Source\PSoC5/ADC_DelSig_1.c **** *  None
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 29
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 29
 
 
  607:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  620:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Summary:
  621:Generated_Source\PSoC5/ADC_DelSig_1.c **** *  Checks the status that the most recently started conversion has completed.
  622:Generated_Source\PSoC5/ADC_DelSig_1.c **** *  The status is cleared by any of ADC_GetResult8(), ADC_GetResult16() or 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 30
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 30
 
 
  623:Generated_Source\PSoC5/ADC_DelSig_1.c **** *  ADC_GetResult32() API.
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1053              		.loc 1 655 0
  1054 0014 0C4B     		ldr	r3, .L47+4
  1055 0016 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 31
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 31
 
 
  1056 0018 FB73     		strb	r3, [r7, #15]
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1101              		.thumb_func
  1102              		.type	ADC_DelSig_1_GetResult8, %function
  1103              	ADC_DelSig_1_GetResult8:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 32
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 32
 
 
  1104              	.LFB11:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1123              		.loc 1 699 0
  1124 0012 104B     		ldr	r3, .L54+4
  1125 0014 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 33
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 33
 
 
  1126 0016 DBB2     		uxtb	r3, r3
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1161 0046 0C37     		adds	r7, r7, #12
  1162              		.cfi_def_cfa_offset 4
  1163 0048 BD46     		mov	sp, r7
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 34
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 34
 
 
  1164              		.cfi_def_cfa_register 13
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1190              		.loc 1 746 0
  1191              		.cfi_startproc
  1192              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 35
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 35
 
 
  1193              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1225 002a 1B78     		ldrb	r3, [r3]
  1226 002c DBB2     		uxtb	r3, r3
  1227 002e 9BB2     		uxth	r3, r3
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 36
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 36
 
 
  1228 0030 1B02     		lsls	r3, r3, #8
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1268              	.L61:
  1269 0064 144E0040 		.word	1073761812
  1270 0068 104E0040 		.word	1073761808
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 37
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 37
 
 
  1271 006c 114E0040 		.word	1073761809
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  810:Generated_Source\PSoC5/ADC_DelSig_1.c **** 	    uint16 tmp;
  811:Generated_Source\PSoC5/ADC_DelSig_1.c ****     #endif /* CY_PSOC3 */
  812:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 38
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 38
 
 
  813:Generated_Source\PSoC5/ADC_DelSig_1.c ****     /* Read active coherency configuration */
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  838:Generated_Source\PSoC5/ADC_DelSig_1.c ****             }
  839:Generated_Source\PSoC5/ADC_DelSig_1.c ****             result = (result << 16u) | (CY_GET_REG16(ADC_DelSig_1_DEC_SAMP_16B_PTR));
  840:Generated_Source\PSoC5/ADC_DelSig_1.c ****         #else
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 39
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 39
 
 
  841:Generated_Source\PSoC5/ADC_DelSig_1.c ****             result = CY_GET_REG16(ADC_DelSig_1_DEC_SAMPH_16B_PTR);
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1362 0070 7B60     		str	r3, [r7, #4]
  1363              	.L65:
  860:Generated_Source\PSoC5/ADC_DelSig_1.c ****         #endif /* CY_PSOC3 */
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 40
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 40
 
 
  861:Generated_Source\PSoC5/ADC_DelSig_1.c ****     }
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  871:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
  872:Generated_Source\PSoC5/ADC_DelSig_1.c **** /*******************************************************************************
  873:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Function Name: ADC_DelSig_1_SetOffset
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 41
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 41
 
 
  874:Generated_Source\PSoC5/ADC_DelSig_1.c **** ********************************************************************************
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1433              		.cfi_def_cfa_offset 0
  1434 0016 7047     		bx	lr
  1435              	.L73:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 42
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 42
 
 
  1436              		.align	2
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1458 0002 83B0     		sub	sp, sp, #12
  1459              		.cfi_def_cfa_offset 16
  1460 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 43
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 43
 
 
  1461              		.cfi_def_cfa_register 7
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  958:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
  959:Generated_Source\PSoC5/ADC_DelSig_1.c **** *******************************************************************************/
  960:Generated_Source\PSoC5/ADC_DelSig_1.c **** int16 ADC_DelSig_1_CountsTo_mVolts(int32 adcCounts) 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 44
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 44
 
 
  961:Generated_Source\PSoC5/ADC_DelSig_1.c **** {
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1512 0012 7B68     		ldr	r3, [r7, #4]
  1513 0014 4FF47A72 		mov	r2, #1000
  1514 0018 02FB03F2 		mul	r2, r2, r3
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 45
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 45
 
 
  1515 001c 074B     		ldr	r3, .L79+4
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1014:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
 1015:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Global variables:
 1016:Generated_Source\PSoC5/ADC_DelSig_1.c **** *  ADC_DelSig_1_CountsPerVolt:  used to convert to Volts.
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 46
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 46
 
 
 1017:Generated_Source\PSoC5/ADC_DelSig_1.c **** *  ADC_DelSig_1_Offset:  Used as the offset while converting ADC counts
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1567 000c 7A68     		ldr	r2, [r7, #4]
  1568 000e D31A     		subs	r3, r2, r3
  1569 0010 7B60     		str	r3, [r7, #4]
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 47
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 47
 
 
 1054:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1068:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
 1069:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Parameters:
 1070:Generated_Source\PSoC5/ADC_DelSig_1.c **** *  int32 adcCounts: Result from the ADC conversion.
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 48
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 48
 
 
 1071:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
@@ -2870,7 +2870,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1098:Generated_Source\PSoC5/ADC_DelSig_1.c ****     {
 1099:Generated_Source\PSoC5/ADC_DelSig_1.c ****         resolution = ADC_DelSig_1_CFG1_RESOLUTION;
  1629              		.loc 1 1099 0
- 1630 0012 1423     		movs	r3, #20
+ 1630 0012 1223     		movs	r3, #18
  1631 0014 FB73     		strb	r3, [r7, #15]
  1632 0016 11E0     		b	.L87
  1633              	.L86:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1101:Generated_Source\PSoC5/ADC_DelSig_1.c ****             adcCounts /= ADC_DelSig_1_CFG1_DEC_DIV;
 1102:Generated_Source\PSoC5/ADC_DelSig_1.c ****         #endif /* ADC_DelSig_1_CFG1_DEC_DIV */
 1103:Generated_Source\PSoC5/ADC_DelSig_1.c ****     }
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 49
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 49
 
 
 1104:Generated_Source\PSoC5/ADC_DelSig_1.c ****     else if (ADC_DelSig_1_Config == ADC_DelSig_1_CFG2)
@@ -2934,11 +2934,11 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1661 003c FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
  1662 003e 102B     		cmp	r3, #16
  1663 0040 02D0     		beq	.L91
- 1664 0042 142B     		cmp	r3, #20
+ 1664 0042 122B     		cmp	r3, #18
  1665 0044 06D0     		beq	.L92
- 1666 0046 0CE0     		b	.L95
+ 1666 0046 0BE0     		b	.L95
  1667              	.L91:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 50
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 50
 
 
 1127:Generated_Source\PSoC5/ADC_DelSig_1.c ****     {
@@ -2993,12 +2993,12 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1673 0050 3B61     		str	r3, [r7, #16]
 1171:Generated_Source\PSoC5/ADC_DelSig_1.c ****                 break;
  1674              		.loc 1 1171 0
- 1675 0052 0BE0     		b	.L93
+ 1675 0052 0AE0     		b	.L93
  1676              	.L92:
 1172:Generated_Source\PSoC5/ADC_DelSig_1.c ****         #endif /* ADC_DelSig_1__BITS_16 */    
 1173:Generated_Source\PSoC5/ADC_DelSig_1.c ****         #if( (ADC_DelSig_1_CFG1_RESOLUTION == ADC_DelSig_1__BITS_17) || \
 1174:Generated_Source\PSoC5/ADC_DelSig_1.c ****              (ADC_DelSig_1_CFG2_RESOLUTION == ADC_DelSig_1__BITS_17) || \
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 51
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 51
 
 
 1175:Generated_Source\PSoC5/ADC_DelSig_1.c ****              (ADC_DelSig_1_CFG3_RESOLUTION == ADC_DelSig_1__BITS_17) || \
@@ -3014,8 +3014,17 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1185:Generated_Source\PSoC5/ADC_DelSig_1.c ****              (ADC_DelSig_1_CFG4_RESOLUTION == ADC_DelSig_1__BITS_18) )
 1186:Generated_Source\PSoC5/ADC_DelSig_1.c ****             case (uint8)ADC_DelSig_1__BITS_18:
 1187:Generated_Source\PSoC5/ADC_DelSig_1.c ****                 coefA = ADC_DelSig_1_1UV_COUNTS / ADC_DelSig_1_DIVISOR_125;
+ 1677              		.loc 1 1187 0
+ 1678 0054 4FF4FA53 		mov	r3, #8000
+ 1679 0058 7B61     		str	r3, [r7, #20]
 1188:Generated_Source\PSoC5/ADC_DelSig_1.c ****                 coefB = ADC_DelSig_1_DIVISOR_125;
+ 1680              		.loc 1 1188 0
+ 1681 005a 7D23     		movs	r3, #125
+ 1682 005c 3B61     		str	r3, [r7, #16]
 1189:Generated_Source\PSoC5/ADC_DelSig_1.c ****                 break;
+ 1683              		.loc 1 1189 0
+ 1684 005e 04E0     		b	.L93
+ 1685              	.L95:
 1190:Generated_Source\PSoC5/ADC_DelSig_1.c ****         #endif /* ADC_DelSig_1__BITS_18 */    
 1191:Generated_Source\PSoC5/ADC_DelSig_1.c ****         #if( (ADC_DelSig_1_CFG1_RESOLUTION == ADC_DelSig_1__BITS_19) || \
 1192:Generated_Source\PSoC5/ADC_DelSig_1.c ****              (ADC_DelSig_1_CFG2_RESOLUTION == ADC_DelSig_1__BITS_19) || \
@@ -3032,76 +3041,67 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1203:Generated_Source\PSoC5/ADC_DelSig_1.c ****              (ADC_DelSig_1_CFG4_RESOLUTION == ADC_DelSig_1__BITS_20) )
 1204:Generated_Source\PSoC5/ADC_DelSig_1.c ****             case (uint8)ADC_DelSig_1__BITS_20:
 1205:Generated_Source\PSoC5/ADC_DelSig_1.c ****                 coefA = ADC_DelSig_1_1UV_COUNTS / ADC_DelSig_1_DIVISOR_500;
- 1677              		.loc 1 1205 0
- 1678 0054 4FF4FA63 		mov	r3, #2000
- 1679 0058 7B61     		str	r3, [r7, #20]
 1206:Generated_Source\PSoC5/ADC_DelSig_1.c ****                 coefB = ADC_DelSig_1_DIVISOR_500;
- 1680              		.loc 1 1206 0
- 1681 005a 4FF4FA73 		mov	r3, #500
- 1682 005e 3B61     		str	r3, [r7, #16]
 1207:Generated_Source\PSoC5/ADC_DelSig_1.c ****                 break;
- 1683              		.loc 1 1207 0
- 1684 0060 04E0     		b	.L93
- 1685              	.L95:
 1208:Generated_Source\PSoC5/ADC_DelSig_1.c ****         #endif /* ADC_DelSig_1__BITS_20 */    
 1209:Generated_Source\PSoC5/ADC_DelSig_1.c ****         default:    /* resolution < 12 */
 1210:Generated_Source\PSoC5/ADC_DelSig_1.c ****             /* 11 bits ADC + 2^20(1048576) = 31 bits */
 1211:Generated_Source\PSoC5/ADC_DelSig_1.c ****             coefA = ADC_DelSig_1_1UV_COUNTS;
  1686              		.loc 1 1211 0
- 1687 0062 124B     		ldr	r3, .L96+4
- 1688 0064 7B61     		str	r3, [r7, #20]
+ 1687 0060 124B     		ldr	r3, .L96+4
+ 1688 0062 7B61     		str	r3, [r7, #20]
 1212:Generated_Source\PSoC5/ADC_DelSig_1.c ****             coefB = ADC_DelSig_1_DIVISOR_1;
  1689              		.loc 1 1212 0
- 1690 0066 0123     		movs	r3, #1
- 1691 0068 3B61     		str	r3, [r7, #16]
+ 1690 0064 0123     		movs	r3, #1
+ 1691 0066 3B61     		str	r3, [r7, #16]
 1213:Generated_Source\PSoC5/ADC_DelSig_1.c ****             break;
  1692              		.loc 1 1213 0
- 1693 006a 00BF     		nop
+ 1693 0068 00BF     		nop
  1694              	.L93:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 52
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 52
 
 
 1214:Generated_Source\PSoC5/ADC_DelSig_1.c ****     }
 1215:Generated_Source\PSoC5/ADC_DelSig_1.c ****     coefB = ADC_DelSig_1_CountsPerVolt / coefB;
  1695              		.loc 1 1215 0
- 1696 006c 104B     		ldr	r3, .L96+8
- 1697 006e 1A68     		ldr	r2, [r3]
- 1698 0070 3B69     		ldr	r3, [r7, #16]
- 1699 0072 92FBF3F3 		sdiv	r3, r2, r3
- 1700 0076 3B61     		str	r3, [r7, #16]
+ 1696 006a 114B     		ldr	r3, .L96+8
+ 1697 006c 1A68     		ldr	r2, [r3]
+ 1698 006e 3B69     		ldr	r3, [r7, #16]
+ 1699 0070 92FBF3F3 		sdiv	r3, r2, r3
+ 1700 0074 3B61     		str	r3, [r7, #16]
 1216:Generated_Source\PSoC5/ADC_DelSig_1.c ****     uVolts = ((coefA * adcCounts) / coefB) - ((coefA * ADC_DelSig_1_Offset) / coefB);
  1701              		.loc 1 1216 0
- 1702 0078 7B69     		ldr	r3, [r7, #20]
- 1703 007a 7A68     		ldr	r2, [r7, #4]
- 1704 007c 02FB03F2 		mul	r2, r2, r3
- 1705 0080 3B69     		ldr	r3, [r7, #16]
- 1706 0082 92FBF3F2 		sdiv	r2, r2, r3
- 1707 0086 0B4B     		ldr	r3, .L96+12
- 1708 0088 1B68     		ldr	r3, [r3]
- 1709 008a 7969     		ldr	r1, [r7, #20]
- 1710 008c 01FB03F1 		mul	r1, r1, r3
- 1711 0090 3B69     		ldr	r3, [r7, #16]
- 1712 0092 91FBF3F3 		sdiv	r3, r1, r3
- 1713 0096 D31A     		subs	r3, r2, r3
- 1714 0098 BB60     		str	r3, [r7, #8]
+ 1702 0076 7B69     		ldr	r3, [r7, #20]
+ 1703 0078 7A68     		ldr	r2, [r7, #4]
+ 1704 007a 02FB03F2 		mul	r2, r2, r3
+ 1705 007e 3B69     		ldr	r3, [r7, #16]
+ 1706 0080 92FBF3F2 		sdiv	r2, r2, r3
+ 1707 0084 0B4B     		ldr	r3, .L96+12
+ 1708 0086 1B68     		ldr	r3, [r3]
+ 1709 0088 7969     		ldr	r1, [r7, #20]
+ 1710 008a 01FB03F1 		mul	r1, r1, r3
+ 1711 008e 3B69     		ldr	r3, [r7, #16]
+ 1712 0090 91FBF3F3 		sdiv	r3, r1, r3
+ 1713 0094 D31A     		subs	r3, r2, r3
+ 1714 0096 BB60     		str	r3, [r7, #8]
 1217:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
 1218:Generated_Source\PSoC5/ADC_DelSig_1.c ****     return( uVolts );
  1715              		.loc 1 1218 0
- 1716 009a BB68     		ldr	r3, [r7, #8]
+ 1716 0098 BB68     		ldr	r3, [r7, #8]
 1219:Generated_Source\PSoC5/ADC_DelSig_1.c **** }
  1717              		.loc 1 1219 0
- 1718 009c 1846     		mov	r0, r3
- 1719 009e 1C37     		adds	r7, r7, #28
+ 1718 009a 1846     		mov	r0, r3
+ 1719 009c 1C37     		adds	r7, r7, #28
  1720              		.cfi_def_cfa_offset 4
- 1721 00a0 BD46     		mov	sp, r7
+ 1721 009e BD46     		mov	sp, r7
  1722              		.cfi_def_cfa_register 13
  1723              		@ sp needed
- 1724 00a2 5DF8047B 		ldr	r7, [sp], #4
+ 1724 00a0 5DF8047B 		ldr	r7, [sp], #4
  1725              		.cfi_restore 7
  1726              		.cfi_def_cfa_offset 0
- 1727 00a6 7047     		bx	lr
+ 1727 00a4 7047     		bx	lr
  1728              	.L97:
- 1729              		.align	2
+ 1729 00a6 00BF     		.align	2
  1730              	.L96:
  1731 00a8 00000000 		.word	ADC_DelSig_1_Config
  1732 00ac 40420F00 		.word	1000000
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1743              	ADC_DelSig_1_InitConfig:
  1744              	.LFB19:
 1220:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 53
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 53
 
 
 1221:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
@@ -3174,25 +3174,25 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1249:Generated_Source\PSoC5/ADC_DelSig_1.c ****         ADC_DelSig_1_DEC_CR_REG      = ADC_DelSig_1_CFG1_DEC_CR;
  1767              		.loc 1 1249 0
  1768 0016 344B     		ldr	r3, .L100+4
- 1769 0018 7822     		movs	r2, #120
+ 1769 0018 7C22     		movs	r2, #124
  1770 001a 1A70     		strb	r2, [r3]
 1250:Generated_Source\PSoC5/ADC_DelSig_1.c ****         ADC_DelSig_1_DEC_SHIFT1_REG  = ADC_DelSig_1_CFG1_DEC_SHIFT1;
  1771              		.loc 1 1250 0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 54
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 54
 
 
  1772 001c 334B     		ldr	r3, .L100+8
- 1773 001e 0022     		movs	r2, #0
+ 1773 001e 0422     		movs	r2, #4
  1774 0020 1A70     		strb	r2, [r3]
 1251:Generated_Source\PSoC5/ADC_DelSig_1.c ****         ADC_DelSig_1_DEC_SHIFT2_REG  = ADC_DelSig_1_CFG1_DEC_SHIFT2;
  1775              		.loc 1 1251 0
  1776 0022 334B     		ldr	r3, .L100+12
- 1777 0024 0A22     		movs	r2, #10
+ 1777 0024 0922     		movs	r2, #9
  1778 0026 1A70     		strb	r2, [r3]
 1252:Generated_Source\PSoC5/ADC_DelSig_1.c ****         ADC_DelSig_1_DEC_DR2_REG     = ADC_DelSig_1_CFG1_DEC_DR2;
  1779              		.loc 1 1252 0
  1780 0028 324B     		ldr	r3, .L100+16
- 1781 002a 7F22     		movs	r2, #127
+ 1781 002a 0F22     		movs	r2, #15
  1782 002c 1A70     		strb	r2, [r3]
 1253:Generated_Source\PSoC5/ADC_DelSig_1.c ****         ADC_DelSig_1_DEC_DR2H_REG    = ADC_DelSig_1_CFG1_DEC_DR2H;
  1783              		.loc 1 1253 0
@@ -3202,7 +3202,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1254:Generated_Source\PSoC5/ADC_DelSig_1.c ****         ADC_DelSig_1_DEC_DR1_REG     = ADC_DelSig_1_CFG1_DEC_DR1;
  1787              		.loc 1 1254 0
  1788 0034 314B     		ldr	r3, .L100+24
- 1789 0036 7F22     		movs	r2, #127
+ 1789 0036 3F22     		movs	r2, #63
  1790 0038 1A70     		strb	r2, [r3]
 1255:Generated_Source\PSoC5/ADC_DelSig_1.c ****         ADC_DelSig_1_DEC_OCOR_REG    = ADC_DelSig_1_CFG1_DEC_OCOR;
  1791              		.loc 1 1255 0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1262:Generated_Source\PSoC5/ADC_DelSig_1.c ****         ADC_DelSig_1_DSM_CR6_REG     = ADC_DelSig_1_CFG1_DSM_CR6;
  1815              		.loc 1 1262 0
  1816 005e 2E4B     		ldr	r3, .L100+52
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 55
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 55
 
 
  1817 0060 2B22     		movs	r2, #43
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1859 00a0 274B     		ldr	r3, .L100+92
  1860 00a2 0022     		movs	r2, #0
  1861 00a4 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 56
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 56
 
 
 1275:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
@@ -3345,12 +3345,12 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1300:Generated_Source\PSoC5/ADC_DelSig_1.c ****         ADC_DelSig_1_CountsPerVolt = (int32)ADC_DelSig_1_CFG1_COUNTS_PER_VOLT;
  1878              		.loc 1 1300 0
  1879 00be 254B     		ldr	r3, .L100+112
- 1880 00c0 4FF47A32 		mov	r2, #256000
+ 1880 00c0 4FF47A42 		mov	r2, #64000
  1881 00c4 1A60     		str	r2, [r3]
 1301:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
 1302:Generated_Source\PSoC5/ADC_DelSig_1.c ****         ADC_DelSig_1_Ext_CP_Clk_SetDividerRegister(ADC_DelSig_1_CFG1_CP_CLK_DIVIDER, 1u);
  1882              		.loc 1 1302 0
- 1883 00c6 0120     		movs	r0, #1
+ 1883 00c6 0520     		movs	r0, #5
  1884 00c8 0121     		movs	r1, #1
  1885 00ca FFF7FEFF 		bl	ADC_DelSig_1_Ext_CP_Clk_SetDividerRegister
 1303:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
@@ -3358,10 +3358,10 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1305:Generated_Source\PSoC5/ADC_DelSig_1.c ****         #if(ADC_DelSig_1_DEFAULT_INTERNAL_CLK)
 1306:Generated_Source\PSoC5/ADC_DelSig_1.c ****             ADC_DelSig_1_theACLK_SetDividerRegister(ADC_DelSig_1_CFG1_ADC_CLK_DIVIDER, 1u);
  1886              		.loc 1 1306 0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 57
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 57
 
 
- 1887 00ce 0720     		movs	r0, #7
+ 1887 00ce 1920     		movs	r0, #25
  1888 00d0 0121     		movs	r1, #1
  1889 00d2 FFF7FEFF 		bl	ADC_DelSig_1_theACLK_SetDividerRegister
 1307:Generated_Source\PSoC5/ADC_DelSig_1.c ****         #endif /* ADC_DelSig_1_DEFAULT_INTERNAL_CLK */
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1353:Generated_Source\PSoC5/ADC_DelSig_1.c ****             */
 1354:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
 1355:Generated_Source\PSoC5/ADC_DelSig_1.c ****             #if(ADC_DelSig_1_DEFAULT_INPUT_MODE)
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 58
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 58
 
 
 1356:Generated_Source\PSoC5/ADC_DelSig_1.c ****                 #if (ADC_DelSig_1_CFG2_INPUT_RANGE == ADC_DelSig_1_IR_VSSA_TO_2VREF)
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1410:Generated_Source\PSoC5/ADC_DelSig_1.c ****             ADC_DelSig_1_DSM_CR15_REG    = ADC_DelSig_1_CFG3_DSM_CR15;
 1411:Generated_Source\PSoC5/ADC_DelSig_1.c ****             ADC_DelSig_1_DSM_CR16_REG    = ADC_DelSig_1_CFG3_DSM_CR16;
 1412:Generated_Source\PSoC5/ADC_DelSig_1.c ****             ADC_DelSig_1_DSM_CR17_REG    = ADC_DelSig_1_CFG3_DSM_CR17;
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 59
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 59
 
 
 1413:Generated_Source\PSoC5/ADC_DelSig_1.c ****             /* Set DSM_REF0_REG by disabling and enabling the PRESS circuit */
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1467:Generated_Source\PSoC5/ADC_DelSig_1.c ****             ADC_DelSig_1_DEC_OCOR_REG    = ADC_DelSig_1_CFG4_DEC_OCOR;
 1468:Generated_Source\PSoC5/ADC_DelSig_1.c ****             ADC_DelSig_1_DEC_OCORM_REG   = ADC_DelSig_1_CFG4_DEC_OCORM;
 1469:Generated_Source\PSoC5/ADC_DelSig_1.c ****             ADC_DelSig_1_DEC_OCORH_REG   = ADC_DelSig_1_CFG4_DEC_OCORH;
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 60
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 60
 
 
 1470:Generated_Source\PSoC5/ADC_DelSig_1.c ****             ADC_DelSig_1_DEC_COHER_REG   = ADC_DelSig_1_CFG4_DEC_COHER;
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1524:Generated_Source\PSoC5/ADC_DelSig_1.c ****         }
 1525:Generated_Source\PSoC5/ADC_DelSig_1.c ****     #endif /* ADC_DelSig_1_DEFAULT_NUM_CONFIGS > 3 */
 1526:Generated_Source\PSoC5/ADC_DelSig_1.c **** }
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 61
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 61
 
 
  1895              		.loc 1 1526 0
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1530:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Function Name: ADC_DelSig_1_SelectCofiguration
 1531:Generated_Source\PSoC5/ADC_DelSig_1.c **** ********************************************************************************
 1532:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 62
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 62
 
 
 1533:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Summary:
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  1971              		.loc 1 1561 0 is_stmt 1
  1972 001c 164B     		ldr	r3, .L107
  1973 001e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 63
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 63
 
 
  1974 0020 002B     		cmp	r3, #0
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2010 005e 04D1     		bne	.L105
 1580:Generated_Source\PSoC5/ADC_DelSig_1.c ****         {
 1581:Generated_Source\PSoC5/ADC_DelSig_1.c ****             /* Restart the ADC */
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 64
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 64
 
 
 1582:Generated_Source\PSoC5/ADC_DelSig_1.c ****             ADC_DelSig_1_Start();
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1596:Generated_Source\PSoC5/ADC_DelSig_1.c **** /*******************************************************************************
 1597:Generated_Source\PSoC5/ADC_DelSig_1.c **** * Function Name: ADC_DelSig_1_GainCompensation
 1598:Generated_Source\PSoC5/ADC_DelSig_1.c **** ********************************************************************************
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 65
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 65
 
 
 1599:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2077 0022 002B     		cmp	r3, #0
  2078 0024 00F08A80 		beq	.L110
  2079              		.loc 1 1625 0 is_stmt 0 discriminator 1
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 66
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 66
 
 
  2080 0028 97F82830 		ldrb	r3, [r7, #40]	@ zero_extendqisi2
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2118 007a 1B78     		ldrb	r3, [r3]
  2119 007c DBB2     		uxtb	r3, r3
  2120 007e FB75     		strb	r3, [r7, #23]
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 67
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 67
 
 
  2121              		.loc 1 1640 0
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1662:Generated_Source\PSoC5/ADC_DelSig_1.c ****                     flash = ADC_DelSig_1_DEC_TRIM_VREF_4_DIFF_8_15;
 1663:Generated_Source\PSoC5/ADC_DelSig_1.c ****                 }
 1664:Generated_Source\PSoC5/ADC_DelSig_1.c ****                 break;
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 68
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 68
 
 
  2153              		.loc 1 1664 0
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2189              	.L119:
 1681:Generated_Source\PSoC5/ADC_DelSig_1.c ****         }
 1682:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 69
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 69
 
 
 1683:Generated_Source\PSoC5/ADC_DelSig_1.c ****         /* Add two values */
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2230 0120 013B     		subs	r3, r3, #1
  2231 0122 114A     		ldr	r2, .L129+32
  2232 0124 9B00     		lsls	r3, r3, #2
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 70
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 70
 
 
  2233 0126 1344     		add	r3, r3, r2
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2276              	ADC_DelSig_1_SetDSMRef0Reg:
  2277              	.LFB22:
 1708:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 71
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 71
 
 
 1709:Generated_Source\PSoC5/ADC_DelSig_1.c **** 
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2309 002a 43F00303 		orr	r3, r3, #3
  2310 002e DBB2     		uxtb	r3, r3
  2311 0030 1370     		strb	r3, [r2]
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 72
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 72
 
 
 1732:Generated_Source\PSoC5/ADC_DelSig_1.c ****     ADC_DelSig_1_DSM_REF0_REG = value;
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2356              		.align	2
  2357              		.global	ADC_DelSig_1_Read8
  2358              		.thumb
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 73
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 73
 
 
  2359              		.thumb_func
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2385              		.loc 1 1769 0
  2386 001a 0020     		movs	r0, #0
  2387 001c FFF7FEFF 		bl	ADC_DelSig_1_IsEndConversion
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 74
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 74
 
 
 1770:Generated_Source\PSoC5/ADC_DelSig_1.c ****      result = ADC_DelSig_1_GetResult8();
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
 1792:Generated_Source\PSoC5/ADC_DelSig_1.c **** *  int16:  ADC result.
 1793:Generated_Source\PSoC5/ADC_DelSig_1.c **** *
 1794:Generated_Source\PSoC5/ADC_DelSig_1.c **** *******************************************************************************/
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 75
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 75
 
 
 1795:Generated_Source\PSoC5/ADC_DelSig_1.c **** int16 ADC_DelSig_1_Read16(void) 
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2461 0036 80BD     		pop	{r7, pc}
  2462              	.L141:
  2463              		.align	2
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 76
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 76
 
 
  2464              	.L140:
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2492 000a 1B78     		ldrb	r3, [r3]
  2493 000c DBB2     		uxtb	r3, r3
  2494 000e 43F00403 		orr	r3, r3, #4
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 77
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 77
 
 
  2495 0012 DBB2     		uxtb	r3, r3
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2542 0025 02       		.uleb128 0x2
  2543 0026 01       		.byte	0x1
  2544 0027 06       		.byte	0x6
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 78
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 78
 
 
  2545 0028 25010000 		.4byte	.LASF0
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2599 0094 02       		.byte	0x2
  2600 0095 9501     		.2byte	0x195
  2601 0097 25000000 		.4byte	0x25
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 79
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 79
 
 
  2602 009b 04       		.uleb128 0x4
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2656 0110 03       		.byte	0x3
  2657 0111 2F       		.byte	0x2f
  2658 0112 2F010000 		.4byte	0x12f
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 80
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 80
 
 
  2659 0116 07       		.uleb128 0x7
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2713 0182 01       		.byte	0x1
  2714 0183 4901     		.2byte	0x149
  2715 0185 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 81
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 81
 
 
  2716 0189 30000000 		.4byte	.LFE2-.LFB2
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2770 01fb 9C       		.byte	0x9c
  2771 01fc 1F020000 		.4byte	0x21f
  2772 0200 10       		.uleb128 0x10
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 82
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 82
 
 
  2773 0201 39030000 		.4byte	.LASF36
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2827 026e B3000000 		.4byte	0xb3
  2828 0272 02       		.uleb128 0x2
  2829 0273 91       		.byte	0x91
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 83
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 83
 
 
  2830 0274 70       		.sleb128 -16
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2884 02e9 0C030000 		.4byte	0x30c
  2885 02ed 10       		.uleb128 0x10
  2886 02ee 7A010000 		.4byte	.LASF47
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 84
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 84
 
 
  2887 02f2 01       		.byte	0x1
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2941 0364 01       		.byte	0x1
  2942 0365 EB02     		.2byte	0x2eb
  2943 0367 77000000 		.4byte	0x77
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 85
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 85
 
 
  2944 036b 02       		.uleb128 0x2
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  2998 03da 91       		.byte	0x91
  2999 03db 74       		.sleb128 -12
  3000 03dc 00       		.byte	0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 86
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 86
 
 
  3001 03dd 0F       		.uleb128 0xf
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3055 0452 75040000 		.4byte	0x475
  3056 0456 10       		.uleb128 0x10
  3057 0457 8D040000 		.4byte	.LASF57
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 87
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 87
 
 
  3058 045b 01       		.byte	0x1
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3112 04c8 02       		.uleb128 0x2
  3113 04c9 91       		.byte	0x91
  3114 04ca 70       		.sleb128 -16
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 88
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 88
 
 
  3115 04cb 0E       		.uleb128 0xe
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3169 0537 97040000 		.4byte	.LASF69
  3170 053b 01       		.byte	0x1
  3171 053c 5106     		.2byte	0x651
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 89
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 89
 
 
  3172 053e 00000000 		.4byte	.LFB21
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3226 05a7 88030000 		.4byte	.LASF74
  3227 05ab 01       		.byte	0x1
  3228 05ac 5506     		.2byte	0x655
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 90
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 90
 
 
  3229 05ae A7000000 		.4byte	0xa7
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3283 061d 01       		.uleb128 0x1
  3284 061e 9C       		.byte	0x9c
  3285 061f 33060000 		.4byte	0x633
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 91
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 91
 
 
  3286 0623 0E       		.uleb128 0xe
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3340 0697 0B       		.uleb128 0xb
  3341 0698 1D060000 		.4byte	.LASF81
  3342 069c 01       		.byte	0x1
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 92
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 92
 
 
  3343 069d 3D       		.byte	0x3d
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3397 070f A7000000 		.4byte	0xa7
  3398 0713 17       		.uleb128 0x17
  3399 0714 33040000 		.4byte	.LASF88
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 93
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 93
 
 
  3400 0718 01       		.byte	0x1
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3454 002d 0E       		.uleb128 0xe
  3455 002e 3A       		.uleb128 0x3a
  3456 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 94
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 94
 
 
  3457 0030 3B       		.uleb128 0x3b
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3511 0066 09       		.uleb128 0x9
  3512 0067 2E       		.uleb128 0x2e
  3513 0068 00       		.byte	0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 95
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 95
 
 
  3514 0069 3F       		.uleb128 0x3f
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3568 00a1 49       		.uleb128 0x49
  3569 00a2 13       		.uleb128 0x13
  3570 00a3 02       		.uleb128 0x2
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 96
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 96
 
 
  3571 00a4 18       		.uleb128 0x18
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3625 00dc 03       		.uleb128 0x3
  3626 00dd 0E       		.uleb128 0xe
  3627 00de 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 97
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 97
 
 
  3628 00df 0B       		.uleb128 0xb
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3682 0116 03       		.uleb128 0x3
  3683 0117 0E       		.uleb128 0xe
  3684 0118 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 98
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 98
 
 
  3685 0119 0B       		.uleb128 0xb
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3739 0151 0B       		.uleb128 0xb
  3740 0152 3B       		.uleb128 0x3b
  3741 0153 05       		.uleb128 0x5
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 99
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 99
 
 
  3742 0154 27       		.uleb128 0x27
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3796 018c 34       		.uleb128 0x34
  3797 018d 00       		.byte	0
  3798 018e 03       		.uleb128 0x3
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 100
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 100
 
 
  3799 018f 0E       		.uleb128 0xe
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3853 0090 00000000 		.4byte	.LFB16
  3854 0094 40000000 		.4byte	.LFE16-.LFB16
  3855 0098 00000000 		.4byte	.LFB17
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 101
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 101
 
 
  3856 009c 44000000 		.4byte	.LFE17-.LFB17
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3910 0084 40000000 		.4byte	.LFE16
  3911 0088 00000000 		.4byte	.LFB17
  3912 008c 44000000 		.4byte	.LFE17
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 102
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 102
 
 
  3913 0090 00000000 		.4byte	.LFB18
@@ -6081,7 +6081,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3930 00d4 00000000 		.4byte	0
  3931              		.section	.debug_line,"",%progbits
  3932              	.Ldebug_line0:
- 3933 0000 61030000 		.section	.debug_str,"MS",%progbits,1
+ 3933 0000 63030000 		.section	.debug_str,"MS",%progbits,1
  3933      02005B00 
  3933      00000201 
  3933      FB0E0D00 
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3947      68756169 
  3947      5C446F63 
  3948 0082 6E676C65 		.ascii	"ngleEndedMode01\\ADC_SingleEndedMode02.cydsn\000"
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 103
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 103
 
 
  3948      456E6465 
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3968      00
  3969              	.LASF20:
  3970 0154 72656731 		.ascii	"reg16\000"
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 104
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 104
 
 
  3970      3600
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  3997              	.LASF43:
  3998 01ea 67636F72 		.ascii	"gcorValue\000"
  3998      56616C75 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 105
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 105
 
 
  3998      6500
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  4022      32303135 
  4022      30333033 
  4023 02ca 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 106
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 106
 
 
  4023      20726576 
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  4044      69675F31 
  4044      5F536574 
  4044      4F666673 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 107
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 107
 
 
  4045              	.LASF2:
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  4072 0462 746D7056 		.ascii	"tmpValue\000"
  4072      616C7565 
  4072      00
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 108
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 108
 
 
  4073              	.LASF76:
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  4096 0537 4144435F 		.ascii	"ADC_DelSig_1_Start\000"
  4096      44656C53 
  4096      69675F31 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 109
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 109
 
 
  4096      5F537461 
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 1
  4118 0607 4144435F 		.ascii	"ADC_DelSig_1_ReadGCOR\000"
  4118      44656C53 
  4118      69675F31 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc0RlrWO.s 			page 110
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\ccDl9V4h.s 			page 110
 
 
  4118      5F526561 

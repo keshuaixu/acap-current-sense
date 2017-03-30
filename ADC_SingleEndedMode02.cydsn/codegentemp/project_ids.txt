@@ -7,3 +7,4 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprim
 C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\ADC_SingleEndedMode01.cydsn\ADC_SingleEndedMode01.cyprj|dd30857b-10bb-42f5-8f14-d14a8f310fc5
 C:\Users\Keshuai\Desktop\AN57473\Joystick.cydsn\Joystick.cyprj|30886c2e-552a-4f27-9aa3-05869a27b081
 C:\Users\Keshuai\Documents\PSoC Creator\ADC_SingleEndedMode01\USBFS_HID01.cydsn\USBFS_HID01.cyprj|d90bad50-4ed8-4306-8484-4334bc2968d8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev\psoc3\AnalogDevice\PSoC35AnalogDevice.cylib\PSoC35AnalogDevice.cyprj|84283e63-c78c-4cee-862a-8bab7debcbd5

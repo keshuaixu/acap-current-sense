@@ -1,5 +1,5 @@
 -- Project:   ADC_SingleEndedMode02
--- Generated: 03/30/2017 04:58:23
+-- Generated: 03/30/2017 05:24:39
 -- PSoC Creator  4.0 Update 1
 
 ENTITY ADC_SingleEndedMode02 IS
@@ -94,15 +94,15 @@ ARCHITECTURE __DEFAULT__ OF ADC_SingleEndedMode02 IS
     ATTRIBUTE lib_model OF Pin_1(0) : LABEL IS "iocell1";
     ATTRIBUTE Location OF Pin_1(0) : LABEL IS "P0[7]";
     ATTRIBUTE lib_model OF Pin_1(1) : LABEL IS "iocell2";
-    ATTRIBUTE Location OF Pin_1(1) : LABEL IS "P15[5]";
+    ATTRIBUTE Location OF Pin_1(1) : LABEL IS "P0[6]";
     ATTRIBUTE lib_model OF Pin_1(2) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF Pin_1(2) : LABEL IS "P0[6]";
+    ATTRIBUTE Location OF Pin_1(2) : LABEL IS "P0[5]";
     ATTRIBUTE lib_model OF Pin_1(3) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF Pin_1(3) : LABEL IS "P2[5]";
+    ATTRIBUTE Location OF Pin_1(3) : LABEL IS "P0[4]";
     ATTRIBUTE lib_model OF Pin_1(4) : LABEL IS "iocell5";
-    ATTRIBUTE Location OF Pin_1(4) : LABEL IS "P0[2]";
+    ATTRIBUTE Location OF Pin_1(4) : LABEL IS "P0[3]";
     ATTRIBUTE lib_model OF Pin_1(5) : LABEL IS "iocell6";
-    ATTRIBUTE Location OF Pin_1(5) : LABEL IS "P2[1]";
+    ATTRIBUTE Location OF Pin_1(5) : LABEL IS "P0[2]";
     ATTRIBUTE lib_model OF \USBUART:Dm(0)\ : LABEL IS "iocell7";
     ATTRIBUTE Location OF \USBUART:Dm(0)\ : LABEL IS "P15[7]";
     ATTRIBUTE Location OF \USBUART:Dp\ : LABEL IS "F(PICU,8)";
@@ -727,7 +727,7 @@ BEGIN
     \ADC_DelSig_1:DSM\:dsmodcell
         GENERIC MAP(
             cy_registers => "",
-            resolution => 20)
+            resolution => 18)
         PORT MAP(
             aclock => \ClockBlock.aclk_glb_ff_0__sig\,
             modbitin_udb => open,

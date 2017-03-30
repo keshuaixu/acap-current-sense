@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 1
 
 
    1              		.syntax unified
@@ -24,7 +24,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
   21              		.size	ADC_DelSig_1_backup, 2
   22              	ADC_DelSig_1_backup:
   23 0000 00       		.byte	0
-  24 0001 78       		.byte	120
+  24 0001 7C       		.byte	124
   25 0002 0000     		.section	.text.ADC_DelSig_1_SaveConfig,"ax",%progbits
   26              		.align	2
   27              		.global	ADC_DelSig_1_SaveConfig
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
   22:Generated_Source\PSoC5/ADC_DelSig_1_PM.c ****     ADC_DelSig_1_DISABLED,
   23:Generated_Source\PSoC5/ADC_DelSig_1_PM.c ****     ADC_DelSig_1_CFG1_DEC_CR
   24:Generated_Source\PSoC5/ADC_DelSig_1_PM.c **** };
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 2
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 2
 
 
   25:Generated_Source\PSoC5/ADC_DelSig_1_PM.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
   63              		.cfi_endproc
   64              	.LFE0:
   65              		.size	ADC_DelSig_1_SaveConfig, .-ADC_DelSig_1_SaveConfig
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 3
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 3
 
 
   66              		.section	.text.ADC_DelSig_1_RestoreConfig,"ax",%progbits
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
   95              		.cfi_def_cfa_offset 0
   96 0012 7047     		bx	lr
   97              	.L6:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 4
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 4
 
 
   98              		.align	2
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  128 000e 002B     		cmp	r3, #0
  129 0010 1AD0     		beq	.L8
   99:Generated_Source\PSoC5/ADC_DelSig_1_PM.c ****        (ADC_DelSig_1_ACT_PWR_DSM_EN == (ADC_DelSig_1_PWRMGR_DSM_REG & ADC_DelSig_1_ACT_PWR_DSM_EN))
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 5
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 5
 
 
  130              		.loc 1 99 0 discriminator 1
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  117:Generated_Source\PSoC5/ADC_DelSig_1_PM.c **** 
  118:Generated_Source\PSoC5/ADC_DelSig_1_PM.c ****     /* Save the user configuration */
  119:Generated_Source\PSoC5/ADC_DelSig_1_PM.c ****     ADC_DelSig_1_SaveConfig();
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 6
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 6
 
 
  166              		.loc 1 119 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  143:Generated_Source\PSoC5/ADC_DelSig_1_PM.c ****     /* Restore the configuration */
  144:Generated_Source\PSoC5/ADC_DelSig_1_PM.c ****     ADC_DelSig_1_RestoreConfig();
  197              		.loc 1 144 0
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 7
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 7
 
 
  198 0004 FFF7FEFF 		bl	ADC_DelSig_1_RestoreConfig
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  241 0021 00000000 		.4byte	.Ldebug_line0
  242 0025 02       		.uleb128 0x2
  243 0026 01       		.byte	0x1
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 8
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 8
 
 
  244 0027 06       		.byte	0x6
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  298 0088 BC000000 		.4byte	.LASF11
  299 008c 04       		.uleb128 0x4
  300 008d C0010000 		.4byte	.LASF13
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 9
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 9
 
 
  301 0091 02       		.byte	0x2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  355 0101 01       		.uleb128 0x1
  356 0102 9C       		.byte	0x9c
  357 0103 0A       		.uleb128 0xa
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 10
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 10
 
 
  358 0104 83000000 		.4byte	.LASF21
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  412 0024 0B       		.uleb128 0xb
  413 0025 03       		.uleb128 0x3
  414 0026 08       		.uleb128 0x8
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 11
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 11
 
 
  415 0027 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  469 005d 0E       		.uleb128 0xe
  470 005e 3A       		.uleb128 0x3a
  471 005f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 12
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 12
 
 
  472 0060 3B       		.uleb128 0x3b
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  526 0098 00       		.byte	0
  527 0099 03       		.uleb128 0x3
  528 009a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 13
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 13
 
 
  529 009b 3A       		.uleb128 0x3a
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  576 000e 656E6162 		.ascii	"enableState\000"
  576      6C655374 
  576      61746500 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 14
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 14
 
 
  577              	.LASF8:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  598      5F626163 
  598      6B757000 
  599              	.LASF10:
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 15
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 15
 
 
  600 00de 646F7562 		.ascii	"double\000"
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 1
  622 01e0 433A5C55 		.ascii	"C:\\Users\\Keshuai\\Documents\\PSoC Creator\\ADC_Si"
  622      73657273 
  622      5C4B6573 
-ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc8Xskn6.s 			page 16
+ARM GAS  C:\Users\Keshuai\AppData\Local\Temp\cc6HXcIn.s 			page 16
 
 
  622      68756169 
